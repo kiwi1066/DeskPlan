@@ -13,6 +13,7 @@ import {
   getSortedTeamIds,
   teamColor,
   getDaySummary,
+  displayName,
 } from "./state.js";
 
 import { getCurrentFloor, floorExists } from "./buildings.js";
@@ -403,7 +404,7 @@ export function exportImage(planFile, titleText, planDarken) {
 
         const desks  = teamCounts[t] || 0;
         const spaceN = teamSpaceCounts[t] || 0;
-        let text = `${t} ${AppState.teamNames[t] || ""}: ${desks} desk${desks === 1 ? "" : "s"}`;
+        let text = `${displayName(t)}: ${desks} desk${desks === 1 ? "" : "s"}`;
         if (spaceN) text += ` · ${spaceN} space${spaceN === 1 ? "" : "s"}`;
 
         ctx.fillStyle = "#000";

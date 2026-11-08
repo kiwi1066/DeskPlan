@@ -94,6 +94,14 @@ export function removeAllTeams() {
   AppState.teamColors = {};
 }
 
+/**
+ * Name shown to users for a team. The T1/T2… IDs are kept internally (saved
+ * data, CSV files) but not displayed; falls back to the ID if unnamed.
+ */
+export function displayName(teamId) {
+  return (AppState.teamNames[teamId] || "").trim() || teamId;
+}
+
 export function getSortedTeamIds() {
   return Object.keys(AppState.teamNames).sort(
     (a, b) => parseInt(a.slice(1)) - parseInt(b.slice(1))

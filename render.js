@@ -10,6 +10,7 @@ import {
   teamColor,
   getDaySummary,
   PALETTE_SIZE,
+  displayName,
 } from "./state.js";
 
 // ── Floor plan colouring ──────────────────────────────────────────────────────
@@ -51,8 +52,7 @@ export function renderContainer(containerId, day) {
         title = document.createElementNS("http://www.w3.org/2000/svg", "title");
         shape.appendChild(title);
       }
-      const name = AppState.teamNames[teamId];
-      title.textContent = name ? `${teamId} — ${name}` : teamId;
+      title.textContent = displayName(teamId);
     } else if (title) {
       title.remove();
     }
@@ -118,7 +118,6 @@ export function buildLegend(onTeamClick, onTeamEdit) {
 
   teamIds.forEach(teamId => {
     const color = teamColor(teamId);
-    const name  = AppState.teamNames[teamId];
 
     const chip = document.createElement("div");
     chip.className    = "chip";
@@ -126,8 +125,8 @@ export function buildLegend(onTeamClick, onTeamEdit) {
 
     chip.innerHTML = `
       <span class="chip-dot" style="background:${color}"></span>
-      <span class="chip-label" title="Assign to ${teamId} ${name}">${teamId} ${name}</span>
-      <button class="chip-edit-btn" title="Rename or delete ${teamId}" aria-label="Edit team ${teamId}">✏️</button>
+      <span class="chip-label" title="Assign to ${displayName(teamId)}">${displayName(teamId)}</span>
+      <button class="chip-edit-btn" title="Rename or delete ${displayName(teamId)}" aria-label="Edit ${displayName(teamId)}">✏️</button>
     `;
 
     // Left-click on the label area → assign
@@ -196,8 +195,8 @@ export function updateSummary() {
     const desks  = teamCounts[t] || 0;
     const spaceN = teamSpaceCounts[t] || 0;
     const text   = spaceN
-      ? `${t}: ${desks} desk${desks === 1 ? "" : "s"} · ${spaceN} space${spaceN === 1 ? "" : "s"}`
-      : `${t}: ${desks} desk${desks === 1 ? "" : "s"}`;
+      ? `${displayName(t)}: ${desks} desk${desks === 1 ? "" : "s"} · ${spaceN} space${spaceN === 1 ? "" : "s"}`
+      : `${displayName(t)}: ${desks} desk${desks === 1 ? "" : "s"}`;
     html += `
       <span class="summary-badge" style="background:${color}">
         ${text}

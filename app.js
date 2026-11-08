@@ -28,6 +28,7 @@ import {
   clearSelection,
   undo,
   nextTeamId,
+  displayName,
   addTeam,
   renameTeam,
   deleteTeam,
@@ -181,7 +182,7 @@ const _mel = {
 
 function openTeamEditModal(teamId) {
   _editingTeamId                 = teamId;
-  _mel.title.textContent         = `Edit ${teamId}`;
+  _mel.title.textContent         = `Edit ${displayName(teamId)}`;
   _mel.dot.style.background      = teamColor(teamId);
   _mel.input.value               = AppState.teamNames[teamId] || "";
   _mel.editPanel.style.display   = "block";
@@ -209,7 +210,7 @@ function showDeletePanel(teamId) {
   const dayWord = count === 1 ? "desk assignment" : "desk assignments";
   const name    = AppState.teamNames[teamId] || teamId;
   _mel.deleteDot.style.background = teamColor(teamId);
-  _mel.deleteTitle.textContent    = `Delete ${teamId} ${name}?`;
+  _mel.deleteTitle.textContent    = `Delete ${name}?`;
   _mel.deleteMsg.innerHTML = count > 0
     ? `This team has <strong>${count}</strong> ${dayWord} across all options.`
     : `This team has no desk assignments.`;
