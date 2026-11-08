@@ -310,6 +310,43 @@ elFloor.addEventListener("change", () => {
   switchFloor(elBuilding.value, elFloor.value);
 });
 
+// ── Plan image darkening ──────────────────────────────────────────────────────
+// Optional per-floor "planDarken" in buildings.json (e.g. 3) darkens faint
+// line work in the PNG with a gamma curve: greys get darker, white stays white.
+// 1 or missing = no change. The same curve is applied in Export Image.
+
+function applyPlanDarken(exponent) {
+  const imgs = [elFloorPlanImg, elFloorPlanImg1, elFloorPlanImg2];
+  const k    = Number(exponent);
+
+  if (!k || k === 1) {
+    imgs.forEach(img => { img.style.filter = ""; });
+    return;
+  }
+
+  let svg = document.getElementById("planFilters");
+  if (!svg) {
+    svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+    svg.id = "planFilters";
+    svg.setAttribute("width", "0");
+    svg.setAttribute("height", "0");
+    svg.setAttribute("aria-hidden", "true");
+    svg.style.position = "absolute";
+    svg.innerHTML = `
+      <filter id="planDarkenFilter" color-interpolation-filters="sRGB">
+        <feComponentTransfer>
+          <feFuncR type="gamma" exponent="1"/>
+          <feFuncG type="gamma" exponent="1"/>
+          <feFuncB type="gamma" exponent="1"/>
+        </feComponentTransfer>
+      </filter>`;
+    document.body.appendChild(svg);
+  }
+  svg.querySelectorAll("feFuncR, feFuncG, feFuncB")
+     .forEach(fn => fn.setAttribute("exponent", String(k)));
+  imgs.forEach(img => { img.style.filter = "url(#planDarkenFilter)"; });
+}
+
 // ── Default (startup) floor ───────────────────────────────────────────────────
 
 const elDefaultFloorBtn = document.getElementById("btn-default-floor");
@@ -381,6 +418,7 @@ function switchFloor(buildingId, floorId, onComplete) {
   elFloorPlanImg.src  = pngFile;
   elFloorPlanImg1.src = pngFile;
   elFloorPlanImg2.src = pngFile;
+  applyPlanDarken(floor.planDarken);
 
   // Reset all runtime state
   resetFloorData();
@@ -459,6 +497,7 @@ async function boot() {
     elFloorPlanImg.src  = pngFile;
     elFloorPlanImg1.src = pngFile;
     elFloorPlanImg2.src = pngFile;
+    applyPlanDarken(floor.planDarken);
 
     if (!floor.plan) {
       console.warn("No plan file for default floor — check buildings.json");
@@ -662,7 +701,7 @@ bind("btn-export-all",      "click", exportCSVAllTeams);
 bind("btn-export-assigned", "click", exportCSVAssignedTeams);
 bind("btn-export-image",  "click", () => {
   const floor = getCurrentFloor();
-  exportImage(floor.plan, floorTitle());
+  exportImage(floor.plan, floorTitle(), floor.planDarken);
 });
 
 bind("btn-toggle-summary", "click", toggleSummary);

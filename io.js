@@ -302,8 +302,10 @@ export function handleTeamImport(file, mode = "replace") {
 /**
  * @param {string} planFile   - PNG filename e.g. from getCurrentFloor().plan (svg, we derive png)
  * @param {string} titleText  - e.g. "1 Williams St — Level 11"
+ * @param {number} [planDarken] - optional gamma exponent from buildings.json,
+ *                                same darkening as shown on screen
  */
-export function exportImage(planFile, titleText) {
+export function exportImage(planFile, titleText, planDarken) {
   // Derive PNG name: strip svg extension, add .png
   // Convention: the PNG shares the same base name as the SVG
   const pngFile = planFile ? planFile.replace(/\.svg$/i, ".png") : "floorPlan.png";
@@ -345,6 +347,7 @@ export function exportImage(planFile, titleText) {
 
     // Floor plan image
     ctx.drawImage(img, 0, bannerH);
+    darkenRegion(ctx, 0, bannerH, width, height, planDarken);
 
     // SVG overlay
     const svg     = document.querySelector("#svgContainer svg");
@@ -413,6 +416,27 @@ export function exportImage(planFile, titleText) {
 
     svgImg.src = url;
   };
+}
+
+// Applies the same gamma curve as the on-screen plan filter to one area of
+// the canvas: each channel c (0..1) becomes c^exponent.
+function darkenRegion(ctx, x, y, w, h, exponent) {
+  const k = Number(exponent);
+  if (!k || k === 1) return;
+  const lut = new Uint8ClampedArray(256);
+  for (let i = 0; i < 256; i++) lut[i] = Math.round(255 * Math.pow(i / 255, k));
+  try {
+    const data = ctx.getImageData(x, y, w, h);
+    const px   = data.data;
+    for (let i = 0; i < px.length; i += 4) {
+      px[i]     = lut[px[i]];
+      px[i + 1] = lut[px[i + 1]];
+      px[i + 2] = lut[px[i + 2]];
+    }
+    ctx.putImageData(data, x, y);
+  } catch (e) {
+    console.warn("Could not darken exported plan:", e);
+  }
 }
 
 // ── File input helpers ────────────────────────────────────────────────────────

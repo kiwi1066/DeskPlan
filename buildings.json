@@ -40,12 +40,14 @@
       {
         "id":    "L11",
         "label": "Level 11",
-        "plan":  "275G_L11_deskPlan.svg"
+        "plan":  "275G_L11_deskPlan.svg",
+        "planDarken": 3
       },
       {
         "id":    "L12",
         "label": "Level 12",
-        "plan":  "275G_L12_deskPlan.svg"
+        "plan":  "275G_L12_deskPlan.svg",
+        "planDarken": 3
       },
        {
         "id":    "L13",

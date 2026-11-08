@@ -93,6 +93,7 @@ export function getCurrentFloor() {
     floorLabel:    floor?.label        ?? _floorId ?? "",
     plan:          floor?.plan         ?? null,
     deskSelector:  floor?.deskSelector ?? "g[id^='desk']",
+    planDarken:    floor?.planDarken   ?? null,
   };
 }
 
