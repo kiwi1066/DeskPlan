@@ -772,7 +772,7 @@ function renderAddTeamRows() {
     const input = document.createElement("input");
     input.type = "text";
     input.className = "row-input";
-    input.placeholder = `Team ${index + 1} name`;
+    input.placeholder = `Name ${index + 1}`;
     input.autocomplete = "off";
     input.spellcheck = false;
     input.value = row.name || "";
@@ -839,10 +839,7 @@ function updateConfirmLabel() {
     _addTeamEls.confirm.textContent = "Add";
     _addTeamEls.confirm.disabled = true;
   } else {
-    const word = named === 1 ? "team" : "teams";
-    const singular = (AppState.categoryLabel || "Teams").replace(/s$/i, "").toLowerCase();
-    const plural = singular + (named === 1 ? "" : "s");
-    _addTeamEls.confirm.textContent = `Add ${named} ${plural}`;
+    _addTeamEls.confirm.textContent = `Add ${named} name${named === 1 ? "" : "s"}`;
     _addTeamEls.confirm.disabled = false;
   }
 }
@@ -946,8 +943,8 @@ function buildPopoverGrid(rowId) {
 // ── Modal open/close ──────────────────────────────────────────────────────────
 
 function openAddTeamModal() {
-  const singular = (AppState.categoryLabel || "Teams").replace(/s$/i, "");
-  _addTeamEls.title.textContent = `Add ${singular}s`;
+  // Fixed wording to match the "Add Selection Name" button
+  _addTeamEls.title.textContent = "Add Selection Names";
   _rows = [];
   addNewRow();
   _addTeamEls.modal.style.display = "block";
