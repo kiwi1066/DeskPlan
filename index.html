@@ -64,41 +64,49 @@
 
         <button id="btn-export-image">📸 Export Image</button>
       </div>
-      <div class="toolbar-section">
-        <span class="toolbar-label">Edit</span>
-        <button id="btn-copy">📋 Copy Option</button>
-        <button id="btn-undo">↩ Undo</button>
-        <button id="btn-multi">🧩 Multi</button>
-        <button id="btn-clear-desks">🧽 Clear Desks</button>
-        <button id="btn-clear-all">🧹 Clear All</button>
-        <button id="btn-reset" class="btn-danger">🗑 Reset</button>
-      </div>
       <div class="toolbar-section" style="border-top:none;padding-top:0;">
         <button id="btn-help">❓ Help</button>
       </div>
+    </div>
+  </div>
 
-      <!-- Editable category label -->
-      <div id="categoryHeaderWrap" class="category-header-wrap">
-        <span class="category-label-group">
-          <span id="categoryLabel" class="section-header category-label-text" title="Click to rename">Teams</span>
-          <button id="btn-edit-category" class="category-edit-btn" title="Rename category">✏️</button>
-        </span>
-      </div>
-      <div id="categoryEditWrap" class="category-edit-wrap" style="display:none;">
-        <input id="categoryInput" type="text" class="category-input" value="Teams" autocomplete="off" spellcheck="false">
-        <button id="btn-category-save" class="category-save-btn">✓</button>
-        <button id="btn-category-cancel" class="category-cancel-btn">✕</button>
-      </div>
+  <!-- Edit tools + names list: stays pinned to the top of the window while
+       scrolling the floor plan (hidden in compare mode, like editControls) -->
+  <div id="stickyTools" class="panel-card sticky-tools">
+    <div class="toolbar-section sticky-edit-row">
+      <span class="toolbar-label">Edit</span>
+      <button id="btn-copy">📋 Copy Option</button>
+      <button id="btn-undo">↩ Undo</button>
+      <button id="btn-multi">🧩 Multi</button>
+      <button id="btn-clear-desks">🧽 Clear Desks</button>
+      <button id="btn-clear-all">🧹 Clear All</button>
+      <button id="btn-reset" class="btn-danger">🗑 Reset</button>
+  </div>
 
-      <div id="legend"></div>
+  <!-- Editable category label -->
+  <div id="categoryHeaderWrap" class="category-header-wrap">
+    <span class="category-label-group">
+      <span id="categoryLabel" class="section-header category-label-text" title="Click to rename">Teams</span>
+      <button id="btn-edit-category" class="category-edit-btn" title="Rename category">✏️</button>
+    </span>
+  </div>
+  <div id="categoryEditWrap" class="category-edit-wrap" style="display:none;">
+    <input id="categoryInput" type="text" class="category-input" value="Teams" autocomplete="off" spellcheck="false">
+    <button id="btn-category-save" class="category-save-btn">✓</button>
+    <button id="btn-category-cancel" class="category-cancel-btn">✕</button>
+  </div>
 
-      <div class="summary-wrap">
-        <div class="summary-header">
-          <span class="section-header" style="margin:0;">Desk Allocation Summary</span>
-          <button id="btn-toggle-summary" class="summary-toggle-btn" title="Hide summary">▲</button>
-        </div>
-        <div id="summary"></div>
+  <div id="legend"></div>
+  </div>
+
+  <!-- Allocation summary -->
+  <div id="summaryPanel" class="panel-card summary-panel">
+    <div class="summary-wrap">
+      <div class="summary-header">
+        <span class="section-header" style="margin:0;">Desk Allocation Summary</span>
+        <button id="btn-toggle-summary" class="summary-toggle-btn" title="Hide summary">▲</button>
       </div>
+      <div id="summary"></div>
     </div>
   </div>
 

@@ -59,11 +59,51 @@ body {
 /* ── Controls panel ──────────────────────────────────────────── */
 #controls {
   background: var(--surface);
-  margin: 14px;
+  margin: 14px 14px 10px;
   padding: 14px 16px;
   border-radius: var(--radius-md);
   box-shadow: var(--shadow-sm);
   border: 1px solid var(--border);
+}
+
+/* ── Cards below the controls panel ──────────────────────────── */
+.panel-card {
+  background: var(--surface);
+  margin: 0 14px 14px;
+  padding: 6px 16px 10px;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--border);
+}
+
+/* Edit tools + names list stay pinned to the top while the plan scrolls */
+.sticky-tools {
+  position: sticky;
+  top: 0;
+  z-index: 500;               /* above the floor plan, below modals (1000) */
+  transition: box-shadow 0.15s;
+}
+
+.sticky-tools.is-stuck {
+  border-radius: 0 0 var(--radius-md) var(--radius-md);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.18);
+}
+
+/* Long name lists scroll inside the bar rather than covering the plan */
+.sticky-tools #legend {
+  max-height: 22vh;
+  overflow-y: auto;
+}
+
+.sticky-tools .category-header-wrap {
+  margin: 4px 0 6px;
+}
+
+/* Summary sits in its own card now, so drop the old divider */
+.summary-panel .summary-wrap {
+  margin-top: 0;
+  padding-top: 4px;
+  border-top: none;
 }
 
 /* ── View row (Mode + Day selectors) ─────────────────────────── */

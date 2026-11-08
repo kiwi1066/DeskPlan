@@ -347,6 +347,17 @@ function applyPlanDarken(exponent) {
   imgs.forEach(img => { img.style.filter = "url(#planDarkenFilter)"; });
 }
 
+// ── Sticky tools bar ──────────────────────────────────────────────────────────
+// Adds a stronger shadow once the Edit/names bar is pinned to the top.
+
+const elStickyTools = document.getElementById("stickyTools");
+function updateStickyShadow() {
+  if (!elStickyTools) return;
+  elStickyTools.classList.toggle("is-stuck", elStickyTools.getBoundingClientRect().top <= 0.5);
+}
+window.addEventListener("scroll", updateStickyShadow, { passive: true });
+window.addEventListener("resize", updateStickyShadow);
+
 // ── Default (startup) floor ───────────────────────────────────────────────────
 
 const elDefaultFloorBtn = document.getElementById("btn-default-floor");

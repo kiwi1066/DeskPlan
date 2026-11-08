@@ -19,6 +19,8 @@ export function activateCompare(svgFile) {
   document.getElementById("mapSingle").style.display       = "none";
   document.getElementById("compareWrap").style.display     = "flex";
   document.getElementById("editControls").style.display    = "none";
+  document.getElementById("stickyTools").style.display     = "none";
+  document.getElementById("summaryPanel").style.display    = "none";
   document.getElementById("compareControls").style.display = "inline-flex";
 
   // Reload compare SVGs if floor has changed since last time
@@ -47,6 +49,8 @@ export function deactivateCompare() {
   document.getElementById("mapSingle").style.display       = "block";
   document.getElementById("compareWrap").style.display     = "none";
   document.getElementById("editControls").style.display    = "block";
+  document.getElementById("stickyTools").style.display     = "";
+  document.getElementById("summaryPanel").style.display    = "";
   document.getElementById("compareControls").style.display = "none";
 }
 
