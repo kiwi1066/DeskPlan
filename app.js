@@ -650,6 +650,21 @@ function setupDeskClicks(deskSelector) {
     applyHighlight();
   });
 
+  // Double-click an allocated desk or space → unallocate it for the current
+  // option (can be undone). Double-clicking an unallocated one does nothing.
+  fresh.addEventListener("dblclick", e => {
+    if (AppState.mode === "compare" || e.shiftKey) return;
+
+    const desk = e.target.closest(deskSelector);
+    if (!desk) return;
+    if (!AppState.deskData[desk.id]?.[AppState.currentDay]) return;
+
+    clearDeskDay([desk.id], AppState.currentDay);
+    // The two clicks before this toggled the desk's selection — drop it
+    AppState.selectedDesks = AppState.selectedDesks.filter(id => id !== desk.id);
+    render();
+  });
+
   return fresh;  // return so initDragSelect gets the live node
 }
 
