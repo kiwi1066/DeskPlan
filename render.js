@@ -11,6 +11,7 @@ import {
   getDaySummary,
   PALETTE_SIZE,
   displayName,
+  readableTextColor,
 } from "./state.js";
 
 // ── Floor plan colouring ──────────────────────────────────────────────────────
@@ -198,7 +199,7 @@ export function updateSummary() {
       ? `${displayName(t)}: ${desks} desk${desks === 1 ? "" : "s"} · ${spaceN} space${spaceN === 1 ? "" : "s"}`
       : `${displayName(t)}: ${desks} desk${desks === 1 ? "" : "s"}`;
     html += `
-      <span class="summary-badge" style="background:${color}">
+      <span class="summary-badge" style="background:${color};color:${readableTextColor(color)}">
         ${text}
       </span>
     `;

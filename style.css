@@ -589,7 +589,7 @@ button[data-active="true"] { background: var(--accent); }
   padding: 2px 9px;
   border-radius: 12px;
   color: #fff;
-  font-size: 11px;
+  font-size: 12px;
   font-weight: 600;
 }
 

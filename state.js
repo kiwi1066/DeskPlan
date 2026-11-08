@@ -173,6 +173,45 @@ function autoColor(teamId) {
   return `hsl(${hue}, 60%, ${lt}%)`;
 }
 
+/**
+ * Text colour that reads best on a given background colour: near-black on
+ * light colours (yellow, green, orange…), white on dark ones. Accepts
+ * #rgb, #rrggbb and hsl(h, s%, l%) — the formats teamColor() can return.
+ */
+export function readableTextColor(bg) {
+  const rgb = parseColor(bg);
+  if (!rgb) return "#fff";
+  const lin = rgb.map(v => {
+    v /= 255;
+    return v <= 0.03928 ? v / 12.92 : ((v + 0.055) / 1.055) ** 2.4;
+  });
+  const luminance = 0.2126 * lin[0] + 0.7152 * lin[1] + 0.0722 * lin[2];
+  return luminance > 0.35 ? "#111" : "#fff";
+}
+
+function parseColor(c) {
+  if (!c) return null;
+  c = String(c).trim();
+  let m = /^#([0-9a-f]{3})$/i.exec(c);
+  if (m) return [...m[1]].map(h => parseInt(h + h, 16));
+  m = /^#([0-9a-f]{6})$/i.exec(c);
+  if (m) return [0, 2, 4].map(i => parseInt(m[1].slice(i, i + 2), 16));
+  m = /^hsl\(\s*([\d.]+)\s*,\s*([\d.]+)%\s*,\s*([\d.]+)%\s*\)$/i.exec(c);
+  if (m) {
+    const h = +m[1] / 360, s = +m[2] / 100, l = +m[3] / 100;
+    const q = l < 0.5 ? l * (1 + s) : l + s - l * s, p = 2 * l - q;
+    const f = t => {
+      t = (t + 1) % 1;
+      if (t < 1 / 6) return p + (q - p) * 6 * t;
+      if (t < 1 / 2) return q;
+      if (t < 2 / 3) return p + (q - p) * (2 / 3 - t) * 6;
+      return p;
+    };
+    return [f(h + 1 / 3), f(h), f(h - 1 / 3)].map(v => Math.round(v * 255));
+  }
+  return null;
+}
+
 export function teamColor(teamId) {
   if (!teamId) return "transparent";
   // Manual override wins
