@@ -206,6 +206,14 @@ select:focus {
   display: flex;
 }
 
+/* While the Export menu is open, lift the top panel above the pinned
+   Edit/names panel (z-index 500) so the menu isn't hidden behind it */
+#controls:has(.submenu-wrap:hover),
+#controls:has(.submenu-wrap:focus-within) {
+  position: relative;
+  z-index: 600;
+}
+
 .submenu button {
   background: transparent;
   color: var(--text);
