@@ -59,8 +59,8 @@ body {
 /* ── Controls panel ──────────────────────────────────────────── */
 #controls {
   background: var(--surface);
-  margin: 14px 14px 10px;
-  padding: 14px 16px;
+  margin: 14px 14px 6px;
+  padding: 14px 16px 4px;
   border-radius: var(--radius-md);
   box-shadow: var(--shadow-sm);
   border: 1px solid var(--border);
@@ -70,7 +70,7 @@ body {
 .panel-card {
   background: var(--surface);
   margin: 0 14px 14px;
-  padding: 6px 16px 10px;
+  padding: 4px 16px 10px;
   border-radius: var(--radius-md);
   box-shadow: var(--shadow-sm);
   border: 1px solid var(--border);
@@ -88,6 +88,10 @@ body {
   border-radius: 0 0 var(--radius-md) var(--radius-md);
   box-shadow: 0 4px 14px rgba(0, 0, 0, 0.18);
 }
+
+/* Tighter spacing between the File row and the Edit row */
+#editControls .toolbar-section:last-child { padding-bottom: 4px; }
+.sticky-tools .sticky-edit-row { padding-top: 4px; }
 
 /* Long name lists scroll inside the bar rather than covering the plan */
 .sticky-tools #legend {
