@@ -83,6 +83,9 @@ import {
   storageKey,
   v1StorageKey,
   floorTitle,
+  setDefaultFloor,
+  clearDefaultFloor,
+  isCurrentFloorDefault,
 } from "./buildings.js";
 
 import { uiPrompt, uiConfirm } from "./modal.js";
@@ -307,6 +310,28 @@ elFloor.addEventListener("change", () => {
   switchFloor(elBuilding.value, elFloor.value);
 });
 
+// ── Default (startup) floor ───────────────────────────────────────────────────
+
+const elDefaultFloorBtn = document.getElementById("btn-default-floor");
+
+function updateDefaultFloorBtn() {
+  if (!elDefaultFloorBtn) return;
+  const isDefault = isCurrentFloorDefault();
+  elDefaultFloorBtn.textContent = isDefault ? "★ Default" : "☆ Set as default";
+  elDefaultFloorBtn.title       = isDefault
+    ? "The app opens on this floor. Click to remove it as the default."
+    : "Open the app on this floor next time";
+  elDefaultFloorBtn.classList.toggle("is-default", isDefault);
+}
+
+elDefaultFloorBtn?.addEventListener("click", () => {
+  const { buildingId, floorId } = getCurrentFloor();
+  if (!buildingId || !floorId) return;
+  if (isCurrentFloorDefault()) clearDefaultFloor();
+  else setDefaultFloor(buildingId, floorId);
+  updateDefaultFloorBtn();
+});
+
 // ── Floor switching ───────────────────────────────────────────────────────────
 
 function showLoading(label) {
@@ -334,6 +359,7 @@ function switchFloor(buildingId, floorId, onComplete) {
 
   // Update active floor in buildings module
   setCurrentFloor(buildingId, floorId);
+  updateDefaultFloorBtn();
   const floor = getCurrentFloor();
 
   if (!floor.plan) {
@@ -421,6 +447,7 @@ async function boot() {
 
     // Set storage key for the default floor
     setStorageKey(storageKey(), v1StorageKey());
+    updateDefaultFloorBtn();
 
     // Update title
     const title = floorTitle();

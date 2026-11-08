@@ -473,6 +473,30 @@ button[data-active="true"] { background: var(--accent); }
   line-height: 1;
 }
 
+.default-floor-btn {
+  all: unset;
+  cursor: pointer;
+  font-size: 12px;
+  color: var(--text-muted);
+  padding: 4px 10px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border);
+  background: var(--surface);
+  white-space: nowrap;
+  transition: background 0.15s, color 0.15s;
+}
+
+.default-floor-btn:hover {
+  background: var(--brand-light);
+  color: var(--brand-dark);
+}
+
+.default-floor-btn.is-default {
+  color: var(--brand-dark);
+  border-color: var(--brand-mid);
+  font-weight: 600;
+}
+
 .summary-toggle-btn:hover {
   background: var(--brand-light);
   color: var(--brand-dark);

@@ -21,18 +21,59 @@ export async function loadBuildings() {
   if (!res.ok) throw new Error(`buildings.json returned HTTP ${res.status}`);
   _buildings = await res.json();
 
-  // Pick first building and first floor as defaults
-  const firstBldg  = Object.keys(_buildings)[0];
-  const firstFloor = _buildings[firstBldg]?.floors?.[0]?.id ?? null;
+  // Start on the user's saved default floor if it still exists,
+  // otherwise the first floor of the first building
+  let startBldg  = Object.keys(_buildings)[0];
+  let startFloor = _buildings[startBldg]?.floors?.[0]?.id ?? null;
 
-  _buildingId = firstBldg;
-  _floorId    = firstFloor;
+  const saved = getDefaultFloor();
+  if (saved && floorExists(saved.buildingId, saved.floorId)) {
+    startBldg  = saved.buildingId;
+    startFloor = saved.floorId;
+  }
+
+  _buildingId = startBldg;
+  _floorId    = startFloor;
 
   return {
     buildings:       _buildings,
-    defaultBuilding: firstBldg,
-    defaultFloor:    firstFloor,
+    defaultBuilding: startBldg,
+    defaultFloor:    startFloor,
   };
+}
+
+// ── User's default (startup) floor ────────────────────────────────────────────
+// Stored per browser. Not tied to any one floor's data.
+
+const DEFAULT_FLOOR_KEY = "deskPlannerV2_defaultFloor";
+
+/** { buildingId, floorId } or null */
+export function getDefaultFloor() {
+  try {
+    const raw = localStorage.getItem(DEFAULT_FLOOR_KEY);
+    const v   = raw ? JSON.parse(raw) : null;
+    return v?.buildingId && v?.floorId ? v : null;
+  } catch {
+    return null;
+  }
+}
+
+export function setDefaultFloor(buildingId, floorId) {
+  try {
+    localStorage.setItem(DEFAULT_FLOOR_KEY, JSON.stringify({ buildingId, floorId }));
+  } catch (e) {
+    console.warn("Could not save default floor:", e);
+  }
+}
+
+export function clearDefaultFloor() {
+  try { localStorage.removeItem(DEFAULT_FLOOR_KEY); } catch { /* ignore */ }
+}
+
+/** True if the current floor is the saved default */
+export function isCurrentFloorDefault() {
+  const d = getDefaultFloor();
+  return !!d && d.buildingId === _buildingId && d.floorId === _floorId;
 }
 
 // ── Getters / setters ─────────────────────────────────────────────────────────
