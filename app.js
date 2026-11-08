@@ -81,6 +81,7 @@ import {
   getCurrentFloor,
   setCurrentFloor,
   storageKey,
+  v1StorageKey,
   floorTitle,
 } from "./buildings.js";
 
@@ -359,7 +360,7 @@ function switchFloor(buildingId, floorId, onComplete) {
   resetFloorData();
 
   // Update storage key for the new floor
-  setStorageKey(storageKey());
+  setStorageKey(storageKey(), v1StorageKey());
 
   // Reset compare state so it reloads with the new SVG
   resetCompare();
@@ -419,7 +420,7 @@ async function boot() {
     if (defaultFloor) elFloor.value = defaultFloor;
 
     // Set storage key for the default floor
-    setStorageKey(storageKey());
+    setStorageKey(storageKey(), v1StorageKey());
 
     // Update title
     const title = floorTitle();

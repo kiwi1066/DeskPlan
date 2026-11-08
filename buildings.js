@@ -69,8 +69,17 @@ export function floorExists(buildingId, floorId) {
   return floors.some(f => f.id === floorId);
 }
 
-/** Unique localStorage key for the current floor */
+/**
+ * Unique localStorage key for the current floor.
+ * V2 uses its own prefix so it never overwrites V1 data — both versions are
+ * served from kiwi1066.github.io and share the same browser storage.
+ */
 export function storageKey() {
+  return `deskPlannerV2_${_buildingId}_${_floorId}`;
+}
+
+/** V1's key for the current floor — read once to copy V1 data into V2, never written */
+export function v1StorageKey() {
   return `deskPlanner_${_buildingId}_${_floorId}`;
 }
 

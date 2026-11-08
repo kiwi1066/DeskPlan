@@ -16,8 +16,12 @@ export const DAYS = [
 const STORAGE_KEY = "deskPlannerData";
 
 // Override this with a per-floor key once buildings are loaded
-let _storageKey = STORAGE_KEY;
-export function setStorageKey(key) { _storageKey = key; }
+let _storageKey   = STORAGE_KEY;
+let _v1StorageKey = null;   // V1 key for the same floor — read-only, used once to copy V1 data
+export function setStorageKey(key, v1Key = null) {
+  _storageKey   = key;
+  _v1StorageKey = v1Key;
+}
 
 export const AppState = {
   deskData:      {},   // { "desk-001": { mon:"T1", tue:"", ... }, ... }
@@ -250,7 +254,16 @@ export function saveState() {
 
 export function loadState() {
   try {
-    const raw = localStorage.getItem(_storageKey);
+    let raw = localStorage.getItem(_storageKey);
+    let fromV1 = false;
+
+    // First visit to this floor in V2: copy the user's V1 data, if any.
+    // V1's entry is only read, never changed. Assignments on desk IDs that
+    // no longer exist in the V2 plan are dropped.
+    if (!raw && _v1StorageKey) {
+      raw = localStorage.getItem(_v1StorageKey);
+      fromV1 = !!raw;
+    }
     if (!raw) return;
     const saved = JSON.parse(raw);
 
@@ -269,13 +282,21 @@ export function loadState() {
 
     // Restore user-edited category label if present
     if (saved.categoryLabel) AppState.categoryLabel = saved.categoryLabel;
+
+    // Save straight away under the V2 key so the copy only ever happens once
+    if (fromV1) {
+      saveState();
+      console.info(`Copied V1 data from ${_v1StorageKey} to ${_storageKey}`);
+    }
   } catch (e) {
     console.warn("Could not load state:", e);
   }
 }
 
 export function resetAll() {
-  localStorage.removeItem(_storageKey);
+  // Store an empty floor rather than removing the key, otherwise the next
+  // load would copy the V1 data back in
+  localStorage.setItem(_storageKey, JSON.stringify({ deskData: {}, teamNames: {}, teamColors: {} }));
   location.reload();
 }
 
