@@ -1071,6 +1071,39 @@ function openCopyModal() {
     elCopyDays.appendChild(lbl);
   });
   elCopyModal.style.display = "block";
+  positionCopyModal();
+}
+
+/**
+ * Places the Copy Option pop-up just to the right of the Copy Option button,
+ * top-aligned with it. If there isn't room on the right (narrow windows) it
+ * goes below the button instead, and it is always kept inside the window.
+ */
+function positionCopyModal() {
+  const btn = document.getElementById("btn-copy");
+  if (!btn) return;
+
+  const gap  = 8;
+  const pad  = 8;
+  const b    = btn.getBoundingClientRect();
+  const m    = elCopyModal.getBoundingClientRect();
+  const vw   = document.documentElement.clientWidth;
+  const vh   = document.documentElement.clientHeight;
+
+  let left = b.right + gap;
+  let top  = b.top;
+
+  if (left + m.width > vw - pad) {   // no room on the right → below the button
+    left = b.left;
+    top  = b.bottom + gap;
+  }
+
+  left = Math.max(pad, Math.min(left, vw - m.width  - pad));
+  top  = Math.max(pad, Math.min(top,  vh - m.height - pad));
+
+  elCopyModal.style.transform = "none";
+  elCopyModal.style.left      = `${left}px`;
+  elCopyModal.style.top       = `${top}px`;
 }
 
 function applyCopy() {
