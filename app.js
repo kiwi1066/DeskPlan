@@ -35,6 +35,7 @@ import {
   teamColor,
   assignDesks,
   registerDesk,
+  warnUnknownDeskIds,
   setTeamColor,
   nextAutoColor,
   TEAM_PALETTE,
@@ -379,6 +380,7 @@ function switchFloor(buildingId, floorId, onComplete) {
       registerDesk(el.id);
     });
     loadState();
+    warnUnknownDeskIds();
 
     // Apply category label — loaded state takes priority, then buildings.json default
     applyFloorConfig();
@@ -443,6 +445,7 @@ async function boot() {
         registerDesk(el.id);
       });
       loadState();
+      warnUnknownDeskIds();
 
       // Apply category label — loaded state takes priority, then buildings.json default
       applyFloorConfig();

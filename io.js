@@ -12,6 +12,7 @@ import {
   saveState,
   getSortedTeamIds,
   teamColor,
+  getDaySummary,
 } from "./state.js";
 
 import { getCurrentFloor, floorExists } from "./buildings.js";
@@ -315,7 +316,11 @@ export function exportImage(planFile, titleText) {
   img.onload = () => {
     const { width, height } = img;
     const bannerH  = 70;
-    const summaryH = 200;
+    const summary  = getDaySummary(AppState.currentDay);
+    const perRow   = Math.max(1, Math.floor(width / 300));
+    const teamRows = Math.ceil(getSortedTeamIds().length / perRow);
+    // title + desks line + spaces line + team rows + padding
+    const summaryH = 40 + 30 + 26 + (summary.spaces.length ? 26 : 0) + 10 + teamRows * 26 + 30;
 
     canvas.width  = width;
     canvas.height = height + bannerH + summaryH;
@@ -353,7 +358,7 @@ export function exportImage(planFile, titleText) {
       URL.revokeObjectURL(url);
 
       // Summary section
-      const { teamCounts } = getDaySummaryForExport();
+      const { total, assigned, free, teamCounts, teamSpaceCounts, spaces } = summary;
       const teamIds   = getSortedTeamIds();
       let y           = bannerH + height + 40;
 
@@ -363,8 +368,22 @@ export function exportImage(planFile, titleText) {
       ctx.fillText("Desk Allocation Summary", width / 2, y);
       y += 30;
 
+      ctx.font = "15px Segoe UI";
+      ctx.fillText(`Desks: ${total} total · ${assigned} assigned · ${free} free`, width / 2, y);
+      y += 26;
+
+      if (spaces.length) {
+        ctx.font = "14px Segoe UI";
+        ctx.fillStyle = "#444";
+        const spaceText = spaces
+          .map(sp => `${sp.label}: ${sp.total} (${sp.assigned} assigned)`)
+          .join("  ·  ");
+        ctx.fillText(`Other spaces — ${spaceText}`, width / 2, y);
+        y += 26;
+      }
+      y += 10;
+
       ctx.font = "14px Segoe UI";
-      const perRow   = Math.max(1, Math.floor(width / 260));
       const colWidth = width / perRow;
 
       teamIds.forEach((t, i) => {
@@ -379,13 +398,14 @@ export function exportImage(planFile, titleText) {
         ctx.fillStyle = color;
         ctx.fill();
 
+        const desks  = teamCounts[t] || 0;
+        const spaceN = teamSpaceCounts[t] || 0;
+        let text = `${t} ${AppState.teamNames[t] || ""}: ${desks} desk${desks === 1 ? "" : "s"}`;
+        if (spaceN) text += ` · ${spaceN} space${spaceN === 1 ? "" : "s"}`;
+
         ctx.fillStyle = "#000";
         ctx.textAlign = "left";
-        ctx.fillText(
-          `${t} ${AppState.teamNames[t] || ""}: ${teamCounts[t] || 0}`,
-          x + 20,
-          lineY
-        );
+        ctx.fillText(text, x + 20, lineY);
       });
 
       downloadBlob(canvas.toDataURL(), "desk-plan.png");
@@ -393,16 +413,6 @@ export function exportImage(planFile, titleText) {
 
     svgImg.src = url;
   };
-}
-
-// Internal helper — avoids importing getDaySummary twice
-function getDaySummaryForExport() {
-  const d          = AppState.currentDay;
-  const teamCounts = {};
-  Object.values(AppState.deskData).forEach(v => {
-    if (v[d]) teamCounts[v[d]] = (teamCounts[v[d]] || 0) + 1;
-  });
-  return { teamCounts };
 }
 
 // ── File input helpers ────────────────────────────────────────────────────────

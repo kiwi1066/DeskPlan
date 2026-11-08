@@ -498,6 +498,22 @@ button[data-active="true"] { background: var(--accent); }
   margin-right: 2px;
 }
 
+.summary-totals {
+  flex-wrap: wrap;
+  align-items: baseline;
+}
+
+.summary-row-label {
+  min-width: 90px;
+  font-weight: 600;
+  color: #0b3c66;
+}
+
+.summary-space-assigned {
+  color: #888;
+  font-size: 11px;
+}
+
 .summary-teams {
   display: flex;
   flex-wrap: wrap;

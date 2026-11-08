@@ -1,342 +1,444 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 550 640">
-  <g id="desk-055" opacity=".25">
-    <polygon points="509.92 542.4 515.16 551.72 504.31 558.23 504.18 570.49 492.95 571.13 493.58 552.23 509.92 542.4" fill="#39b54a"/>
+<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 550 640">
+  <g id="desk-090">
+    <rect x="399.23" y="70.96" width="10.98" height="22.21" fill="#a7a9ac" opacity=".3"/>
   </g>
-  <g id="desk-054" opacity=".25">
-    <polygon points="476.69 541.44 482.1 532.22 493.19 538.32 503.84 532.25 510.05 541.63 493.41 550.6 476.69 541.44" fill="#39b54a"/>
+  <g id="desk-089">
+    <rect x="399.23" y="93.94" width="10.98" height="22.21" fill="#a7a9ac" opacity=".3"/>
   </g>
-  <g id="desk-058" opacity=".3">
-    <polygon points="501.69 463.26 510.76 468.91 504.39 479.84 510.18 490.65 500.64 496.61 492.1 479.75 501.69 463.26" fill="#39b54a"/>
+  <g id="desk-091">
+    <rect x="399.23" y="48.74" width="10.98" height="22.21" fill="#a7a9ac" opacity=".3"/>
   </g>
-  <g id="desk-059" opacity=".3">
-    <polygon points="530.11 446.83 529.88 457.51 517.23 457.61 510.89 468.1 500.89 462.94 511.04 446.99 530.11 446.83" fill="#39b54a"/>
+  <g id="desk-092">
+    <rect x="398.98" y="26.02" width="10.98" height="22.21" fill="#a7a9ac" opacity=".3"/>
   </g>
-  <g id="desk-060" opacity=".3">
-    <polygon points="501.39 428.58 510.88 423.66 517.02 434.73 529.26 435.27 529.52 446.52 510.66 445.24 501.39 428.58" fill="#39b54a"/>
+  <g id="desk-094">
+    <rect x="387.49" y="70.96" width="10.98" height="22.21" fill="#a7a9ac" opacity=".3"/>
   </g>
-  <g id="desk-066" opacity=".3">
-    <polygon points="501.74 371.68 510.8 377.36 504.38 388.27 510.14 399.09 500.58 405.03 492.1 388.14 501.74 371.68" fill="#39b54a"/>
+  <g id="desk-093">
+    <rect x="387.49" y="93.94" width="10.98" height="22.21" fill="#a7a9ac" opacity=".3"/>
   </g>
-  <g id="desk-067" opacity=".3">
-    <polygon points="530.4 354.5 530.23 365.19 517.58 365.35 511.3 375.88 501.27 370.78 511.33 354.77 530.4 354.5" fill="#39b54a"/>
+  <g id="desk-095">
+    <rect x="387.49" y="48.74" width="10.98" height="22.21" fill="#a7a9ac" opacity=".3"/>
   </g>
-  <g id="desk-069" opacity=".3">
-    <polygon points="500.76 370.58 491.4 365.41 497.19 354.16 490.84 343.68 500.05 337.22 509.46 353.61 500.76 370.58" fill="#39b54a"/>
+  <g id="desk-096">
+    <rect x="387.23" y="26.02" width="10.98" height="22.21" fill="#a7a9ac" opacity=".3"/>
   </g>
-  <g id="desk-068" opacity=".3">
-    <polygon points="501.6 337.37 510.84 331.99 517.52 342.74 529.77 342.68 530.58 353.9 511.68 353.56 501.6 337.37" fill="#39b54a"/>
+  <g id="desk-098">
+    <rect x="246.81" y="70.7" width="10.98" height="22.21" fill="#a7a9ac" opacity=".3"/>
   </g>
-  <g id="desk-074" opacity=".3">
-    <polygon points="501.28 279.93 510.32 285.64 503.87 296.53 509.58 307.37 500.01 313.28 491.58 296.35 501.28 279.93" fill="#39b54a"/>
+  <g id="desk-097">
+    <rect x="246.81" y="93.68" width="10.98" height="22.21" fill="#a7a9ac" opacity=".3"/>
   </g>
-  <g id="desk-082" opacity=".3">
-    <polygon points="502.13 191.42 511.17 197.13 504.72 208.02 510.44 218.86 500.86 224.77 492.43 207.84 502.13 191.42" fill="#39b54a"/>
+  <g id="desk-099">
+    <rect x="246.81" y="48.49" width="10.98" height="22.21" fill="#a7a9ac" opacity=".3"/>
   </g>
-  <g id="desk-073" opacity=".3">
-    <polygon points="499.81 314.14 490.38 319.17 484.11 308.18 471.86 307.78 471.47 296.54 490.34 297.59 499.81 314.14" fill="#39b54a"/>
+  <g id="desk-100">
+    <rect x="246.55" y="25.77" width="10.98" height="22.21" fill="#a7a9ac" opacity=".3"/>
   </g>
-  <g id="desk-081" opacity=".3">
-    <polygon points="500.66 225.97 491.23 231 484.96 220.01 472.71 219.61 472.32 208.37 491.19 209.42 500.66 225.97" fill="#39b54a"/>
+  <g id="desk-102">
+    <rect x="235.06" y="70.7" width="10.98" height="22.21" fill="#a7a9ac" opacity=".3"/>
   </g>
-  <g id="desk-072" opacity=".3">
-    <polygon points="471.46 296.91 471.34 307.6 458.69 307.82 452.46 318.38 442.41 313.32 452.39 297.27 471.46 296.91" fill="#39b54a"/>
+  <g id="desk-101">
+    <rect x="235.06" y="93.68" width="10.98" height="22.21" fill="#a7a9ac" opacity=".3"/>
   </g>
-  <g id="desk-080" opacity=".3">
-    <polygon points="471.63 209.08 471.51 219.77 458.86 219.99 452.63 230.55 442.58 225.49 452.56 209.44 471.63 209.08" fill="#39b54a"/>
+  <g id="desk-103">
+    <rect x="235.06" y="48.49" width="10.98" height="22.21" fill="#a7a9ac" opacity=".3"/>
   </g>
-  <g id="desk-079" opacity=".3">
-    <polygon points="442.69 279.62 452.07 274.5 458.46 285.42 470.71 285.69 471.22 296.93 452.34 296.07 442.69 279.62" fill="#39b54a"/>
+  <g id="desk-104">
+    <rect x="234.81" y="25.77" width="10.98" height="22.21" fill="#a7a9ac" opacity=".3"/>
   </g>
-  <g id="desk-087" opacity=".3">
-    <polygon points="443.55 191.28 452.92 186.15 459.31 197.08 471.56 197.35 472.07 208.59 453.19 207.73 443.55 191.28" fill="#39b54a"/>
+  <g id="desk-106">
+    <rect x="196.51" y="70.96" width="10.98" height="22.21" fill="#a7a9ac" opacity=".3"/>
   </g>
-  <g id="desk-078" opacity=".3">
-    <polygon points="471.82 296.18 472.1 285.49 484.75 285.46 491.14 275 501.12 280.2 490.89 296.1 471.82 296.18" fill="#39b54a"/>
+  <g id="desk-105">
+    <rect x="196.51" y="93.94" width="10.98" height="22.21" fill="#a7a9ac" opacity=".3"/>
   </g>
-  <g id="desk-086" opacity=".3">
-    <polygon points="472.16 207.67 472.44 196.98 485.09 196.95 491.48 186.49 501.46 191.69 491.23 207.59 472.16 207.67" fill="#39b54a"/>
+  <g id="desk-107">
+    <rect x="196.51" y="48.74" width="10.98" height="22.21" fill="#a7a9ac" opacity=".3"/>
   </g>
-  <g id="desk-077" opacity=".3">
-    <polygon points="500 279.32 491.03 273.5 497.61 262.69 492.02 251.78 501.67 245.99 509.89 263.02 500 279.32" fill="#39b54a"/>
+  <g id="desk-108">
+    <rect x="196.26" y="26.02" width="10.98" height="22.21" fill="#a7a9ac" opacity=".3"/>
   </g>
-  <g id="desk-085" opacity=".3">
-    <polygon points="499.66 190.98 490.69 185.16 497.27 174.35 491.68 163.44 501.33 157.65 509.55 174.67 499.66 190.98" fill="#39b54a"/>
+  <g id="desk-110">
+    <rect x="184.77" y="70.96" width="10.98" height="22.21" fill="#a7a9ac" opacity=".3"/>
   </g>
-  <g id="desk-076" opacity=".3">
-    <polygon points="501.46 245.89 510.73 240.56 517.35 251.35 529.6 251.35 530.35 262.58 511.45 262.13 501.46 245.89" fill="#39b54a"/>
+  <g id="desk-109">
+    <rect x="184.77" y="93.94" width="10.98" height="22.21" fill="#a7a9ac" opacity=".3"/>
   </g>
-  <g id="desk-084" opacity=".3">
-    <polygon points="501.12 157.55 510.39 152.22 517.01 163.01 529.26 163.01 530.01 174.24 511.11 173.79 501.12 157.55" fill="#39b54a"/>
+  <g id="desk-111">
+    <rect x="184.77" y="48.74" width="10.98" height="22.21" fill="#a7a9ac" opacity=".3"/>
   </g>
-  <g id="desk-075" opacity=".3">
-    <polygon points="530.55 263.24 530.4 273.93 517.75 274.12 511.5 284.66 501.45 279.58 511.48 263.55 530.55 263.24" fill="#39b54a"/>
+  <g id="desk-112">
+    <rect x="184.51" y="26.02" width="10.98" height="22.21" fill="#a7a9ac" opacity=".3"/>
   </g>
-  <g id="desk-083" opacity=".3">
-    <polygon points="530.89 175.07 530.74 185.76 518.09 185.95 511.84 196.49 501.8 191.41 511.82 175.38 530.89 175.07" fill="#39b54a"/>
+  <g id="desk-026">
+    <rect x="168.68" y="552.49" width="10.98" height="22.21" fill="#a7a9ac" opacity=".3"/>
   </g>
-  <g id="desk-065" opacity=".3">
-    <polygon points="500.51 405.1 491.24 410.42 484.63 399.63 472.37 399.62 471.63 388.39 490.53 388.85 500.51 405.1" fill="#39b54a"/>
+  <g id="desk-027">
+    <rect x="168.68" y="575.47" width="10.98" height="22.21" fill="#a7a9ac" opacity=".3"/>
   </g>
-  <g id="desk-064" opacity=".3">
-    <polygon points="471.46 388.61 471.53 399.3 458.88 399.75 452.84 410.41 442.7 405.53 452.4 389.31 471.46 388.61" fill="#39b54a"/>
+  <g id="desk-025">
+    <rect x="168.68" y="530.28" width="10.98" height="22.21" fill="#a7a9ac" opacity=".3"/>
   </g>
-  <g id="desk-071" opacity=".3">
-    <polygon points="442.37 370.65 451.76 365.55 458.12 376.49 470.37 376.78 470.85 388.03 451.97 387.13 442.37 370.65" fill="#39b54a"/>
+  <g id="desk-024">
+    <rect x="168.43" y="507.55" width="10.98" height="22.21" fill="#a7a9ac" opacity=".3"/>
   </g>
-  <g id="desk-070" opacity=".3">
-    <polygon points="471.69 387.23 472.12 376.55 484.77 376.7 491.31 366.33 501.21 371.68 490.76 387.43 471.69 387.23" fill="#39b54a"/>
+  <g id="desk-022">
+    <rect x="156.94" y="552.49" width="10.98" height="22.21" fill="#a7a9ac" opacity=".3"/>
   </g>
-  <g id="desk-061" opacity=".3">
-    <polygon points="500.84 462.53 491.57 457.22 497.55 446.06 491.37 435.47 500.69 429.17 509.83 445.71 500.84 462.53" fill="#39b54a"/>
+  <g id="desk-015">
+    <rect x="89.36" y="532.25" width="10.98" height="22.21" transform="translate(-448.41 638.74) rotate(-90.06)" fill="#a7a9ac" opacity=".3"/>
   </g>
-  <g id="desk-058-2" data-name="desk-058" opacity=".3">
-    <polygon points="500.52 496.31 491.26 501.65 484.63 490.87 472.37 490.87 471.61 479.65 490.51 480.08 500.52 496.31" fill="#39b54a"/>
+  <g id="desk-016">
+    <rect x="112.33" y="532.22" width="10.98" height="22.21" transform="translate(-425.39 661.7) rotate(-90.06)" fill="#a7a9ac" opacity=".3"/>
   </g>
-  <g id="desk-056" opacity=".3">
-    <polygon points="471.04 480.08 471.2 490.77 458.56 491.33 452.6 502.04 442.42 497.25 451.99 480.94 471.04 480.08" fill="#39b54a"/>
+  <g id="desk-017">
+    <rect x="89.37" y="543.99" width="10.98" height="22.21" transform="translate(-460.14 650.51) rotate(-90.06)" fill="#a7a9ac" opacity=".3"/>
   </g>
-  <g id="desk-063" opacity=".3">
-    <polygon points="442.93 462.78 452.37 457.76 458.63 468.76 470.88 469.16 471.26 480.41 452.39 479.34 442.93 462.78" fill="#39b54a"/>
+  <g id="desk-018">
+    <rect x="112.35" y="543.97" width="10.98" height="22.21" transform="translate(-437.12 673.46) rotate(-90.06)" fill="#a7a9ac" opacity=".3"/>
   </g>
-  <g id="desk-062" opacity=".3">
-    <polygon points="471.92 479.33 471.9 468.64 484.55 468.25 490.63 457.62 500.75 462.54 490.98 478.72 471.92 479.33" fill="#39b54a"/>
+  <g id="desk-007">
+    <rect x="22.8" y="521.01" width="10.98" height="22.21" transform="translate(-503.8 560.94) rotate(-90.06)" fill="#a7a9ac" opacity=".3"/>
   </g>
-  <g id="desk-053" opacity=".25">
-    <polygon points="492.19 571.11 481.5 570.94 481.34 558.29 470.81 552.01 475.91 541.98 491.92 552.04 492.19 571.11" fill="#39b54a"/>
+  <g id="desk-008">
+    <rect x="45.78" y="520.99" width="10.98" height="22.21" transform="translate(-480.77 583.9) rotate(-90.06)" fill="#a7a9ac" opacity=".3"/>
   </g>
-  <g id="desk-050" opacity=".25">
-    <polygon points="436.16 518.7 446.85 518.56 447.38 531.2 458.08 537.17 453.27 547.34 436.98 537.75 436.16 518.7" fill="#39b54a"/>
+  <g id="desk-010">
+    <rect x="22.81" y="532.76" width="10.98" height="22.21" transform="translate(-515.53 572.71) rotate(-90.06)" fill="#a7a9ac" opacity=".3"/>
   </g>
-  <g id="desk-051" opacity=".25">
-    <polygon points="452.88 548.91 447.2 557.97 436.29 551.56 425.47 557.33 419.53 547.77 436.42 539.28 452.88 548.91" fill="#39b54a"/>
+  <g id="desk-009">
+    <rect x="45.79" y="532.73" width="10.98" height="22.21" transform="translate(-492.51 595.67) rotate(-90.06)" fill="#a7a9ac" opacity=".3"/>
   </g>
-  <g id="desk-052" opacity=".25">
-    <polygon points="418.35 548.35 423.88 557.49 413.25 564.35 413.52 576.6 402.31 577.6 402.34 558.7 418.35 548.35" fill="#39b54a"/>
+  <g id="desk-003">
+    <rect x="22.8" y="469.95" width="10.98" height="22.21" transform="translate(-452.73 509.83) rotate(-90.06)" fill="#a7a9ac" opacity=".3"/>
   </g>
-  <g id="desk-047" opacity=".25">
-    <polygon points="401.82 577.57 391.13 577.41 390.95 564.76 380.42 558.49 385.51 548.46 401.53 558.5 401.82 577.57" fill="#39b54a"/>
+  <g id="desk-004">
+    <rect x="45.78" y="469.92" width="10.98" height="22.21" transform="translate(-429.71 532.78) rotate(-90.06)" fill="#a7a9ac" opacity=".3"/>
   </g>
-  <g id="desk-048" opacity=".25">
-    <polygon points="385.57 546.98 391.5 538.09 402.22 544.81 413.2 539.36 418.87 549.09 401.74 557.09 385.57 546.98" fill="#39b54a"/>
+  <g id="desk-005">
+    <rect x="22.81" y="481.69" width="10.98" height="22.21" transform="translate(-464.47 521.6) rotate(-90.06)" fill="#a7a9ac" opacity=".3"/>
   </g>
-  <g id="desk-049" opacity=".25">
-    <polygon points="418.89 547.87 413.83 538.45 424.8 532.14 425.16 519.89 436.4 519.46 435.41 538.34 418.89 547.87" fill="#39b54a"/>
+  <g id="desk-006">
+    <rect x="45.79" y="481.67" width="10.98" height="22.21" transform="translate(-441.44 544.55) rotate(-90.06)" fill="#a7a9ac" opacity=".3"/>
   </g>
-  <g id="desk-089" opacity=".45">
-    <polygon points="407.58 122.19 407.41 100.23 396.52 100.06 396.52 122.02 407.58 122.19" fill="#39b54a" opacity=".25"/>
+  <g id="desk-011">
+    <rect x="89.02" y="481.69" width="10.98" height="22.21" transform="translate(-398.2 587.8) rotate(-90.06)" fill="#a7a9ac" opacity=".3"/>
   </g>
-  <g id="desk-090" opacity=".45">
-    <polygon points="407.75 99.89 407.58 77.93 396.69 77.76 396.69 99.72 407.75 99.89" fill="#39b54a" opacity=".25"/>
+  <g id="desk-012">
+    <rect x="111.99" y="481.67" width="10.98" height="22.21" transform="translate(-375.17 610.75) rotate(-90.06)" fill="#a7a9ac" opacity=".3"/>
   </g>
-  <g id="desk-091" opacity=".45">
-    <polygon points="407.75 77.42 407.58 55.47 396.69 55.3 396.69 77.25 407.75 77.42" fill="#39b54a" opacity=".25"/>
+  <g id="desk-013">
+    <rect x="89.03" y="493.44" width="10.98" height="22.21" transform="translate(-409.93 599.56) rotate(-90.06)" fill="#a7a9ac" opacity=".3"/>
   </g>
-  <g id="desk-092" opacity=".45">
-    <polygon points="407.58 54.79 407.41 32.83 396.52 32.66 396.52 54.62 407.58 54.79" fill="#39b54a" opacity=".25"/>
+  <g id="desk-014">
+    <rect x="112.01" y="493.41" width="10.98" height="22.21" transform="translate(-386.91 622.52) rotate(-90.06)" fill="#a7a9ac" opacity=".3"/>
   </g>
-  <g id="desk-096" opacity=".45">
-    <polygon points="396.35 54.28 396.18 32.32 385.29 32.15 385.29 54.11 396.35 54.28" fill="#39b54a" opacity=".25"/>
+  <g id="desk-021">
+    <rect x="156.94" y="530.28" width="10.98" height="22.21" fill="#a7a9ac" opacity=".3"/>
   </g>
-  <g id="desk-095" opacity=".45">
-    <polygon points="396.18 77.08 396.01 55.13 385.12 54.96 385.12 76.91 396.18 77.08" fill="#39b54a" opacity=".25"/>
+  <g id="desk-020">
+    <rect x="156.68" y="507.55" width="10.98" height="22.21" fill="#a7a9ac" opacity=".3"/>
   </g>
-  <g id="desk-093" opacity=".45">
-    <polygon points="395.84 122.19 395.67 100.23 384.78 100.06 384.78 122.02 395.84 122.19" fill="#39b54a" opacity=".25"/>
+  <g id="desk-034">
+    <rect x="220.26" y="554.02" width="10.98" height="22.21" fill="#a7a9ac" opacity=".3"/>
   </g>
-  <g id="desk-094" opacity=".45">
-    <polygon points="396.18 99.72 396.01 77.76 385.12 77.59 385.12 99.55 396.18 99.72" fill="#39b54a" opacity=".25"/>
+  <g id="desk-035">
+    <rect x="220.26" y="577" width="10.98" height="22.21" fill="#a7a9ac" opacity=".3"/>
   </g>
-  <g id="desk-097" opacity=".45">
-    <polygon points="256.78 122.19 256.6 100.23 245.71 100.06 245.71 122.02 256.78 122.19" fill="#39b54a" opacity=".25"/>
+  <g id="desk-033">
+    <rect x="220.26" y="531.81" width="10.98" height="22.21" fill="#a7a9ac" opacity=".3"/>
   </g>
-  <g id="desk-098" opacity=".45">
-    <polygon points="256.95 99.89 256.78 77.93 245.88 77.76 245.88 99.72 256.95 99.89" fill="#39b54a" opacity=".25"/>
+  <g id="desk-032">
+    <rect x="220" y="509.09" width="10.98" height="22.21" fill="#a7a9ac" opacity=".3"/>
   </g>
-  <g id="desk-099" opacity=".45">
-    <polygon points="256.95 77.42 256.78 55.47 245.88 55.3 245.88 77.25 256.95 77.42" fill="#39b54a" opacity=".25"/>
+  <g id="desk-030">
+    <rect x="208.51" y="554.02" width="10.98" height="22.21" fill="#a7a9ac" opacity=".3"/>
   </g>
-  <g id="desk-100" opacity=".45">
-    <polygon points="256.78 54.79 256.6 32.83 245.71 32.66 245.71 54.62 256.78 54.79" fill="#39b54a" opacity=".25"/>
+  <g id="desk-031">
+    <rect x="208.51" y="577" width="10.98" height="22.21" fill="#a7a9ac" opacity=".3"/>
   </g>
-  <g id="desk-104" opacity=".45">
-    <polygon points="245.54 54.28 245.37 32.32 234.48 32.15 234.48 54.11 245.54 54.28" fill="#39b54a" opacity=".25"/>
+  <g id="desk-029">
+    <rect x="208.51" y="531.81" width="10.98" height="22.21" fill="#a7a9ac" opacity=".3"/>
   </g>
-  <g id="desk-103" opacity=".45">
-    <polygon points="245.37 77.08 245.2 55.13 234.31 54.96 234.31 76.91 245.37 77.08" fill="#39b54a" opacity=".25"/>
+  <g id="desk-028">
+    <rect x="208.26" y="509.09" width="10.98" height="22.21" fill="#a7a9ac" opacity=".3"/>
   </g>
-  <g id="desk-101" opacity=".45">
-    <polygon points="245.03 122.19 244.86 100.23 233.97 100.06 233.97 122.02 245.03 122.19" fill="#39b54a" opacity=".25"/>
+  <g id="desk-042">
+    <rect x="275.66" y="554.02" width="10.98" height="22.21" fill="#a7a9ac" opacity=".3"/>
   </g>
-  <g id="desk-102" opacity=".45">
-    <polygon points="245.37 99.72 245.2 77.76 234.31 77.59 234.31 99.55 245.37 99.72" fill="#39b54a" opacity=".25"/>
+  <g id="desk-043">
+    <rect x="275.66" y="577" width="10.98" height="22.21" fill="#a7a9ac" opacity=".3"/>
   </g>
-  <g id="desk-105" opacity=".45">
-    <polygon points="206.73 122.19 206.56 100.23 195.67 100.06 195.67 122.02 206.73 122.19" fill="#39b54a" opacity=".25"/>
+  <g id="desk-041">
+    <rect x="275.66" y="531.81" width="10.98" height="22.21" fill="#a7a9ac" opacity=".3"/>
   </g>
-  <g id="desk-106" opacity=".45">
-    <polygon points="206.9 99.89 206.73 77.93 195.84 77.76 195.84 99.72 206.9 99.89" fill="#39b54a" opacity=".25"/>
+  <g id="desk-040">
+    <rect x="275.4" y="509.09" width="10.98" height="22.21" fill="#a7a9ac" opacity=".3"/>
   </g>
-  <g id="desk-107" opacity=".45">
-    <polygon points="206.9 77.42 206.73 55.47 195.84 55.3 195.84 77.25 206.9 77.42" fill="#39b54a" opacity=".25"/>
+  <g id="desk-038">
+    <rect x="263.91" y="554.02" width="10.98" height="22.21" fill="#a7a9ac" opacity=".3"/>
   </g>
-  <g id="desk-108" opacity=".45">
-    <polygon points="206.73 54.79 206.56 32.83 195.67 32.66 195.67 54.62 206.73 54.79" fill="#39b54a" opacity=".25"/>
+  <g id="desk-039">
+    <rect x="263.91" y="577" width="10.98" height="22.21" fill="#a7a9ac" opacity=".3"/>
   </g>
-  <g id="desk-112" opacity=".45">
-    <polygon points="195.5 54.28 195.33 32.32 184.43 32.15 184.43 54.11 195.5 54.28" fill="#39b54a" opacity=".25"/>
+  <g id="desk-037">
+    <rect x="263.91" y="531.81" width="10.98" height="22.21" fill="#a7a9ac" opacity=".3"/>
   </g>
-  <g id="desk-111" opacity=".45">
-    <polygon points="195.33 77.08 195.16 55.13 184.26 54.96 184.26 76.91 195.33 77.08" fill="#39b54a" opacity=".25"/>
+  <g id="desk-036">
+    <rect x="263.66" y="509.09" width="10.98" height="22.21" fill="#a7a9ac" opacity=".3"/>
   </g>
-  <g id="desk-109" opacity=".45">
-    <polygon points="194.99 122.19 194.82 100.23 183.92 100.06 183.92 122.02 194.99 122.19" fill="#39b54a" opacity=".25"/>
+  <g id="desk-093L">
+    <rect x="285.87" y="26.87" width="11.06" height="20.77" fill="#a7a9ac" opacity=".3"/>
   </g>
-  <g id="desk-110" opacity=".45">
-    <polygon points="195.33 99.72 195.16 77.76 184.26 77.59 184.26 99.55 195.33 99.72" fill="#39b54a" opacity=".25"/>
+  <g id="desk-093K">
+    <rect x="285.87" y="48.15" width="11.06" height="20.77" fill="#a7a9ac" opacity=".3"/>
   </g>
-  <g id="desk-027" opacity=".45">
-    <polygon points="180.05 598.46 179.88 576.51 168.99 576.34 168.99 598.29 180.05 598.46" fill="#39b54a" opacity=".25"/>
+  <g id="desk-093J">
+    <rect x="285.7" y="69.26" width="11.06" height="20.77" fill="#a7a9ac" opacity=".3"/>
   </g>
-  <g id="desk-026" opacity=".45">
-    <polygon points="180.22 576.17 180.05 554.21 169.16 554.04 169.16 576 180.22 576.17" fill="#39b54a" opacity=".25"/>
+  <g id="desk-093I">
+    <rect x="297.28" y="27.04" width="11.06" height="20.77" fill="#a7a9ac" opacity=".3"/>
   </g>
-  <g id="desk-025" opacity=".45">
-    <polygon points="180.22 553.7 180.05 531.74 169.16 531.57 169.16 553.53 180.22 553.7" fill="#39b54a" opacity=".25"/>
+  <g id="desk-093H">
+    <rect x="297.28" y="48.32" width="11.06" height="20.77" fill="#a7a9ac" opacity=".3"/>
   </g>
-  <g id="desk-024" opacity=".45">
-    <polygon points="179.8 530.8 179.63 508.85 168.73 508.68 168.73 530.63 179.8 530.8" fill="#39b54a" opacity=".25"/>
+  <g id="desk-093G">
+    <rect x="297.11" y="69.43" width="11.06" height="20.77" fill="#a7a9ac" opacity=".3"/>
   </g>
-  <g id="desk-020" opacity=".45">
-    <polygon points="167.8 530.8 167.63 508.85 156.73 508.68 156.73 530.63 167.8 530.8" fill="#39b54a" opacity=".25"/>
+  <g id="desk-093F">
+    <rect x="335.91" y="27.04" width="11.06" height="20.77" fill="#a7a9ac" opacity=".3"/>
   </g>
-  <g id="desk-021" opacity=".45">
-    <polygon points="168.52 553.23 168.35 531.27 157.46 531.1 157.46 553.06 168.52 553.23" fill="#39b54a" opacity=".25"/>
+  <g id="desk-093E">
+    <rect x="335.91" y="48.32" width="11.06" height="20.77" fill="#a7a9ac" opacity=".3"/>
   </g>
-  <g id="desk-016" opacity=".45">
-    <polygon points="128.6 538.75 106.64 538.93 106.48 549.83 128.44 549.82 128.6 538.75" fill="#39b54a" opacity=".25"/>
+  <g id="desk-093D">
+    <rect x="335.74" y="69.43" width="11.06" height="20.77" fill="#a7a9ac" opacity=".3"/>
   </g>
-  <g id="desk-015" opacity=".45">
-    <polygon points="105.96 538.93 84.01 539.11 83.84 550.01 105.8 550 105.96 538.93" fill="#39b54a" opacity=".25"/>
+  <g id="desk-093C">
+    <rect x="347.32" y="27.21" width="11.06" height="20.77" fill="#a7a9ac" opacity=".3"/>
   </g>
-  <g id="desk-017" opacity=".45">
-    <polygon points="105.46 550.17 83.5 550.35 83.33 561.24 105.29 561.23 105.46 550.17" fill="#39b54a" opacity=".25"/>
+  <g id="desk-093B">
+    <rect x="347.32" y="48.49" width="11.06" height="20.77" fill="#a7a9ac" opacity=".3"/>
   </g>
-  <g id="desk-018" opacity=".45">
-    <polygon points="128.27 550.33 106.31 550.51 106.14 561.4 128.1 561.39 128.27 550.33" fill="#39b54a" opacity=".25"/>
+  <g id="desk-093A">
+    <rect x="347.15" y="69.6" width="11.06" height="20.77" fill="#a7a9ac" opacity=".3"/>
   </g>
-  <g id="desk-012" opacity=".45">
-    <polygon points="129.62 489.22 107.67 489.4 107.5 500.29 129.46 500.29 129.62 489.22" fill="#39b54a" opacity=".25"/>
+  <g id="desk-043A">
+    <rect x="324" y="534.62" width="11.06" height="20.77" fill="#a7a9ac" opacity=".3"/>
   </g>
-  <g id="desk-011" opacity=".45">
-    <polygon points="106.98 489.4 85.03 489.58 84.86 500.47 106.82 500.46 106.98 489.4" fill="#39b54a" opacity=".25"/>
+  <g id="desk-043B">
+    <rect x="324" y="555.89" width="11.06" height="20.77" fill="#a7a9ac" opacity=".3"/>
   </g>
-  <g id="desk-013" opacity=".45">
-    <polygon points="106.48 500.63 84.52 500.81 84.36 511.71 106.31 511.7 106.48 500.63" fill="#39b54a" opacity=".25"/>
+  <g id="desk-043C">
+    <rect x="323.83" y="577" width="11.06" height="20.77" fill="#a7a9ac" opacity=".3"/>
   </g>
-  <g id="desk-014" opacity=".45">
-    <polygon points="129.29 500.8 107.33 500.97 107.16 511.87 129.12 511.86 129.29 500.8" fill="#39b54a" opacity=".25"/>
+  <g id="desk-043D">
+    <rect x="335.4" y="534.79" width="11.06" height="20.77" fill="#a7a9ac" opacity=".3"/>
   </g>
-  <g id="desk-004" opacity=".45">
-    <polygon points="63.75 476.97 41.79 477.14 41.63 488.04 63.59 488.03 63.75 476.97" fill="#39b54a" opacity=".25"/>
+  <g id="desk-043E">
+    <rect x="335.4" y="556.06" width="11.06" height="20.77" fill="#a7a9ac" opacity=".3"/>
   </g>
-  <g id="desk-003" opacity=".45">
-    <polygon points="41.11 477.15 19.16 477.32 18.99 488.22 40.95 488.21 41.11 477.15" fill="#39b54a" opacity=".25"/>
+  <g id="desk-043F">
+    <rect x="335.23" y="577.17" width="11.06" height="20.77" fill="#a7a9ac" opacity=".3"/>
   </g>
-  <g id="desk-005" opacity=".45">
-    <polygon points="40.61 488.38 18.65 488.56 18.48 499.45 40.44 499.44 40.61 488.38" fill="#39b54a" opacity=".25"/>
+  <g id="desk-088">
+    <path d="M433.45,77.09h10.72v18.04h13.79v5.79h-24.68s0-24,.17-23.83Z" fill="#a7a9ac" opacity=".3"/>
   </g>
-  <g id="desk-006" opacity=".45">
-    <polygon points="63.42 488.54 41.46 488.72 41.29 499.61 63.25 499.6 63.42 488.54" fill="#39b54a" opacity=".25"/>
+  <g id="desk-084B">
+    <rect x="492.51" y="112.49" width="20.94" height="11.06" fill="#a7a9ac" opacity=".3"/>
   </g>
-  <g id="desk-008" opacity=".45">
-    <polygon points="63.75 528.03 41.79 528.21 41.63 539.1 63.59 539.09 63.75 528.03" fill="#39b54a" opacity=".25"/>
+  <g id="desk-084A">
+    <rect x="513.45" y="112.49" width="20.94" height="11.06" fill="#a7a9ac" opacity=".3"/>
   </g>
-  <g id="desk-007" opacity=".45">
-    <polygon points="41.11 528.21 19.16 528.39 18.99 539.28 40.95 539.27 41.11 528.21" fill="#39b54a" opacity=".25"/>
+  <g id="desk-084">
+    <path d="M504.94,151.47l9.53-5.28,5.28,8.85,1.36,1.36,1.19.34,2.55.68h8.85v10.72h-19.06s-9.87-16.85-9.7-16.68Z" fill="#a7a9ac" opacity=".3"/>
   </g>
-  <g id="desk-009" opacity=".45">
-    <polygon points="40.61 539.44 18.65 539.62 18.48 550.52 40.44 550.51 40.61 539.44" fill="#39b54a" opacity=".25"/>
+  <g id="desk-083">
+    <path d="M534.13,169.65v10.89s-10.3.33-10.3.33l-1.85.53-.88.88-1.83,1.9-4.29,7.74-9.38-5.2,9.24-16.68s19.52-.47,19.29-.4Z" fill="#a7a9ac" opacity=".3"/>
   </g>
-  <g id="desk-010" opacity=".45">
-    <polygon points="63.42 539.6 41.46 539.78 41.29 550.68 63.25 550.67 63.42 539.6" fill="#39b54a" opacity=".25"/>
+  <g id="desk-085">
+    <path d="M504.3,185.82l-9.33-5.63,5.04-8.99.5-1.86-.3-1.2-.68-2.55-4.42-7.67,9.29-5.35,9.51,16.52s-9.68,16.96-9.61,16.73Z" fill="#a7a9ac" opacity=".3"/>
   </g>
-  <g id="desk-023" opacity=".45">
-    <polygon points="168.18 598.34 168.01 576.38 157.12 576.21 157.12 598.17 168.18 598.34" fill="#39b54a" opacity=".25"/>
+  <g id="desk-086">
+    <path d="M475.29,202.57l.21-10.89,10.3-.13,1.86-.5.89-.86,1.87-1.87,4.43-7.66,9.28,5.37-9.55,16.5s-19.53.1-19.3.04Z" fill="#a7a9ac" opacity=".3"/>
   </g>
-  <g id="desk-022" opacity=".45">
-    <polygon points="168.52 575.87 168.35 553.91 157.46 553.74 157.46 575.7 168.52 575.87" fill="#39b54a" opacity=".25"/>
+  <g id="desk-082">
+    <path d="M504.88,186.41l9.47,5.38-4.8,9.12-.45,1.87.33,1.19.75,2.53,4.61,7.55-9.15,5.59-9.94-16.27s9.23-17.21,9.18-16.98Z" fill="#a7a9ac" opacity=".3"/>
   </g>
-  <g id="desk-035" opacity=".45">
-    <polygon points="230.22 600.38 230.05 578.42 219.16 578.25 219.16 600.21 230.22 600.38" fill="#39b54a" opacity=".25"/>
+  <g id="desk-081">
+    <path d="M504.06,220.5l-9.54,5.26-5.26-8.86-1.36-1.36-1.19-.34-2.55-.69-8.85-.02.02-10.72,19.06.03s9.84,16.87,9.67,16.7Z" fill="#a7a9ac" opacity=".3"/>
   </g>
-  <g id="desk-034" opacity=".45">
-    <polygon points="230.39 578.08 230.22 556.12 219.33 555.95 219.33 577.91 230.39 578.08" fill="#39b54a" opacity=".25"/>
+  <g id="desk-080">
+    <path d="M474.67,203.69l-.29,10.89-10.3.06-1.86.48-.9.85-1.88,1.86-4.49,7.63-9.24-5.44,9.67-16.43s19.53.04,19.3.1Z" fill="#a7a9ac" opacity=".3"/>
   </g>
-  <g id="desk-033" opacity=".45">
-    <polygon points="230.39 555.61 230.22 533.66 219.33 533.49 219.33 555.44 230.39 555.61" fill="#39b54a" opacity=".25"/>
+  <g id="desk-087">
+    <path d="M445.7,186.02l9.53-5.27,5.27,8.85,1.36,1.36,1.19.34,2.55.68h8.85s0,10.73,0,10.73h-19.06s-9.87-16.86-9.7-16.69Z" fill="#a7a9ac" opacity=".3"/>
   </g>
-  <g id="desk-032" opacity=".45">
-    <polygon points="230.22 532.97 230.05 511.02 219.16 510.85 219.16 532.8 230.22 532.97" fill="#39b54a" opacity=".25"/>
+  <g id="desk-076">
+    <path d="M504.94,241l9.53-5.28,5.28,8.85,1.36,1.36,1.19.34,2.55.68h8.85v10.72h-19.06s-9.87-16.85-9.7-16.68Z" fill="#a7a9ac" opacity=".3"/>
   </g>
-  <g id="desk-028" opacity=".45">
-    <polygon points="218.99 532.46 218.82 510.51 207.93 510.34 207.93 532.29 218.99 532.46" fill="#39b54a" opacity=".25"/>
+  <g id="desk-075">
+    <path d="M534.13,259.18v10.89s-10.3.33-10.3.33l-1.85.53-.88.88-1.83,1.9-4.29,7.74-9.38-5.2,9.24-16.68s19.52-.47,19.29-.4Z" fill="#a7a9ac" opacity=".3"/>
   </g>
-  <g id="desk-029" opacity=".45">
-    <polygon points="218.82 555.27 218.65 533.32 207.76 533.15 207.76 555.1 218.82 555.27" fill="#39b54a" opacity=".25"/>
+  <g id="desk-077">
+    <path d="M504.3,275.35l-9.33-5.63,5.04-8.99.5-1.86-.3-1.2-.68-2.55-4.42-7.67,9.29-5.35,9.51,16.52s-9.68,16.96-9.61,16.73Z" fill="#a7a9ac" opacity=".3"/>
   </g>
-  <g id="desk-031" opacity=".45">
-    <polygon points="218.48 600.38 218.31 578.42 207.41 578.25 207.41 600.21 218.48 600.38" fill="#39b54a" opacity=".25"/>
+  <g id="desk-078">
+    <path d="M475.29,292.1l.21-10.89,10.3-.13,1.86-.5.89-.86,1.87-1.87,4.43-7.66,9.28,5.37-9.55,16.5s-19.53.1-19.3.04Z" fill="#a7a9ac" opacity=".3"/>
   </g>
-  <g id="desk-030" opacity=".45">
-    <polygon points="218.82 577.91 218.65 555.95 207.76 555.78 207.76 577.74 218.82 577.91" fill="#39b54a" opacity=".25"/>
+  <g id="desk-074">
+    <path d="M504.88,275.94l9.47,5.38-4.8,9.12-.45,1.87.33,1.19.75,2.53,4.61,7.55-9.15,5.59-9.94-16.27s9.23-17.21,9.18-16.98Z" fill="#a7a9ac" opacity=".3"/>
   </g>
-  <g id="desk-043" opacity=".45">
-    <polygon points="284.86 600.12 284.69 578.17 273.8 578 273.8 599.95 284.86 600.12" fill="#39b54a" opacity=".25"/>
+  <g id="desk-073">
+    <path d="M504.06,310.03l-9.54,5.26-5.26-8.86-1.36-1.36-1.19-.34-2.55-.69-8.85-.02.02-10.72,19.06.03s9.84,16.87,9.67,16.7Z" fill="#a7a9ac" opacity=".3"/>
   </g>
-  <g id="desk-042" opacity=".45">
-    <polygon points="285.03 577.83 284.86 555.87 273.97 555.7 273.97 577.66 285.03 577.83" fill="#39b54a" opacity=".25"/>
+  <g id="desk-072">
+    <path d="M474.67,293.23l-.29,10.89-10.3.06-1.86.48-.9.85-1.88,1.86-4.49,7.63-9.24-5.44,9.67-16.43s19.53.04,19.3.1Z" fill="#a7a9ac" opacity=".3"/>
   </g>
-  <g id="desk-041" opacity=".45">
-    <polygon points="285.03 555.36 284.86 533.4 273.97 533.23 273.97 555.19 285.03 555.36" fill="#39b54a" opacity=".25"/>
+  <g id="desk-079">
+    <path d="M445.7,275.55l9.53-5.27,5.27,8.85,1.36,1.36,1.19.34,2.55.68h8.85s0,10.73,0,10.73h-19.06s-9.87-16.86-9.7-16.69Z" fill="#a7a9ac" opacity=".3"/>
   </g>
-  <g id="desk-040" opacity=".45">
-    <polygon points="284.86 532.72 284.69 510.76 273.8 510.59 273.8 532.55 284.86 532.72" fill="#39b54a" opacity=".25"/>
+  <g id="desk-068">
+    <path d="M504.77,333.26l9.53-5.28,5.28,8.85,1.36,1.36,1.19.34,2.55.68h8.85v10.72h-19.06s-9.87-16.85-9.7-16.68Z" fill="#a7a9ac" opacity=".3"/>
   </g>
-  <g id="desk-036" opacity=".45">
-    <polygon points="273.63 532.21 273.46 510.25 262.56 510.08 262.56 532.04 273.63 532.21" fill="#39b54a" opacity=".25"/>
+  <g id="desk-067">
+    <path d="M533.96,351.43v10.89s-10.3.33-10.3.33l-1.85.53-.88.88-1.83,1.9-4.29,7.74-9.38-5.2,9.24-16.68s19.52-.47,19.29-.4Z" fill="#a7a9ac" opacity=".3"/>
   </g>
-  <g id="desk-037" opacity=".45">
-    <polygon points="273.46 555.02 273.29 533.06 262.39 532.89 262.39 554.85 273.46 555.02" fill="#39b54a" opacity=".25"/>
+  <g id="desk-069">
+    <path d="M504.13,367.6l-9.33-5.63,5.04-8.99.5-1.86-.3-1.2-.68-2.55-4.42-7.67,9.29-5.35,9.51,16.52s-9.68,16.96-9.61,16.73Z" fill="#a7a9ac" opacity=".3"/>
   </g>
-  <g id="desk-039" opacity=".45">
-    <polygon points="273.12 600.12 272.95 578.17 262.05 578 262.05 599.95 273.12 600.12" fill="#39b54a" opacity=".25"/>
+  <g id="desk-070">
+    <path d="M475.12,384.35l.21-10.89,10.3-.13,1.86-.5.89-.86,1.87-1.87,4.43-7.66,9.28,5.37-9.55,16.5s-19.53.1-19.3.04Z" fill="#a7a9ac" opacity=".3"/>
   </g>
-  <g id="desk-038" opacity=".45">
-    <polygon points="273.46 577.66 273.29 555.7 262.39 555.53 262.39 577.49 273.46 577.66" fill="#39b54a" opacity=".25"/>
+  <g id="desk-066">
+    <path d="M504.71,368.2l9.47,5.38-4.8,9.12-.45,1.87.33,1.19.75,2.53,4.61,7.55-9.15,5.59-9.94-16.27s9.23-17.21,9.18-16.98Z" fill="#a7a9ac" opacity=".3"/>
   </g>
-  <g id="desk-019" opacity=".45">
-    <polygon points="67.97 585.81 80.99 585.55 80.86 579.81 57.24 579.93 57.37 603.68 67.46 604.06 67.97 585.81" fill="#39b54a"/>
+  <g id="desk-065">
+    <path d="M503.89,402.29l-9.54,5.26-5.26-8.86-1.36-1.36-1.19-.34-2.55-.69-8.85-.02.02-10.72,19.06.03s9.84,16.87,9.67,16.7Z" fill="#a7a9ac" opacity=".3"/>
   </g>
-  <g id="desk-088" opacity=".45">
-    <polygon points="441.12 83.59 430.65 83.47 430.9 107.21 454.65 107.47 454.52 101.59 441.24 101.59 441.12 83.59" fill="#39b54a" opacity=".25"/>
+  <g id="desk-064">
+    <path d="M474.5,385.48l-.29,10.89-10.3.06-1.86.48-.9.85-1.88,1.86-4.49,7.63-9.24-5.44,9.67-16.43s19.53.04,19.3.1Z" fill="#a7a9ac" opacity=".3"/>
   </g>
-  <g id="desk-002" opacity=".45">
-    <polygon points="11.16 445.25 22.22 445.25 22.05 427.21 10.99 427.04 11.16 445.25" fill="#39b54a" opacity=".25"/>
+  <g id="desk-071">
+    <path d="M445.53,367.8l9.53-5.27,5.27,8.85,1.36,1.36,1.19.34,2.55.68h8.85s0,10.73,0,10.73h-19.06s-9.87-16.86-9.7-16.69Z" fill="#a7a9ac" opacity=".3"/>
   </g>
-  <g id="desk-001" opacity=".45">
-    <polygon points="10.99 407.98 10.99 426.19 22.39 426.36 22.22 408.32 10.99 407.98" fill="#39b54a" opacity=".25"/>
+  <g id="desk-060">
+    <path d="M505.11,426.02l9.53-5.28,5.28,8.85,1.36,1.36,1.19.34,2.55.68h8.85v10.72h-19.06s-9.87-16.85-9.7-16.68Z" fill="#a7a9ac" opacity=".3"/>
   </g>
-  <g id="desk-044" opacity=".25">
-    <polygon points="396.01 598.28 396.18 609.17 414.56 609.34 414.39 598.45 396.01 598.28" fill="#39b54a"/>
+  <g id="desk-059">
+    <path d="M534.31,444.2v10.89s-10.3.33-10.3.33l-1.85.53-.88.88-1.83,1.9-4.29,7.74-9.38-5.2,9.24-16.68s19.52-.47,19.29-.4Z" fill="#a7a9ac" opacity=".3"/>
   </g>
-  <g id="desk-045" opacity=".25">
-    <polygon points="415.24 598.28 415.24 609 432.95 609 433.12 598.45 415.24 598.28" fill="#39b54a"/>
+  <g id="desk-061">
+    <path d="M504.47,460.37l-9.33-5.63,5.04-8.99.5-1.86-.3-1.2-.68-2.55-4.42-7.67,9.29-5.35,9.51,16.52s-9.68,16.96-9.61,16.73Z" fill="#a7a9ac" opacity=".3"/>
   </g>
-  <g id="desk-046" opacity=".25">
-    <polygon points="458.65 590.79 458.31 585.17 433.8 585.34 433.63 609 444.52 609.17 444.69 592.15 458.65 590.79" fill="#39b54a"/>
+  <g id="desk-062">
+    <path d="M475.46,477.12l.21-10.89,10.3-.13,1.86-.5.89-.86,1.87-1.87,4.43-7.66,9.28,5.37-9.55,16.5s-19.53.1-19.3.04Z" fill="#a7a9ac" opacity=".3"/>
   </g>
-  <g id="desk-003A">
-    <polygon points="44.35 379.38 55.07 379.55 54.9 396.4 72.09 396.23 71.92 407.13 43.84 406.96 44.35 379.38" fill="#39b54a" opacity=".3"/>
+  <g id="desk-058">
+    <path d="M505.05,460.96l9.47,5.38-4.8,9.12-.45,1.87.33,1.19.75,2.53,4.61,7.55-9.15,5.59-9.94-16.27s9.23-17.21,9.18-16.98Z" fill="#a7a9ac" opacity=".3"/>
+  </g>
+  <g id="desk-057">
+    <path d="M504.23,495.05l-9.54,5.26-5.26-8.86-1.36-1.36-1.19-.34-2.55-.69-8.85-.02.02-10.72,19.06.03s9.84,16.87,9.67,16.7Z" fill="#a7a9ac" opacity=".3"/>
+  </g>
+  <g id="desk-056">
+    <path d="M474.84,478.25l-.29,10.89-10.3.06-1.86.48-.9.85-1.88,1.86-4.49,7.63-9.24-5.44,9.67-16.43s19.53.04,19.3.1Z" fill="#a7a9ac" opacity=".3"/>
+  </g>
+  <g id="desk-063">
+    <path d="M445.87,460.57l9.53-5.27,5.27,8.85,1.36,1.36,1.19.34,2.55.68h8.85s0,10.73,0,10.73h-19.06s-9.87-16.86-9.7-16.69Z" fill="#a7a9ac" opacity=".3"/>
+  </g>
+  <g id="desk-049">
+    <path d="M421.83,545.87l-5.22-9.57,8.88-5.22,1.37-1.35.35-1.19.7-2.55.06-8.85,10.72.07-.12,19.06s-16.91,9.77-16.74,9.6Z" fill="#a7a9ac" opacity=".3"/>
+  </g>
+  <g id="desk-050">
+    <path d="M439.53,517.18l10.89-.02.35,10.3.53,1.85.88.87,1.91,1.83,7.75,4.27-5.18,9.39-16.69-9.21s-.51-19.52-.44-19.29Z" fill="#a7a9ac" opacity=".3"/>
+  </g>
+  <g id="desk-047">
+    <path d="M403.61,576.18l-10.89-.4.05-10.3-.46-1.87-.84-.91-1.84-1.9-7.58-4.57,5.53-9.18,16.33,9.84s-.24,19.53-.3,19.29Z" fill="#a7a9ac" opacity=".3"/>
+  </g>
+  <g id="desk-051">
+    <path d="M455.71,547.19l-5.68,9.3-8.96-5.09-1.86-.51-1.2.29-2.56.67-7.7,4.37-5.3-9.32,16.57-9.42s16.91,9.77,16.68,9.71Z" fill="#a7a9ac" opacity=".3"/>
+  </g>
+  <g id="desk-054">
+    <path d="M479.89,539.2l5.83-9.21,8.88,5.23,1.85.54,1.21-.27,2.57-.63,7.76-4.25,5.15,9.41-16.72,9.15s-16.75-10.04-16.52-9.97Z" fill="#a7a9ac" opacity=".3"/>
+  </g>
+  <g id="desk-055">
+    <path d="M513.57,540.73l5.31,9.52-8.83,5.3-1.36,1.37-.34,1.19-.67,2.56.03,8.85-10.72.03-.06-19.06s16.82-9.93,16.65-9.75Z" fill="#a7a9ac" opacity=".3"/>
+  </g>
+  <g id="desk-053">
+    <path d="M495.19,569.45l-10.89-.45.1-10.3-.45-1.87-.84-.91-1.83-1.91-7.56-4.6,5.58-9.16,16.28,9.92s-.33,19.53-.39,19.29Z" fill="#a7a9ac" opacity=".3"/>
+  </g>
+  <g id="desk-052">
+    <path d="M421.85,547.16l5.15,9.6-8.92,5.16-1.38,1.34-.36,1.19-.71,2.54-.12,8.85-10.72-.14.25-19.06s16.98-9.65,16.81-9.48Z" fill="#a7a9ac" opacity=".3"/>
+  </g>
+  <g id="desk-048">
+    <path d="M387.94,546.16l5.67-9.31,8.97,5.07,1.86.51,1.2-.29,2.56-.67,7.69-4.38,5.31,9.32-16.56,9.44s-16.92-9.75-16.69-9.68Z" fill="#a7a9ac" opacity=".3"/>
+  </g>
+  <g id="desk-046">
+    <path d="M460.85,589.94v-5.96h-23.83v24h10.72v-17.87s13.36-.43,13.11-.17Z" fill="#a7a9ac" opacity=".3"/>
+  </g>
+  <g id="desk-045">
+    <rect x="417.62" y="597.09" width="18.38" height="11.23" fill="#a7a9ac" opacity=".3"/>
+  </g>
+  <g id="desk-044">
+    <rect x="398.55" y="596.91" width="18.38" height="11.23" fill="#a7a9ac" opacity=".3"/>
+  </g>
+  <g id="desk-019">
+    <path d="M66.47,603.21v-18.89h13.96v-5.45h-24.17v24s10.04.17,10.21.34Z" fill="#a7a9ac" opacity=".3"/>
+  </g>
+  <g id="desk-001">
+    <rect x="9.79" y="405.43" width="11.23" height="18.55" fill="#a7a9ac" opacity=".3"/>
+  </g>
+  <g id="desk-002">
+    <rect x="9.62" y="424.32" width="11.23" height="18.55" fill="#a7a9ac" opacity=".3"/>
+  </g>
+  <g id="desk-office-03">
+    <path d="M54.04,376.32h-10.89v27.23h27.74v-10.55h-16.85s-.17-16.51,0-16.68Z" fill="#a7a9ac" opacity=".3"/>
+  </g>
+  <g id="desk-023">
+    <path d="M143.57,581.94v-5.96h23.66v23.32h-10.38v-17.36h-13.28Z" fill="#a7a9ac" opacity=".3"/>
+  </g>
+  <g id="desk-mp-09a">
+    <rect x="374.38" y="266.36" width="10.72" height="18.04" fill="#a7a9ac" opacity=".3"/>
+  </g>
+  <g id="desk-mp-09c">
+    <rect x="374.38" y="285.26" width="10.89" height="16.68" fill="#a7a9ac" opacity=".3"/>
+  </g>
+  <g id="desk-quiet-03">
+    <rect x="374.55" y="304.32" width="10.55" height="23.66" fill="#a7a9ac" opacity=".3"/>
+  </g>
+  <g id="desk-quiet-02">
+    <rect x="374.38" y="331.38" width="11.23" height="23.66" fill="#a7a9ac" opacity=".3"/>
+  </g>
+  <g id="desk-quiet-01">
+    <rect x="374.21" y="358.28" width="10.89" height="23.32" fill="#a7a9ac" opacity=".3"/>
+  </g>
+  <g id="desk-booth-01">
+    <rect x="353.79" y="158.62" width="8.17" height="13.28" fill="#a7a9ac" opacity=".3"/>
+  </g>
+  <g id="desk-booth-02">
+    <rect x="320.94" y="158.62" width="8.17" height="13.28" fill="#a7a9ac" opacity=".3"/>
+  </g>
+  <g id="desk-booth-03">
+    <rect x="288.26" y="158.62" width="8.51" height="13.11" fill="#a7a9ac" opacity=".3"/>
+  </g>
+  <g id="desk-meet-04">
+    <rect x="129.79" y="30.79" width="10.38" height="22.47" fill="#a7a9ac" opacity=".3"/>
+  </g>
+  <g id="desk-meet-10">
+    <rect x="390.89" y="174.45" width="10.72" height="21.96" fill="#a7a9ac" opacity=".3"/>
+  </g>
+  <g id="desk-meet-09">
+    <rect x="390.89" y="227.04" width="10.89" height="22.3" fill="#a7a9ac" opacity=".3"/>
+  </g>
+  <g id="desk-meet-05">
+    <rect x="389.7" y="431.13" width="11.4" height="22.13" fill="#a7a9ac" opacity=".3"/>
+  </g>
+  <g id="desk-meet-01">
+    <rect x="64.26" y="323.04" width="44.26" height="28.09" fill="#a7a9ac" opacity=".3"/>
+  </g>
+  <g id="desk-meet-02">
+    <path d="M101.36,398.45a8,8 0 1,0 16,0a8,8 0 1,0 -16,0Z" fill="#a7a9ac" opacity=".3"/>
   </g>
 </svg>

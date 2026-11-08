@@ -166,24 +166,41 @@ export function updateSummary() {
   const el = document.getElementById("summary");
   if (!el) return;
 
-  const { total, assigned, free, teamCounts } = getDaySummary(AppState.currentDay);
+  const { total, assigned, free, teamCounts, teamSpaceCounts, spaces } =
+    getDaySummary(AppState.currentDay);
   const teamIds = getSortedTeamIds();
 
   let html = `
     <div class="summary-totals">
+      <span class="summary-row-label">Desks</span>
       <span><strong>${total}</strong> Total</span>
       <span><strong>${assigned}</strong> Assigned</span>
       <span><strong>${free}</strong> Free</span>
     </div>
-    <div class="summary-teams">
   `;
 
+  if (spaces.length) {
+    html += `<div class="summary-totals summary-spaces">
+      <span class="summary-row-label">Other spaces</span>`;
+    spaces.forEach(s => {
+      html += `<span title="${s.assigned} of ${s.total} assigned"><strong>${s.total}</strong> ${s.label}
+        <span class="summary-space-assigned">(${s.assigned} assigned)</span></span>`;
+    });
+    html += `</div>`;
+  }
+
+  html += `<div class="summary-teams">`;
+
   teamIds.forEach(t => {
-    const color = teamColor(t);
-    const count = teamCounts[t] || 0;
+    const color  = teamColor(t);
+    const desks  = teamCounts[t] || 0;
+    const spaceN = teamSpaceCounts[t] || 0;
+    const text   = spaceN
+      ? `${t}: ${desks} desk${desks === 1 ? "" : "s"} · ${spaceN} space${spaceN === 1 ? "" : "s"}`
+      : `${t}: ${desks} desk${desks === 1 ? "" : "s"}`;
     html += `
       <span class="summary-badge" style="background:${color}">
-        ${t}: ${count}
+        ${text}
       </span>
     `;
   });

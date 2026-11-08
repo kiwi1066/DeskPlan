@@ -305,18 +305,85 @@ export function resetFloorData() {
 
 // ── Summary helpers ───────────────────────────────────────────────────────────
 
-export function getDaySummary(day) {
-  const all    = Object.values(AppState.deskData);
-  const total  = all.length;
-  let assigned = 0;
-  const teamCounts = {};
+// ── Desk vs other-space classification ───────────────────────────────────────
+// Every bookable shape in the SVG is a <g id="desk-…">. Real desks are
+// "desk-" + number (+ optional letter), e.g. desk-012, desk-093A.
+// Other spaces use a type token: desk-<type>-NN, e.g. desk-meet-01.
+// Order here is the display order in the summary.
 
-  all.forEach(v => {
-    if (v[day]) {
-      assigned++;
-      teamCounts[v[day]] = (teamCounts[v[day]] || 0) + 1;
+export const SPACE_TYPES = {
+  meet:   { one: "Meeting room",       many: "Meeting rooms" },
+  quiet:  { one: "Quiet room",         many: "Quiet rooms" },
+  booth:  { one: "Booth",              many: "Booths" },
+  office: { one: "Office",             many: "Offices" },
+  mp:     { one: "Multi-purpose room", many: "Multi-purpose rooms" },
+};
+
+const DESK_ID_RE  = /^desk-\d+[A-Za-z]?$/;
+const SPACE_ID_RE = /^desk-([a-z]+)-/;
+
+/**
+ * Classifies an ID: returns "desk", a SPACE_TYPES key, or null if the ID
+ * matches neither naming convention.
+ */
+export function deskKind(id) {
+  if (DESK_ID_RE.test(id)) return "desk";
+  const m = SPACE_ID_RE.exec(id);
+  if (m && SPACE_TYPES[m[1]]) return m[1];
+  return null;
+}
+
+/** Logs any IDs on the current floor that don't follow the naming convention */
+export function warnUnknownDeskIds() {
+  const bad = Object.keys(AppState.deskData).filter(id => !deskKind(id));
+  if (bad.length) {
+    console.warn(
+      `Unrecognised desk IDs (counted as desks): ${bad.join(", ")}. ` +
+      `Use desk-<number> for desks or desk-<${Object.keys(SPACE_TYPES).join("|")}>-NN for other spaces.`
+    );
+  }
+}
+
+/**
+ * Summary for a day.
+ *   total / assigned / free  — real desks only
+ *   teamCounts               — desks per team
+ *   teamSpaceCounts          — other spaces per team
+ *   spaces                   — [{ type, label, total, assigned }] for types present on this floor
+ * Unrecognised IDs are counted as desks (and warned about on floor load).
+ */
+export function getDaySummary(day) {
+  let total = 0, assigned = 0;
+  const teamCounts      = {};
+  const teamSpaceCounts = {};
+  const spaceTally      = {};
+
+  Object.entries(AppState.deskData).forEach(([id, v]) => {
+    const kind   = deskKind(id) || "desk";
+    const teamId = v[day];
+
+    if (kind === "desk") {
+      total++;
+      if (teamId) {
+        assigned++;
+        teamCounts[teamId] = (teamCounts[teamId] || 0) + 1;
+      }
+    } else {
+      const s = spaceTally[kind] || (spaceTally[kind] = { total: 0, assigned: 0 });
+      s.total++;
+      if (teamId) {
+        s.assigned++;
+        teamSpaceCounts[teamId] = (teamSpaceCounts[teamId] || 0) + 1;
+      }
     }
   });
 
-  return { total, assigned, free: total - assigned, teamCounts };
+  const spaces = Object.keys(SPACE_TYPES)
+    .filter(type => spaceTally[type])
+    .map(type => {
+      const t = spaceTally[type];
+      return { type, label: t.total === 1 ? SPACE_TYPES[type].one : SPACE_TYPES[type].many, ...t };
+    });
+
+  return { total, assigned, free: total - assigned, teamCounts, teamSpaceCounts, spaces };
 }
