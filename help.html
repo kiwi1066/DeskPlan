@@ -260,9 +260,10 @@
     <!-- ═══ Overview ═══ -->
     <h2 id="overview">Overview</h2>
     <p>
-      The Desk Planner lets you visually assign desks to teams across the working week
-      using an interactive floor plan. Navigate between buildings and floors, add teams,
-      allocate desks by day, compare days side-by-side, and export your plan as a CSV or image.
+      The Desk Planner lets you visually assign desks to teams using an interactive floor plan.
+      Each floor has five planning <strong>Options</strong> (Option 1–5), so you can try
+      different layouts on the same floor. Navigate between buildings and floors, add teams,
+      allocate desks per option, compare options side-by-side, and export your plan as a CSV or image.
     </p>
     <p>
       Your work is automatically saved to the browser after every change, per building and floor —
@@ -275,11 +276,11 @@
     <div class="steps">
       <ol>
         <li>Select a <strong>Building</strong> and <strong>Floor</strong> from the dropdowns at the top of the controls panel.</li>
-        <li>Choose a <strong>Day</strong> from the day dropdown.</li>
+        <li>Choose an <strong>Option</strong> from the Option dropdown.</li>
         <li>Add teams using the <span class="btn-pill">&#10133; Add Team</span> button, or import a previous export with <span class="btn-pill">&#128194; Import</span>.</li>
         <li>Select one or more desks on the floor plan.</li>
         <li>Click a team chip in the Teams legend to assign the selected desks.</li>
-        <li>Repeat for each day, or use <span class="btn-pill">&#128203; Copy Day</span> to duplicate a day's assignments across the week.</li>
+        <li>Repeat for each option, or use <span class="btn-pill">&#128203; Copy Option</span> to duplicate one option's assignments into others.</li>
       </ol>
     </div>
     <div class="tip">
@@ -403,7 +404,7 @@
       If the team has existing desk assignments you will be offered two options:
     </p>
     <ul>
-      <li><strong>Delete &amp; Unassign</strong> — removes the team and clears all its desk colours across every day.</li>
+      <li><strong>Delete &amp; Unassign</strong> — removes the team and clears all its desk colours across every option.</li>
       <li><strong>Delete, Keep Colours</strong> — removes the team from the legend but leaves desk colours in place, useful when gradually reassigning desks.</li>
     </ul>
 
@@ -428,7 +429,7 @@
       </tr>
       <tr>
         <td><span class="btn-pill">&#128194; Import</span></td>
-        <td>Restores a previously exported desk-plan CSV, including the full team list and desk assignments across all days.</td>
+        <td>Restores a previously exported desk-plan CSV, including the full team list and desk assignments across all options.</td>
       </tr>
       <tr>
         <td><span class="btn-pill">&#8595; Export &#9662;</span></td>
@@ -436,22 +437,22 @@
           Hover to reveal two export options:
           <ul style="margin:6px 0 0;padding-left:18px;">
             <li><strong>Export All Teams</strong> — exports the full team list plus all desk assignments. Use this to preserve your complete team roster for re-use next week, even if some teams have no desks assigned.</li>
-            <li><strong>Export Assigned Teams</strong> — exports only teams that have at least one desk assigned on any day, plus the desk assignments. Use this for a clean report of who is actually using the floor.</li>
+            <li><strong>Export Assigned Teams</strong> — exports only teams that have at least one desk assigned in any option, plus the desk assignments. Use this for a clean report of who is actually using the floor.</li>
           </ul>
           Both formats are re-importable via <span class="btn-pill">&#128194; Import</span>. You will be prompted for a file name.
         </td>
       </tr>
       <tr>
         <td><span class="btn-pill">&#128248; Export Image</span></td>
-        <td>Saves the current day's floor plan as a PNG, including team colours and an allocation summary below the map.</td>
+        <td>Saves the current option's floor plan as a PNG, including team colours and an allocation summary below the map.</td>
       </tr>
     </table>
 
     <p class="group-label">Edit</p>
     <table class="ref-table">
       <tr>
-        <td><span class="btn-pill">&#128203; Copy Day</span></td>
-        <td>Copies all desk assignments from the current day to one or more other days. Select target days via the checkboxes in the pop-up.</td>
+        <td><span class="btn-pill">&#128203; Copy Option</span></td>
+        <td>Copies all desk assignments from the current option to one or more other options. Select target options via the checkboxes in the pop-up.</td>
       </tr>
       <tr>
         <td><span class="btn-pill">&#8617; Undo</span></td>
@@ -463,7 +464,7 @@
       </tr>
       <tr>
         <td><span class="btn-pill">&#129535; Clear Desks</span></td>
-        <td>Clears desk assignments for the current day. If desks are selected, only those desks are cleared. If nothing is selected, the entire day is cleared.</td>
+        <td>Clears desk assignments for the current option. If desks are selected, only those desks are cleared. If nothing is selected, the entire option is cleared.</td>
       </tr>
       <tr>
         <td><span class="btn-pill">&#129529; Clear All</span></td>
@@ -486,9 +487,9 @@
     <!-- ═══ Compare Mode ═══ -->
     <h2 id="compare">Compare Mode</h2>
     <p>
-      Switch the <strong>Mode</strong> dropdown to <strong>Compare</strong> to view two days
-      side-by-side on the same floor plan. Use the two day selectors that appear to choose
-      which days to compare.
+      Switch the <strong>Mode</strong> dropdown to <strong>Compare</strong> to view two options
+      side-by-side on the same floor plan. Use the two Option selectors that appear to choose
+      which options to compare.
     </p>
     <ul>
       <li>Desk editing, drag-select, and zoom are disabled in Compare mode.</li>
@@ -499,10 +500,11 @@
     <h2 id="summary">Desk Allocation Summary</h2>
     <p>The panel below the Teams legend updates in real time and shows:</p>
     <ul>
-      <li><strong>Total</strong> — total desks on the floor.</li>
-      <li><strong>Assigned</strong> — desks with a team assigned for the current day.</li>
-      <li><strong>Free</strong> — desks with no assignment for the current day.</li>
-      <li>A colour-coded count badge for each team.</li>
+      <li><strong>Desks: Total</strong> — real desks on the floor (meeting rooms and other spaces are not included).</li>
+      <li><strong>Desks: Assigned</strong> — desks with a team assigned in the current option.</li>
+      <li><strong>Desks: Free</strong> — desks with no assignment in the current option.</li>
+      <li><strong>Other spaces</strong> — meeting rooms, quiet rooms, booths, offices and multi-purpose rooms on the floor, with how many are assigned in the current option.</li>
+      <li>A colour-coded badge for each team showing its desks, and its other spaces if it has any.</li>
     </ul>
 
     <!-- ═══ Keyboard Shortcuts ═══ -->
@@ -545,7 +547,7 @@
       </li>
       <li>
         <strong>Export Assigned Teams</strong> — includes only teams that have at least one
-        desk assigned on any day. Use this for a clean weekly report or when sharing the plan
+        desk assigned in any option. Use this for a clean report or when sharing the plan
         with people who only need to see active allocations.
       </li>
     </ul>
@@ -569,7 +571,7 @@
     </div>
     <ul>
       <li>The <code>#teams</code> section lists the teams included in this export. The <code>color</code> column holds any custom or chosen colour as a hex code; if blank, the team uses its default palette colour based on its ID.</li>
-      <li>The <code>#data</code> section has one row per desk with team IDs for each day, plus team name columns for readability in Excel.</li>
+      <li>The <code>#data</code> section has one row per desk with team IDs for each option (columns <code>mon</code>–<code>fri</code> are Options 1–5), plus team name columns for readability in Excel.</li>
       <li>Older CSV files exported before custom colours were supported still import correctly — teams will fall back to their default palette colours.</li>
     </ul>
 
@@ -586,8 +588,8 @@
       <li>Use the rainbow swatch in the colour popover to match brand colours exactly via the custom colour picker.</li>
       <li>Zoom in first when selecting desks in dense areas — scroll wheel zooms to wherever your cursor is.</li>
       <li>Use <kbd>Shift</kbd>+drag for large zones, then <kbd>Ctrl</kbd>+click to fine-tune individual desks.</li>
-      <li>Use <strong>Copy Day</strong> to roll Monday's plan across the week, then adjust individual days.</li>
-      <li>Use <strong>Compare</strong> mode to review differences between two days before finalising.</li>
+      <li>Use <strong>Copy Option</strong> to start a new option from an existing one, then adjust it.</li>
+      <li>Use <strong>Compare</strong> mode to review differences between two options before finalising.</li>
       <li>Use <strong>Export All Teams</strong> at the end of each week — re-importing it next week restores your full team roster (including custom colours) instantly without having to recreate it.</li>
       <li>Use <strong>Export Assigned Teams</strong> when sharing a plan with others — it gives a clean view of only the teams actively using the floor.</li>
       <li>Each floor saves independently — remember to Export each floor you work on if you want a portable backup.</li>

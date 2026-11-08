@@ -5,12 +5,15 @@
  * use the exported helpers so saves and history are never missed.
  */
 
+// Planning options. The keys are the original weekday keys and are kept as-is
+// so saved data, V1 data and existing CSV exports (columns mon..fri) still load.
+// Only the labels shown to users changed.
 export const DAYS = [
-  { key: "mon", label: "Monday" },
-  { key: "tue", label: "Tuesday" },
-  { key: "wed", label: "Wednesday" },
-  { key: "thu", label: "Thursday" },
-  { key: "fri", label: "Friday" },
+  { key: "mon", label: "Option 1" },
+  { key: "tue", label: "Option 2" },
+  { key: "wed", label: "Option 3" },
+  { key: "thu", label: "Option 4" },
+  { key: "fri", label: "Option 5" },
 ];
 
 const STORAGE_KEY = "deskPlannerData";

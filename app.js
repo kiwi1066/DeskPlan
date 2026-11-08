@@ -203,12 +203,12 @@ function closeTeamEditModal() {
 
 function showDeletePanel(teamId) {
   const count   = teamDeskCount(teamId);
-  const dayWord = count === 1 ? "desk-day" : "desk-days";
+  const dayWord = count === 1 ? "desk assignment" : "desk assignments";
   const name    = AppState.teamNames[teamId] || teamId;
   _mel.deleteDot.style.background = teamColor(teamId);
   _mel.deleteTitle.textContent    = `Delete ${teamId} ${name}?`;
   _mel.deleteMsg.innerHTML = count > 0
-    ? `This team has <strong>${count}</strong> ${dayWord} assigned across the week.`
+    ? `This team has <strong>${count}</strong> ${dayWord} across all options.`
     : `This team has no desk assignments.`;
   _mel.editPanel.style.display   = "none";
   _mel.deletePanel.style.display = "block";
@@ -998,8 +998,8 @@ async function handleClearDesks() {
   const ok = await uiConfirm(
     "Clear Desks",
     AppState.selectedDesks.length
-      ? `Clear ${AppState.selectedDesks.length} selected desk${AppState.selectedDesks.length > 1 ? "s" : ""} for ${(DAYS.find(d => d.key === AppState.currentDay) || {}).label || "this day"}?`
-      : `Clear all desk assignments for ${(DAYS.find(d => d.key === AppState.currentDay) || {}).label || "this day"}?`,
+      ? `Clear ${AppState.selectedDesks.length} selected desk${AppState.selectedDesks.length > 1 ? "s" : ""} for ${(DAYS.find(d => d.key === AppState.currentDay) || {}).label || "this option"}?`
+      : `Clear all desk assignments for ${(DAYS.find(d => d.key === AppState.currentDay) || {}).label || "this option"}?`,
     "Clear",
     true
   );
