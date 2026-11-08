@@ -139,8 +139,23 @@
   <!-- Add Team modal — multi-row list builder (up to 10) -->
   <div id="addTeamModal" class="ui-modal" role="dialog" aria-modal="true" style="display:none; max-width: 480px;">
     <h3 id="addTeamTitle" class="ui-modal-title">Add Selection Names</h3>
-    <div class="add-team-rows" id="addTeamRows"></div>
-    <button id="addTeamAddRow" class="btn-secondary add-row-btn" type="button">+ Add another</button>
+    <div class="add-mode-tabs" role="tablist">
+      <button id="addModeNew"  class="add-mode-tab is-active" type="button" role="tab">Create new</button>
+      <button id="addModeCopy" class="add-mode-tab" type="button" role="tab">From another floor</button>
+    </div>
+    <div id="addTeamNewPanel">
+      <div class="add-team-rows" id="addTeamRows"></div>
+      <button id="addTeamAddRow" class="btn-secondary add-row-btn" type="button">+ Add another</button>
+    </div>
+    <div id="addTeamCopyPanel" style="display:none">
+      <label class="copy-floor-label" for="copyFloorSelect">Copy names from</label>
+      <select id="copyFloorSelect" class="copy-floor-select"></select>
+      <div class="copy-names-actions">
+        <button id="copyNamesAll"  class="link-btn" type="button">Select all</button>
+        <button id="copyNamesNone" class="link-btn" type="button">Select none</button>
+      </div>
+      <div id="copyNamesList" class="copy-names-list"></div>
+    </div>
     <div class="modal-actions" style="margin-top:14px;">
       <button id="addTeamConfirm">Add</button>
       <button id="addTeamCancel" class="btn-secondary">Cancel</button>

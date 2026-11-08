@@ -39,6 +39,7 @@ import {
   setTeamColor,
   nextAutoColor,
   TEAM_PALETTE,
+  defaultTeamColor,
 } from "./state.js";
 
 import { createColorPicker } from "./colorPicker.js";
@@ -82,6 +83,8 @@ import {
   setCurrentFloor,
   storageKey,
   v1StorageKey,
+  storageKeyFor,
+  v1StorageKeyFor,
   floorTitle,
   setDefaultFloor,
   clearDefaultFloor,
@@ -899,7 +902,9 @@ function updateAddRowButton() {
 }
 
 function updateConfirmLabel() {
-  const named = _rows.filter(r => r.name.trim()).length;
+  const named = _addMode === "copy"
+    ? _copyEls.list.querySelectorAll("input:checked:not(:disabled)").length
+    : _rows.filter(r => r.name.trim()).length;
   if (named === 0) {
     _addTeamEls.confirm.textContent = "Add";
     _addTeamEls.confirm.disabled = true;
@@ -1007,10 +1012,134 @@ function buildPopoverGrid(rowId) {
 
 // ── Modal open/close ──────────────────────────────────────────────────────────
 
+// ── "From another floor" tab ─────────────────────────────────────────────────
+// Lists names saved on other floors (V2 data, or V1 data for floors not yet
+// opened in V2) so the same names and colours can be reused on this floor.
+
+const _copyEls = {
+  tabNew:   document.getElementById("addModeNew"),
+  tabCopy:  document.getElementById("addModeCopy"),
+  newPanel: document.getElementById("addTeamNewPanel"),
+  panel:    document.getElementById("addTeamCopyPanel"),
+  select:   document.getElementById("copyFloorSelect"),
+  list:     document.getElementById("copyNamesList"),
+  all:      document.getElementById("copyNamesAll"),
+  none:     document.getElementById("copyNamesNone"),
+};
+
+let _addMode     = "new";   // "new" | "copy"
+let _copySources = [];      // [{ buildingId, floorId, label, names:[{name,color}] }]
+
+/** Names saved for a floor, in ID order: [{ name, color }] */
+function savedNamesForFloor(buildingId, floorId) {
+  let raw = null;
+  try {
+    raw = localStorage.getItem(storageKeyFor(buildingId, floorId))
+       ?? localStorage.getItem(v1StorageKeyFor(buildingId, floorId));
+  } catch { return []; }
+  if (!raw) return [];
+  try {
+    const saved  = JSON.parse(raw);
+    const names  = saved.teamNames  || {};
+    const colors = saved.teamColors || {};
+    return Object.keys(names)
+      .filter(id => (names[id] || "").trim())
+      .sort((a, b) => (parseInt(a.slice(1)) || 0) - (parseInt(b.slice(1)) || 0))
+      .map(id => ({ name: names[id].trim(), color: colors[id] || defaultTeamColor(id) }));
+  } catch {
+    return [];
+  }
+}
+
+/** Every other floor that has at least one saved name */
+function findCopySources() {
+  const { buildingId: curB, floorId: curF } = getCurrentFloor();
+  const out = [];
+  Object.entries(getBuildings()).forEach(([bId, bldg]) => {
+    (bldg.floors || []).forEach(f => {
+      if (bId === curB && f.id === curF) return;
+      const names = savedNamesForFloor(bId, f.id);
+      if (names.length) {
+        out.push({
+          buildingId: bId,
+          floorId:    f.id,
+          label:      `${bldg.label || bId} — ${f.label || f.id}`,
+          names,
+        });
+      }
+    });
+  });
+  return out;
+}
+
+function existingNameSet() {
+  return new Set(Object.values(AppState.teamNames).map(n => (n || "").trim().toLowerCase()));
+}
+
+function renderCopyNames() {
+  const src = _copySources[_copyEls.select.selectedIndex];
+  _copyEls.list.innerHTML = "";
+  if (!src) return updateConfirmLabel();
+
+  const existing = existingNameSet();
+  src.names.forEach((n, i) => {
+    const already = existing.has(n.name.toLowerCase());
+    const lbl = document.createElement("label");
+    lbl.className = "copy-name-row" + (already ? " is-existing" : "");
+    lbl.innerHTML = `
+      <input type="checkbox" data-index="${i}" ${already ? "disabled" : "checked"}>
+      <span class="chip-dot" style="background:${n.color}"></span>
+      <span class="copy-name-text"></span>
+      ${already ? '<span class="copy-name-note">already on this floor</span>' : ""}`;
+    lbl.querySelector(".copy-name-text").textContent = n.name;
+    _copyEls.list.appendChild(lbl);
+  });
+  updateConfirmLabel();
+}
+
+function setAddMode(mode) {
+  if (mode === "copy" && !_copySources.length) return;
+  _addMode = mode;
+  _copyEls.tabNew.classList.toggle("is-active",  mode === "new");
+  _copyEls.tabCopy.classList.toggle("is-active", mode === "copy");
+  _copyEls.newPanel.style.display = mode === "new"  ? "" : "none";
+  _copyEls.panel.style.display    = mode === "copy" ? "" : "none";
+  closeSwatchPopover();
+  if (mode === "copy") renderCopyNames();
+  else updateConfirmLabel();
+}
+
+function prepareCopyTab() {
+  _copySources = findCopySources();
+  _copyEls.select.innerHTML = "";
+  _copySources.forEach(src => {
+    const opt = document.createElement("option");
+    opt.textContent = `${src.label} (${src.names.length} name${src.names.length === 1 ? "" : "s"})`;
+    _copyEls.select.appendChild(opt);
+  });
+  _copyEls.tabCopy.disabled = !_copySources.length;
+  _copyEls.tabCopy.title    = _copySources.length ? "" : "No other floor has names saved yet";
+}
+
+_copyEls.tabNew.addEventListener("click",  () => setAddMode("new"));
+_copyEls.tabCopy.addEventListener("click", () => setAddMode("copy"));
+_copyEls.select.addEventListener("change", renderCopyNames);
+_copyEls.list.addEventListener("change",   updateConfirmLabel);
+_copyEls.all.addEventListener("click", () => {
+  _copyEls.list.querySelectorAll("input:not(:disabled)").forEach(cb => { cb.checked = true; });
+  updateConfirmLabel();
+});
+_copyEls.none.addEventListener("click", () => {
+  _copyEls.list.querySelectorAll("input:not(:disabled)").forEach(cb => { cb.checked = false; });
+  updateConfirmLabel();
+});
+
 function openAddTeamModal() {
   // Fixed wording to match the "Add Selection Name" button
   _addTeamEls.title.textContent = "Add Selection Names";
   _rows = [];
+  prepareCopyTab();
+  setAddMode("new");
   addNewRow();
   _addTeamEls.modal.style.display = "block";
   document.getElementById("modalBackdrop").classList.add("active");
@@ -1027,6 +1156,20 @@ function closeAddTeamModal() {
 }
 
 function confirmAddTeams() {
+  if (_addMode === "copy") {
+    const src = _copySources[_copyEls.select.selectedIndex];
+    if (!src) return;
+    const picked = [..._copyEls.list.querySelectorAll("input:checked:not(:disabled)")]
+      .map(cb => src.names[Number(cb.dataset.index)]);
+    if (!picked.length) return;
+    // Same name and colour as the source floor; IDs are numbered for this floor
+    picked.forEach(n => addTeam(nextTeamId(), n.name, n.color));
+    saveState();
+    closeAddTeamModal();
+    render();
+    return;
+  }
+
   const valid = _rows.filter(r => r.name.trim());
   if (!valid.length) return;
 

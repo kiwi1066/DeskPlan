@@ -154,6 +154,9 @@ export function nextAutoColor() {
   return autoColor("T" + (Object.keys(AppState.teamNames).length + 1));
 }
 
+/** Colour a team ID gets when it has no manual colour (used for other floors' data) */
+export function defaultTeamColor(teamId) { return autoColor(teamId); }
+
 function autoColor(teamId) {
   const num = parseInt(teamId.replace("T", "")) || 0;
   if (num >= 1 && num <= TEAM_PALETTE.length) return TEAM_PALETTE[num - 1];

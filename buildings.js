@@ -120,6 +120,10 @@ export function storageKey() {
   return `deskPlannerV2_${_buildingId}_${_floorId}`;
 }
 
+/** V2 / V1 keys for any floor — used to read names saved on other floors */
+export function storageKeyFor(buildingId, floorId)   { return `deskPlannerV2_${buildingId}_${floorId}`; }
+export function v1StorageKeyFor(buildingId, floorId) { return `deskPlanner_${buildingId}_${floorId}`; }
+
 /** V1's key for the current floor — read once to copy V1 data into V2, never written */
 export function v1StorageKey() {
   return `deskPlanner_${_buildingId}_${_floorId}`;
