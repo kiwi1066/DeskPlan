@@ -545,10 +545,9 @@ function updateCategoryUI() {
   // Keep the hidden input in sync
   document.getElementById("categoryInput").value = label;
 
-  // Update the Add button label — strip trailing 's' for singular
-  // e.g. "Teams" → "Add Team", "Port Types" → "Add Port Type"
-  const singular = label.replace(/s$/i, "");
-  document.getElementById("btn-add-team").textContent = `➕ Add ${singular}`;
+  // The Add button keeps a fixed, generic label in V2 — names can be teams,
+  // projects or anything else, applied to desks and other spaces alike
+  document.getElementById("btn-add-team").textContent = "➕ Add Selection Name";
 }
 
 function openCategoryEdit() {
