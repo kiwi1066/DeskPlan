@@ -190,8 +190,8 @@ export function applyHighlight() {
     if (!shape) return;
 
     const selected = AppState.selectedDesks.includes(deskEl.id);
-    shape.setAttribute("stroke",       selected ? "#000" : "none");
-    shape.setAttribute("stroke-width", selected ? "1.25" : "0");
+    shape.setAttribute("stroke",       selected ? "#444" : "none");
+    shape.setAttribute("stroke-width", selected ? "0.6"  : "0");
     shape.style.opacity = selected ? "1" : "0.85";
   });
 }
