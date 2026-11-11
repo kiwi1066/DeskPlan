@@ -192,7 +192,6 @@ export function applyHighlight() {
     const selected = AppState.selectedDesks.includes(deskEl.id);
     shape.setAttribute("stroke",       selected ? "#000" : "none");
     shape.setAttribute("stroke-width", selected ? "1.25" : "0");
-    shape.style.filter  = selected ? "drop-shadow(0 0 3px rgba(0,0,0,0.5))" : "none";
     shape.style.opacity = selected ? "1" : "0.85";
   });
 }
