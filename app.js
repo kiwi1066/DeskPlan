@@ -651,6 +651,8 @@ function setupDeskClicks(deskSelector) {
 
   fresh.addEventListener("mousedown", e => {
     suppressNextClick = e.shiftKey;
+    // Stop the browser selecting text/images on double-click
+    if (e.detail > 1) e.preventDefault();
   });
 
   fresh.addEventListener("click", e => {

@@ -103,6 +103,11 @@ body {
   margin: 4px 0 6px;
 }
 
+/* Light grey card so the summary stands apart from the white cards */
+.summary-panel {
+  background: #e6eaf0;
+}
+
 /* Summary sits in its own card now, so drop the old divider */
 .summary-panel .summary-wrap {
   margin-top: 0;
@@ -675,6 +680,15 @@ button[data-active="true"] { background: var(--accent); }
 .mapBox img {
   width: 100%;
   display: block;
+  -webkit-user-drag: none;
+}
+
+/* Double-clicking a desk (to clear it) must not trigger the browser's
+   select-word behaviour, which tints the whole plan blue */
+.mapBox,
+.mapBox * {
+  -webkit-user-select: none;
+  user-select: none;
 }
 
 .svgLayer {
