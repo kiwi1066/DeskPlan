@@ -103,6 +103,11 @@ body {
   margin: 4px 0 6px;
 }
 
+/* Light grey card so the summary stands apart from the white cards */
+.summary-panel {
+  background: #e6eaf0;
+}
+
 /* Summary sits in its own card now, so drop the old divider */
 .summary-panel .summary-wrap {
   margin-top: 0;
