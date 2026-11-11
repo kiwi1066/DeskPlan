@@ -90,13 +90,21 @@ export function applyHighlight() {
   const container = document.getElementById("svgContainer");
   if (!container) return;
 
+  // Outline width is in SVG units, so plans drawn at a wider viewBox would
+  // show a thinner line on screen. Scale it to 275 George St's 550-wide plan
+  // so every floor gets the same on-screen thickness.
+  const REF_WIDTH  = 550;
+  const BASE_WIDTH = 0.78;
+  const vbWidth = container.querySelector("svg")?.viewBox?.baseVal?.width || REF_WIDTH;
+  const strokeWidth = String(+(BASE_WIDTH * vbWidth / REF_WIDTH).toFixed(2));
+
   container.querySelectorAll(AppState.deskSelector).forEach(deskEl => {
     const shape = deskEl.querySelector("rect,polygon,path");
     if (!shape) return;
 
     const selected = AppState.selectedDesks.includes(deskEl.id);
     shape.setAttribute("stroke",       selected ? "#444" : "none");
-    shape.setAttribute("stroke-width", selected ? "0.78" : "0");
+    shape.setAttribute("stroke-width", selected ? strokeWidth : "0");
     shape.style.opacity = selected ? "1" : "0.85";
   });
 }
