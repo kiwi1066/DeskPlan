@@ -391,6 +391,7 @@ export const SPACE_TYPES = {
   booth:  { one: "Booth",              many: "Booths" },
   office: { one: "Office",             many: "Offices" },
   mp:     { one: "Multi-purpose room", many: "Multi-purpose rooms" },
+  hot:    { one: "Hot desk",           many: "Hot desks" },
 };
 
 const DESK_ID_RE  = /^desk-\d+[A-Za-z]?$/;

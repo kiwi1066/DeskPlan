@@ -76,6 +76,16 @@
       }
     ]
   },
+  "57S": {
+    "label": "57 Sanders St, Mt Gravatt",
+    "floors": [
+      {
+        "id":    "L4",
+        "label": "Level 4",
+        "plan":  "57S_L4_deskPlan.svg"
+      }
+    ]
+  },
   "140C": {
     "label": "140 Creek St",
     "floors": []
