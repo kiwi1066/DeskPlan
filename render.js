@@ -93,16 +93,21 @@ function ensureDeskLabels(container) {
   });
 }
 
+// Labels are dark grey and slightly see-through so they're readable without
+// making the plan look busy. On very dark team colours they switch to white.
+const LABEL_COLOR   = "#333333";
+const LABEL_OPACITY = "0.7";
+
 function styleDeskLabel(label, teamColorOrNull) {
   if (!label) return;
+  label.setAttribute("opacity", LABEL_OPACITY);
   if (teamColorOrNull) {
-    // On a coloured desk: black or white, whichever reads better
-    label.setAttribute("fill", readableTextColor(teamColorOrNull));
+    const onDark = readableTextColor(teamColorOrNull) === "#fff";
+    label.setAttribute("fill", onDark ? "#ffffff" : LABEL_COLOR);
     label.setAttribute("stroke", "none");
   } else {
-    // On the bare plan: dark text with a white halo so line work doesn't
-    // cut through it
-    label.setAttribute("fill", "#1a1a1a");
+    // On the bare plan: white halo so line work doesn't cut through the text
+    label.setAttribute("fill", LABEL_COLOR);
     label.setAttribute("stroke", "#ffffff");
     label.setAttribute("stroke-width", (parseFloat(label.getAttribute("font-size")) * 0.28).toFixed(2));
   }
@@ -191,7 +196,7 @@ export function applyHighlight() {
 
     const selected = AppState.selectedDesks.includes(deskEl.id);
     shape.setAttribute("stroke",       selected ? "#444" : "none");
-    shape.setAttribute("stroke-width", selected ? "0.6"  : "0");
+    shape.setAttribute("stroke-width", selected ? "0.78" : "0");
     shape.style.opacity = selected ? "1" : "0.85";
   });
 }
