@@ -675,6 +675,15 @@ button[data-active="true"] { background: var(--accent); }
 .mapBox img {
   width: 100%;
   display: block;
+  -webkit-user-drag: none;
+}
+
+/* Double-clicking a desk (to clear it) must not trigger the browser's
+   select-word behaviour, which tints the whole plan blue */
+.mapBox,
+.mapBox * {
+  -webkit-user-select: none;
+  user-select: none;
 }
 
 .svgLayer {
