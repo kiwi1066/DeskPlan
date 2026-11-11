@@ -12,7 +12,101 @@ import {
   PALETTE_SIZE,
   displayName,
   readableTextColor,
+  deskKind,
 } from "./state.js";
+
+const SVG_NS = "http://www.w3.org/2000/svg";
+
+// ── Desk number labels ────────────────────────────────────────────────────────
+// The numbers printed on the PNG are tiny and get hidden once a desk is
+// coloured, so each desk gets its own readable label in the SVG overlay.
+// Meeting rooms etc. (desk-meet-01) are left unlabelled.
+
+/** "desk-091" -> "91", "desk-093A" -> "93A", "deskN12" -> "N12" */
+function deskLabelText(deskId) {
+  const kind = deskKind(deskId);
+  if (kind && kind !== "desk") return null;
+  const raw = deskId.replace(/^desk[-_]*/i, "");
+  return raw.replace(/^0+(?=\d)/, "") || null;
+}
+
+/**
+ * Adds a label to every desk in the container that doesn't have one yet.
+ * Font size is fitted to each desk, then capped near the floor's typical
+ * size so oddly shaped desks don't get giant numbers.
+ */
+function ensureDeskLabels(container) {
+  const pending = [];
+
+  container.querySelectorAll("g[id]").forEach(desk => {
+    if (!(desk.id in AppState.deskData)) return;
+    if (desk.querySelector("text.desk-label")) return;
+
+    const text  = deskLabelText(desk.id);
+    const shape = desk.querySelector("rect,polygon,path");
+    if (!text || !shape) return;
+
+    // getBBox is zero while the SVG is hidden (e.g. compare panel not shown
+    // yet) — skip for now, the next render will try again.
+    let bb;
+    try { bb = shape.getBBox(); } catch { return; }
+    if (!bb.width || !bb.height) return;
+
+    // Tall desks get vertical text so every desk in a bank reads the same way.
+    const vertical = bb.height > bb.width * 1.3;
+    const across   = vertical ? bb.width  : bb.height;
+    const along    = vertical ? bb.height : bb.width;
+    const size     = Math.min(across * 0.62, (along * 0.9) / (text.length * 0.62));
+
+    pending.push({ desk, shape, text, bb, vertical, size });
+  });
+
+  if (!pending.length) return;
+
+  const sorted = pending.map(p => p.size).sort((a, b) => a - b);
+  const cap    = sorted[Math.floor(sorted.length / 2)] * 1.2;
+
+  pending.forEach(({ desk, shape, text, bb, vertical, size }) => {
+    const cx = bb.x + bb.width  / 2;
+    const cy = bb.y + bb.height / 2;
+
+    const label = document.createElementNS(SVG_NS, "text");
+    label.setAttribute("class", "desk-label");
+    label.setAttribute("x", cx);
+    label.setAttribute("y", cy);
+    label.setAttribute("text-anchor", "middle");
+    label.setAttribute("dominant-baseline", "central");
+    label.setAttribute("font-family", "Segoe UI, Arial, sans-serif");
+    label.setAttribute("font-weight", "700");
+    label.setAttribute("font-size", Math.min(size, cap).toFixed(2));
+    label.setAttribute("pointer-events", "none");
+    label.setAttribute("paint-order", "stroke");
+    label.setAttribute("stroke-linejoin", "round");
+
+    // Keep the label in the shape's own coordinate space, then rotate if needed.
+    const shapeTf = shape.getAttribute("transform") || "";
+    const rotate  = vertical ? ` rotate(-90 ${cx} ${cy})` : "";
+    if (shapeTf || rotate) label.setAttribute("transform", (shapeTf + rotate).trim());
+
+    label.textContent = text;
+    desk.appendChild(label);
+  });
+}
+
+function styleDeskLabel(label, teamColorOrNull) {
+  if (!label) return;
+  if (teamColorOrNull) {
+    // On a coloured desk: black or white, whichever reads better
+    label.setAttribute("fill", readableTextColor(teamColorOrNull));
+    label.setAttribute("stroke", "none");
+  } else {
+    // On the bare plan: dark text with a white halo so line work doesn't
+    // cut through it
+    label.setAttribute("fill", "#1a1a1a");
+    label.setAttribute("stroke", "#ffffff");
+    label.setAttribute("stroke-width", (parseFloat(label.getAttribute("font-size")) * 0.28).toFixed(2));
+  }
+}
 
 // ── Floor plan colouring ──────────────────────────────────────────────────────
 
@@ -24,6 +118,8 @@ import {
 export function renderContainer(containerId, day) {
   const container = document.getElementById(containerId);
   if (!container) return;
+
+  ensureDeskLabels(container);
 
   Object.keys(AppState.deskData).forEach(deskId => {
     const desk = container.querySelector(`#${deskId}`);
@@ -46,11 +142,13 @@ export function renderContainer(containerId, day) {
     }
     shape.setAttribute("pointer-events", "all");
 
+    styleDeskLabel(desk.querySelector("text.desk-label"), teamId ? color : null);
+
     // Tooltip
     let title = shape.querySelector("title");
     if (teamId) {
       if (!title) {
-        title = document.createElementNS("http://www.w3.org/2000/svg", "title");
+        title = document.createElementNS(SVG_NS, "title");
         shape.appendChild(title);
       }
       title.textContent = displayName(teamId);
