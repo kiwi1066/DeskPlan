@@ -1,390 +1,411 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 550 640">
-  <g id="desk-001">
-    <polygon points="186.55 25.51 197.53 25.64 197.4 47.6 186.17 47.6 186.55 25.51" fill="#bcbec0" opacity=".3"/>
-  </g>
-  <g id="desk-002">
-    <polygon points="198.43 25.51 209.4 25.64 209.28 47.6 198.04 47.6 198.43 25.51" fill="#bcbec0" opacity=".3"/>
-  </g>
-  <g id="desk-003">
-    <polygon points="186.28 48.11 197.26 48.23 197.13 70.19 185.89 70.19 186.28 48.11" fill="#bcbec0" opacity=".3"/>
-  </g>
-  <g id="desk-004">
-    <polygon points="198.15 48.11 209.13 48.23 209 70.19 197.77 70.19 198.15 48.11" fill="#bcbec0" opacity=".3"/>
-  </g>
-  <g id="desk-005">
-    <polygon points="186.55 70.7 197.53 70.83 197.4 92.79 186.17 92.79 186.55 70.7" fill="#bcbec0" opacity=".3"/>
-  </g>
-  <g id="desk-006">
-    <polygon points="198.43 70.7 209.4 70.83 209.28 92.79 198.04 92.79 198.43 70.7" fill="#bcbec0" opacity=".3"/>
-  </g>
-  <g id="desk-007">
-    <polygon points="186.28 93.3 197.26 93.43 197.13 115.38 185.89 115.38 186.28 93.3" fill="#bcbec0" opacity=".3"/>
-  </g>
-  <g id="desk-008">
-    <polygon points="198.15 93.3 209.13 93.43 209 115.38 197.77 115.38 198.15 93.3" fill="#bcbec0" opacity=".3"/>
-  </g>
-  <g id="desk-009">
-    <polygon points="236.21 25.38 247.19 25.51 247.06 47.47 235.83 47.47 236.21 25.38" fill="#bcbec0" opacity=".3"/>
-  </g>
-  <g id="desk-010">
-    <polygon points="248.09 25.38 259.06 25.51 258.94 47.47 247.7 47.47 248.09 25.38" fill="#bcbec0" opacity=".3"/>
-  </g>
-  <g id="desk-011">
-    <polygon points="235.94 47.98 246.91 48.11 246.79 70.06 235.55 70.06 235.94 47.98" fill="#bcbec0" opacity=".3"/>
-  </g>
-  <g id="desk-012">
-    <polygon points="247.81 47.98 258.79 48.11 258.66 70.06 247.43 70.06 247.81 47.98" fill="#bcbec0" opacity=".3"/>
-  </g>
-  <g id="desk-013">
-    <polygon points="236.21 70.57 247.19 70.7 247.06 92.66 235.83 92.66 236.21 70.57" fill="#bcbec0" opacity=".3"/>
-  </g>
-  <g id="desk-014">
-    <polygon points="248.09 70.57 259.06 70.7 258.94 92.66 247.7 92.66 248.09 70.57" fill="#bcbec0" opacity=".3"/>
-  </g>
-  <g id="desk-015">
-    <polygon points="286.77 25.77 297.74 25.89 297.62 47.85 286.38 47.85 286.77 25.77" fill="#bcbec0" opacity=".3"/>
-  </g>
-  <g id="desk-016">
-    <polygon points="298.64 25.77 309.62 25.89 309.49 47.85 298.26 47.85 298.64 25.77" fill="#bcbec0" opacity=".3"/>
-  </g>
-  <g id="desk-017">
-    <polygon points="286.49 48.36 297.47 48.49 297.34 70.45 286.11 70.45 286.49 48.36" fill="#bcbec0" opacity=".3"/>
-  </g>
-  <g id="desk-018">
-    <polygon points="298.36 48.36 309.34 48.49 309.21 70.45 297.98 70.45 298.36 48.36" fill="#bcbec0" opacity=".3"/>
-  </g>
-  <g id="desk-019">
-    <polygon points="286.77 70.96 297.74 71.09 297.62 93.04 286.38 93.04 286.77 70.96" fill="#bcbec0" opacity=".3"/>
-  </g>
-  <g id="desk-020">
-    <polygon points="298.64 70.96 309.62 71.09 309.49 93.04 298.26 93.04 298.64 70.96" fill="#bcbec0" opacity=".3"/>
-  </g>
-  <g id="desk-021">
-    <polygon points="336.17 25.26 347.15 25.38 347.02 47.34 335.79 47.34 336.17 25.26" fill="#bcbec0" opacity=".3"/>
-  </g>
-  <g id="desk-022">
-    <polygon points="348.04 25.26 359.02 25.38 358.89 47.34 347.66 47.34 348.04 25.26" fill="#bcbec0" opacity=".3"/>
-  </g>
-  <g id="desk-023">
-    <polygon points="335.89 47.85 346.87 47.98 346.74 69.94 335.51 69.94 335.89 47.85" fill="#bcbec0" opacity=".3"/>
-  </g>
-  <g id="desk-024">
-    <polygon points="347.77 47.85 358.74 47.98 358.62 69.94 347.38 69.94 347.77 47.85" fill="#bcbec0" opacity=".3"/>
-  </g>
-  <g id="desk-025">
-    <polygon points="336.17 70.45 347.15 70.57 347.02 92.53 335.79 92.53 336.17 70.45" fill="#bcbec0" opacity=".3"/>
-  </g>
-  <g id="desk-026">
-    <polygon points="348.04 70.45 359.02 70.57 358.89 92.53 347.66 92.53 348.04 70.45" fill="#bcbec0" opacity=".3"/>
-  </g>
-  <g id="desk-027">
-    <polygon points="387.49 25.89 398.47 26.02 398.34 47.98 387.11 47.98 387.49 25.89" fill="#bcbec0" opacity=".3"/>
-  </g>
-  <g id="desk-028">
-    <polygon points="399.36 25.89 410.34 26.02 410.21 47.98 398.98 47.98 399.36 25.89" fill="#bcbec0" opacity=".3"/>
-  </g>
-  <g id="desk-029">
-    <polygon points="387.21 48.49 398.19 48.62 398.06 70.57 386.83 70.57 387.21 48.49" fill="#bcbec0" opacity=".3"/>
-  </g>
-  <g id="desk-030">
-    <polygon points="399.09 48.49 410.06 48.62 409.94 70.57 398.7 70.57 399.09 48.49" fill="#bcbec0" opacity=".3"/>
-  </g>
-  <g id="desk-031">
-    <polygon points="387.49 71.09 398.47 71.21 398.34 93.17 387.11 93.17 387.49 71.09" fill="#bcbec0" opacity=".3"/>
-  </g>
-  <g id="desk-032">
-    <polygon points="399.36 71.09 410.34 71.21 410.21 93.17 398.98 93.17 399.36 71.09" fill="#bcbec0" opacity=".3"/>
-  </g>
-  <g id="desk-033">
-    <polygon points="387.62 93.17 398.6 93.3 398.47 115.26 387.23 115.26 387.62 93.17" fill="#bcbec0" opacity=".3"/>
-  </g>
-  <g id="desk-034">
-    <polygon points="399.49 93.17 410.47 93.3 410.34 115.26 399.11 115.26 399.49 93.17" fill="#bcbec0" opacity=".3"/>
-  </g>
-  <g id="desk-040">
-    <polygon points="235.94 93.17 246.91 93.3 246.79 115.26 235.55 115.26 235.94 93.17" fill="#bcbec0" opacity=".3"/>
-  </g>
-  <g id="desk-041">
-    <polygon points="247.81 93.17 258.79 93.3 258.66 115.26 247.43 115.26 247.81 93.17" fill="#bcbec0" opacity=".3"/>
-  </g>
-  <g id="desk-042">
-    <polygon points="513.11 145 504.04 150.62 513.74 167.09 532.64 167.09 532.89 155.98 519.74 156.11 513.11 145" fill="#bcbec0" opacity=".3"/>
-  </g>
-  <g id="desk-043">
-    <polygon points="532.98 179.18 532.91 168.51 513.8 168.22 503.96 184.34 513.31 190.35 520.05 179.06 532.98 179.18" fill="#bcbec0" opacity=".3"/>
-  </g>
-  <g id="desk-044">
-    <polygon points="513.14 190.16 503.64 185.32 494.58 202.14 504.36 218.31 513.99 212.78 507.07 201.59 513.14 190.16" fill="#bcbec0" opacity=".3"/>
-  </g>
-  <g id="desk-045">
-    <polygon points="474.83 190.62 475.02 201.28 494.14 201.37 503.8 185.13 494.39 179.23 487.77 190.6 474.83 190.62" fill="#bcbec0" opacity=".3"/>
-  </g>
-  <g id="desk-047">
-    <polygon points="494.37 224.45 503.49 218.91 493.92 202.36 475.03 202.2 474.68 213.3 487.83 213.29 494.37 224.45" fill="#bcbec0" opacity=".3"/>
-  </g>
-  <g id="desk-048">
-    <polygon points="474.12 212.92 474.19 202.25 455.08 201.7 445.02 217.69 454.29 223.82 461.18 212.62 474.12 212.92" fill="#bcbec0" opacity=".3"/>
-  </g>
-  <g id="desk-049">
-    <polygon points="454.78 179.34 445.59 184.73 454.88 201.43 473.77 201.9 474.3 190.8 461.15 190.61 454.78 179.34" fill="#bcbec0" opacity=".3"/>
-  </g>
-  <g id="desk-050">
-    <polygon points="493.79 179.15 503.23 184.12 512.51 167.41 502.94 151.12 493.23 156.53 500 167.8 493.79 179.15" fill="#bcbec0" opacity=".3"/>
-  </g>
-  <g id="desk-051">
-    <polygon points="513.11 233.68 504.04 239.3 513.74 255.77 532.64 255.77 532.89 244.66 519.74 244.79 513.11 233.68" fill="#bcbec0" opacity=".3"/>
-  </g>
-  <g id="desk-052">
-    <polygon points="532.98 267.86 532.91 257.19 513.8 256.9 503.96 273.02 513.31 279.03 520.05 267.74 532.98 267.86" fill="#bcbec0" opacity=".3"/>
-  </g>
-  <g id="desk-053">
-    <polygon points="513.14 278.84 503.64 274 494.58 290.82 504.36 306.99 513.99 301.46 507.07 290.27 513.14 278.84" fill="#bcbec0" opacity=".3"/>
-  </g>
-  <g id="desk-054">
-    <polygon points="474.83 279.3 475.02 289.96 494.14 290.05 503.8 273.81 494.39 267.91 487.77 279.28 474.83 279.3" fill="#bcbec0" opacity=".3"/>
-  </g>
-  <g id="desk-055">
-    <polygon points="494.37 313.13 503.49 307.59 493.92 291.04 475.03 290.88 474.68 301.98 487.83 301.97 494.37 313.13" fill="#bcbec0" opacity=".3"/>
-  </g>
-  <g id="desk-056">
-    <polygon points="474.12 301.6 474.19 290.93 455.08 290.38 445.02 306.37 454.29 312.5 461.18 301.3 474.12 301.6" fill="#bcbec0" opacity=".3"/>
-  </g>
-  <g id="desk-057">
-    <polygon points="454.78 268.02 445.59 273.41 454.88 290.11 473.77 290.58 474.3 279.48 461.15 279.29 454.78 268.02" fill="#bcbec0" opacity=".3"/>
-  </g>
-  <g id="desk-058">
-    <polygon points="493.79 267.83 503.23 272.8 512.51 256.09 502.94 239.81 493.23 245.21 500 256.48 493.79 267.83" fill="#bcbec0" opacity=".3"/>
-  </g>
-  <g id="desk-059">
-    <polygon points="512.77 325.77 503.7 331.38 513.4 347.85 532.3 347.85 532.55 336.74 519.4 336.87 512.77 325.77" fill="#bcbec0" opacity=".3"/>
-  </g>
-  <g id="desk-060">
-    <polygon points="532.64 359.94 532.57 349.28 513.46 348.98 503.62 365.11 512.97 371.11 519.71 359.82 532.64 359.94" fill="#bcbec0" opacity=".3"/>
-  </g>
-  <g id="desk-061">
-    <polygon points="512.8 370.93 503.3 366.08 494.23 382.91 504.02 399.07 513.65 393.54 506.73 382.36 512.8 370.93" fill="#bcbec0" opacity=".3"/>
-  </g>
-  <g id="desk-062">
-    <polygon points="474.49 371.38 474.68 382.04 493.8 382.13 503.46 365.9 494.05 360 487.43 371.36 474.49 371.38" fill="#bcbec0" opacity=".3"/>
-  </g>
-  <g id="desk-063">
-    <polygon points="494.03 405.21 503.15 399.67 493.58 383.13 474.69 382.97 474.34 394.07 487.49 394.05 494.03 405.21" fill="#bcbec0" opacity=".3"/>
-  </g>
-  <g id="desk-064">
-    <polygon points="473.78 393.68 473.85 383.02 454.74 382.46 444.68 398.46 453.95 404.58 460.84 393.39 473.78 393.68" fill="#bcbec0" opacity=".3"/>
-  </g>
-  <g id="desk-065">
-    <polygon points="454.44 360.1 445.24 365.5 454.54 382.2 473.43 382.67 473.95 371.57 460.81 371.37 454.44 360.1" fill="#bcbec0" opacity=".3"/>
-  </g>
-  <g id="desk-066">
-    <polygon points="493.45 359.92 502.89 364.89 512.17 348.18 502.6 331.89 492.89 337.3 499.66 348.57 493.45 359.92" fill="#bcbec0" opacity=".3"/>
-  </g>
-  <g id="desk-067">
-    <polygon points="512.77 416.83 503.7 422.45 513.4 438.91 532.3 438.91 532.55 427.81 519.4 427.94 512.77 416.83" fill="#bcbec0" opacity=".3"/>
-  </g>
-  <g id="desk-068">
-    <polygon points="532.64 451.01 532.57 440.34 513.46 440.05 503.62 456.17 512.97 462.18 519.71 450.89 532.64 451.01" fill="#bcbec0" opacity=".3"/>
-  </g>
-  <g id="desk-069">
-    <polygon points="512.8 461.99 503.3 457.15 494.23 473.97 504.02 490.14 513.65 484.61 506.73 473.42 512.8 461.99" fill="#bcbec0" opacity=".3"/>
-  </g>
-  <g id="desk-070">
-    <polygon points="474.49 462.45 474.68 473.11 493.8 473.2 503.46 456.96 494.05 451.06 487.43 462.43 474.49 462.45" fill="#bcbec0" opacity=".3"/>
-  </g>
-  <g id="desk-071">
-    <polygon points="494.03 496.28 503.15 490.74 493.58 474.19 474.69 474.03 474.34 485.13 487.49 485.12 494.03 496.28" fill="#bcbec0" opacity=".3"/>
-  </g>
-  <g id="desk-072">
-    <polygon points="517.29 544.62 511.28 535.81 495.25 546.22 496.08 565.1 507.18 564.87 506.48 551.74 517.29 544.62" fill="#bcbec0" opacity=".3"/>
-  </g>
-  <g id="desk-073">
-    <polygon points="483.46 526.64 478.51 536.08 495.24 545.33 511.51 535.72 506.08 526.03 494.82 532.82 483.46 526.64" fill="#bcbec0" opacity=".3"/>
-  </g>
-  <g id="desk-074">
-    <polygon points="484.37 565.69 495.02 565.21 494.58 546.1 478.08 536.89 472.44 546.47 483.99 552.76 484.37 565.69" fill="#bcbec0" opacity=".3"/>
-  </g>
-  <g id="desk-075">
-    <polygon points="449.52 551.15 454.38 541.66 437.56 532.58 421.39 542.34 426.91 551.98 438.1 545.08 449.52 551.15" fill="#bcbec0" opacity=".3"/>
-  </g>
-  <g id="desk-076">
-    <polygon points="449.1 512.85 438.44 513.03 438.34 532.14 454.56 541.82 460.47 532.41 449.11 525.78 449.1 512.85" fill="#bcbec0" opacity=".3"/>
-  </g>
-  <g id="desk-077">
-    <polygon points="415.26 532.36 420.79 541.47 437.35 531.92 437.52 513.03 426.42 512.67 426.42 525.82 415.26 532.36" fill="#bcbec0" opacity=".3"/>
-  </g>
-  <g id="desk-078">
-    <polygon points="426.81 551.14 421.12 542.12 404.73 551.95 404.88 570.84 415.99 571.01 415.76 557.86 426.81 551.14" fill="#bcbec0" opacity=".3"/>
-  </g>
-  <g id="desk-079">
-    <polygon points="393.65 531.96 388.36 541.22 404.75 551.06 421.35 542.04 416.28 532.16 404.78 538.55 393.65 531.96" fill="#bcbec0" opacity=".3"/>
-  </g>
-  <g id="desk-080">
-    <polygon points="393.17 571.02 403.83 570.91 404.06 551.8 387.9 542.01 381.93 551.38 393.24 558.08 393.17 571.02" fill="#bcbec0" opacity=".3"/>
-  </g>
-  <g id="desk-081">
-    <polygon points="473.78 484.75 473.85 474.08 454.74 473.53 444.68 489.52 453.95 495.65 460.84 484.45 473.78 484.75" fill="#bcbec0" opacity=".3"/>
-  </g>
-  <g id="desk-082">
-    <polygon points="454.44 451.17 445.24 456.56 454.54 473.26 473.43 473.73 473.95 462.63 460.81 462.44 454.44 451.17" fill="#bcbec0" opacity=".3"/>
-  </g>
-  <g id="desk-083">
-    <polygon points="493.45 450.98 502.89 455.95 512.17 439.24 502.6 422.95 492.89 428.36 499.66 439.63 493.45 450.98" fill="#bcbec0" opacity=".3"/>
-  </g>
-  <g id="desk-084">
-    <polygon points="488.09 592.32 469.53 591.98 469.53 603.04 488.6 603.04 488.09 592.32" fill="#bcbec0" opacity=".3"/>
-  </g>
-  <g id="desk-085">
-    <polygon points="469.53 592.32 450.98 591.98 450.98 603.04 470.04 603.04 469.53 592.32" fill="#bcbec0" opacity=".3"/>
-  </g>
-  <g id="desk-086">
-    <polygon points="435.32 591.98 416.77 591.64 416.77 602.7 435.83 602.7 435.32 591.98" fill="#bcbec0" opacity=".3"/>
-  </g>
-  <g id="desk-087">
-    <polygon points="416.94 591.98 398.38 591.64 398.38 602.7 417.45 602.7 416.94 591.98" fill="#bcbec0" opacity=".3"/>
-  </g>
-  <g id="desk-088">
-    <polygon points="346.64 594.02 346.81 572.06 335.4 572.06 335.4 594.02 346.64 594.02" fill="#bcbec0" opacity=".3"/>
-  </g>
-  <g id="desk-089">
-    <polygon points="335.23 594.02 335.4 572.06 324 572.06 324 594.02 335.23 594.02" fill="#bcbec0" opacity=".3"/>
+<svg id="Desks" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 550 640">
+  <g id="desk-091">
+    <rect x="399" y="26.5" width="11" height="21.83" fill="none" stroke="#a97c50" stroke-miterlimit="10" stroke-width=".5"/>
   </g>
   <g id="desk-090">
-    <polygon points="346.3 571.38 346.47 549.43 335.06 549.43 335.06 571.38 346.3 571.38" fill="#bcbec0" opacity=".3"/>
+    <rect x="399" y="49.17" width="11" height="21.83" fill="none" stroke="#a97c50" stroke-miterlimit="10" stroke-width=".5"/>
   </g>
-  <g id="desk-091">
-    <polygon points="334.89 571.38 335.06 549.43 323.66 549.43 323.66 571.38 334.89 571.38" fill="#bcbec0" opacity=".3"/>
+  <g id="desk-089">
+    <rect x="399" y="71.83" width="11" height="21.83" fill="none" stroke="#a97c50" stroke-miterlimit="10" stroke-width=".5"/>
   </g>
-  <g id="desk-092">
-    <polygon points="346.81 549.26 346.98 527.3 335.57 527.3 335.57 549.26 346.81 549.26" fill="#bcbec0" opacity=".3"/>
-  </g>
-  <g id="desk-093">
-    <polygon points="335.4 549.26 335.57 527.3 324.17 527.3 324.17 549.26 335.4 549.26" fill="#bcbec0" opacity=".3"/>
-  </g>
-  <g id="desk-094">
-    <polygon points="287.23 594.02 287.4 572.06 276 572.06 276 594.02 287.23 594.02" fill="#bcbec0" opacity=".3"/>
+  <g id="desk-088">
+    <rect x="399" y="94.5" width="11" height="21.83" fill="none" stroke="#a97c50" stroke-miterlimit="10" stroke-width=".5"/>
   </g>
   <g id="desk-095">
-    <polygon points="275.83 594.02 276 572.06 264.6 572.06 264.6 594.02 275.83 594.02" fill="#bcbec0" opacity=".3"/>
+    <rect x="387.17" y="26.08" width="11" height="21.83" fill="none" stroke="#a97c50" stroke-miterlimit="10" stroke-width=".5"/>
   </g>
-  <g id="desk-096">
-    <polygon points="286.89 571.38 287.06 549.43 275.66 549.43 275.66 571.38 286.89 571.38" fill="#bcbec0" opacity=".3"/>
+  <g id="desk-094">
+    <rect x="387.17" y="48.75" width="11" height="21.83" fill="none" stroke="#a97c50" stroke-miterlimit="10" stroke-width=".5"/>
   </g>
-  <g id="desk-097">
-    <polygon points="275.49 571.38 275.66 549.43 264.26 549.43 264.26 571.38 275.49 571.38" fill="#bcbec0" opacity=".3"/>
+  <g id="desk-093">
+    <rect x="387.17" y="71.42" width="11" height="21.83" fill="none" stroke="#a97c50" stroke-miterlimit="10" stroke-width=".5"/>
   </g>
-  <g id="desk-098">
-    <polygon points="287.4 549.26 287.57 527.3 276.17 527.3 276.17 549.26 287.4 549.26" fill="#bcbec0" opacity=".3"/>
+  <g id="desk-092">
+    <rect x="387.17" y="94.08" width="11" height="21.83" fill="none" stroke="#a97c50" stroke-miterlimit="10" stroke-width=".5"/>
   </g>
-  <g id="desk-099">
-    <polygon points="276 549.26 276.17 527.3 264.77 527.3 264.77 549.26 276 549.26" fill="#bcbec0" opacity=".3"/>
+  <g id="desk-084">
+    <path d="M513.67,146.67l-9.17,5.66,10.33,16.67h19v-11.17h-12.66l-2-2.33S513.5,146.5,513.67,146.67Z" fill="none" stroke="#a97c50" stroke-miterlimit="10" stroke-width=".5"/>
   </g>
-  <g id="desk-100">
-    <polygon points="286.89 526.11 287.06 504.15 275.66 504.15 275.66 526.11 286.89 526.11" fill="#bcbec0" opacity=".3"/>
+  <g id="desk-083">
+    <path d="M533.93,180.58l-.12-10.77-19.61.24-9.8,16.28,9.56,5.76,5.33-8.85,1.21-2,3.03-.51S534.16,180.52,533.93,180.58Z" fill="none" stroke="#a97c50" stroke-miterlimit="10" stroke-width=".5"/>
   </g>
-  <g id="desk-101">
-    <polygon points="275.49 526.11 275.66 504.15 264.26 504.15 264.26 526.11 275.49 526.11" fill="#bcbec0" opacity=".3"/>
+  <g id="desk-085">
+    <path d="M494.37,181.49l9.45,5.18,9.4-17.2-9.37-16.53-9.71,5.5,5.09,8.99,1.15,2.03-1.04,2.89S494.3,181.72,494.37,181.49Z" fill="none" stroke="#a97c50" stroke-miterlimit="10" stroke-width=".5"/>
   </g>
-  <g id="desk-102">
-    <polygon points="232.43 594.53 232.6 572.57 221.19 572.57 221.19 594.53 232.43 594.53" fill="#bcbec0" opacity=".3"/>
+  <g id="desk-082">
+    <path d="M514,192.86l-9.43-5.23-9.49,17.16,9.27,16.58,9.75-5.45-5.05-9.02-1.14-2.04,1.06-2.88S514.06,192.64,514,192.86Z" fill="none" stroke="#a97c50" stroke-miterlimit="10" stroke-width=".5"/>
   </g>
-  <g id="desk-103">
-    <polygon points="221.02 594.53 221.19 572.57 209.79 572.57 209.79 594.53 221.02 594.53" fill="#bcbec0" opacity=".3"/>
+  <g id="desk-081">
+    <path d="M494.29,227.11l9.35-5.37-9.79-16.99-18.99-.61-.36,11.16,10.33.33,2.33.08,1.92,2.39S494.46,227.28,494.29,227.11Z" fill="none" stroke="#a97c50" stroke-miterlimit="10" stroke-width=".5"/>
   </g>
-  <g id="desk-104">
-    <polygon points="232.09 571.89 232.26 549.94 220.85 549.94 220.85 571.89 232.09 571.89" fill="#bcbec0" opacity=".3"/>
+  <g id="desk-080">
+    <path d="M474.49,214.91l-.22-10.77-19.6.43-9.66,16.36,9.62,5.68,5.25-8.9,1.19-2.01,3.02-.54S474.72,214.85,474.49,214.91Z" fill="none" stroke="#a97c50" stroke-miterlimit="10" stroke-width=".5"/>
   </g>
-  <g id="desk-105">
-    <polygon points="220.68 571.89 220.85 549.94 209.45 549.94 209.45 571.89 220.68 571.89" fill="#bcbec0" opacity=".3"/>
+  <g id="desk-087">
+    <path d="M454.54,180.59l-9.35,5.36,9.76,17,18.99.64.38-11.16-10.33-.35-2.33-.08-1.92-2.39S454.38,180.42,454.54,180.59Z" fill="none" stroke="#a97c50" stroke-miterlimit="10" stroke-width=".5"/>
   </g>
-  <g id="desk-106">
-    <polygon points="232.6 549.77 232.77 527.81 221.36 527.81 221.36 549.77 232.6 549.77" fill="#bcbec0" opacity=".3"/>
+  <g id="desk-086">
+    <path d="M474.18,193.03l.09,10.77,19.61-.19,9.85-16.25-9.55-5.79-5.36,8.84-1.2,1.99-3.04.5S473.95,193.08,474.18,193.03Z" fill="none" stroke="#a97c50" stroke-miterlimit="10" stroke-width=".5"/>
+  </g>
+  <g id="desk-076">
+    <path d="M513.84,236.02l-9.16,5.67,10.33,16.66h19v-11.16h-12.67l-2-2.34S513.68,235.85,513.84,236.02Z" fill="none" stroke="#a97c50" stroke-miterlimit="10" stroke-width=".5"/>
+  </g>
+  <g id="desk-075">
+    <path d="M534.11,269.94l-.12-10.78-19.61.25-9.81,16.27,9.57,5.76,5.33-8.85,1.21-1.99,3.03-.51S534.34,269.88,534.11,269.94Z" fill="none" stroke="#a97c50" stroke-miterlimit="10" stroke-width=".5"/>
+  </g>
+  <g id="desk-077">
+    <path d="M494.54,270.85l9.45,5.18,9.41-17.21-9.37-16.53-9.72,5.51,5.1,8.99,1.15,2.03-1.04,2.89S494.48,271.08,494.54,270.85Z" fill="none" stroke="#a97c50" stroke-miterlimit="10" stroke-width=".5"/>
+  </g>
+  <g id="desk-074">
+    <path d="M514.17,282.22l-9.42-5.24-9.5,17.16,9.28,16.58,9.75-5.45-5.05-9.02-1.14-2.03,1.06-2.89S514.24,281.99,514.17,282.22Z" fill="none" stroke="#a97c50" stroke-miterlimit="10" stroke-width=".5"/>
+  </g>
+  <g id="desk-073">
+    <path d="M494.47,316.46l9.35-5.36-9.79-17-18.99-.61-.36,11.16,10.32.34,2.34.07,1.92,2.4S494.63,316.64,494.47,316.46Z" fill="none" stroke="#a97c50" stroke-miterlimit="10" stroke-width=".5"/>
+  </g>
+  <g id="desk-072">
+    <path d="M474.67,304.27l-.22-10.78-19.61.43-9.65,16.37,9.62,5.67,5.25-8.9,1.18-2.01,3.03-.54S474.9,304.21,474.67,304.27Z" fill="none" stroke="#a97c50" stroke-miterlimit="10" stroke-width=".5"/>
+  </g>
+  <g id="desk-079">
+    <path d="M454.72,269.95l-9.35,5.35,9.76,17.01,18.99.64.38-11.16-10.33-.35-2.33-.08-1.92-2.4S454.56,269.77,454.72,269.95Z" fill="none" stroke="#a97c50" stroke-miterlimit="10" stroke-width=".5"/>
+  </g>
+  <g id="desk-078">
+    <path d="M474.36,282.38l.09,10.78,19.61-.2,9.85-16.25-9.55-5.79-5.36,8.84-1.21,2-3.03.5S474.13,282.44,474.36,282.38Z" fill="none" stroke="#a97c50" stroke-miterlimit="10" stroke-width=".5"/>
+  </g>
+  <g id="desk-068">
+    <path d="M514.02,327.47l-9.16,5.67,10.33,16.67h19v-11.17h-12.67l-2-2.33S513.86,327.31,514.02,327.47Z" fill="none" stroke="#a97c50" stroke-miterlimit="10" stroke-width=".5"/>
+  </g>
+  <g id="desk-067">
+    <path d="M534.29,361.39l-.12-10.78-19.61.25-9.81,16.27,9.57,5.77,5.33-8.85,1.2-2,3.03-.51S534.52,361.33,534.29,361.39Z" fill="none" stroke="#a97c50" stroke-miterlimit="10" stroke-width=".5"/>
+  </g>
+  <g id="desk-069">
+    <path d="M494.72,362.3l9.45,5.18,9.41-17.21-9.37-16.53-9.72,5.51,5.1,8.99,1.15,2.03-1.05,2.89S494.66,362.53,494.72,362.3Z" fill="none" stroke="#a97c50" stroke-miterlimit="10" stroke-width=".5"/>
+  </g>
+  <g id="desk-066">
+    <path d="M514.35,373.67l-9.42-5.23-9.5,17.15,9.28,16.58,9.74-5.45-5.04-9.02-1.14-2.03,1.06-2.89S514.41,373.44,514.35,373.67Z" fill="none" stroke="#a97c50" stroke-miterlimit="10" stroke-width=".5"/>
+  </g>
+  <g id="desk-065">
+    <path d="M494.65,407.92l9.34-5.37-9.79-16.99-18.99-.62-.36,11.17,10.33.33,2.33.07,1.93,2.4S494.81,408.09,494.65,407.92Z" fill="none" stroke="#a97c50" stroke-miterlimit="10" stroke-width=".5"/>
+  </g>
+  <g id="desk-064">
+    <path d="M474.85,395.72l-.22-10.78-19.61.43-9.65,16.37,9.61,5.67,5.26-8.9,1.18-2.01,3.03-.53S475.08,395.66,474.85,395.72Z" fill="none" stroke="#a97c50" stroke-miterlimit="10" stroke-width=".5"/>
+  </g>
+  <g id="desk-071">
+    <path d="M454.9,362.4l-9.36,5.35,9.77,17.01,18.99.64.38-11.16-10.33-.35-2.33-.08-1.92-2.4S454.74,362.23,454.9,362.4Z" fill="none" stroke="#a97c50" stroke-miterlimit="10" stroke-width=".5"/>
+  </g>
+  <g id="desk-070">
+    <path d="M474.53,373.83l.1,10.78,19.61-.2,9.85-16.25-9.55-5.78-5.36,8.83-1.21,2-3.03.5S474.3,373.89,474.53,373.83Z" fill="none" stroke="#a97c50" stroke-miterlimit="10" stroke-width=".5"/>
+  </g>
+  <g id="desk-060">
+    <path d="M513.52,419.89l-9.17,5.67,10.32,16.67h19s0-11.16,0-11.16h-10.32s-2.34,0-2.34,0l-2-2.34S513.35,419.73,513.52,419.89Z" fill="none" stroke="#a97c50" stroke-miterlimit="10" stroke-width=".5"/>
+  </g>
+  <g id="desk-059">
+    <path d="M533.77,453.82l-.12-10.78-19.61.24-9.81,16.27,9.56,5.77,5.34-8.85,1.2-2,3.04-.5S534,453.76,533.77,453.82Z" fill="none" stroke="#a97c50" stroke-miterlimit="10" stroke-width=".5"/>
+  </g>
+  <g id="desk-061">
+    <path d="M494.2,454.71l9.45,5.19,9.41-17.21-9.36-16.53-9.72,5.5,5.09,8.99,1.15,2.04-1.04,2.89S494.14,454.94,494.2,454.71Z" fill="none" stroke="#a97c50" stroke-miterlimit="10" stroke-width=".5"/>
+  </g>
+  <g id="desk-058">
+    <path d="M513.83,466.09l-9.42-5.24-9.51,17.16,9.27,16.58,9.75-5.45-5.04-9.02-1.14-2.03,1.06-2.89S513.89,465.86,513.83,466.09Z" fill="none" stroke="#a97c50" stroke-miterlimit="10" stroke-width=".5"/>
+  </g>
+  <g id="desk-057">
+    <path d="M494.11,500.33l9.35-5.36-9.79-17-18.99-.62-.36,11.16,10.33.34,2.33.07,1.92,2.4S494.27,500.5,494.11,500.33Z" fill="none" stroke="#a97c50" stroke-miterlimit="10" stroke-width=".5"/>
+  </g>
+  <g id="desk-056">
+    <path d="M474.32,488.12l-.22-10.77-19.61.42-9.66,16.36,9.62,5.68,5.25-8.9,1.19-2.01,3.02-.53S474.55,488.07,474.32,488.12Z" fill="none" stroke="#a97c50" stroke-miterlimit="10" stroke-width=".5"/>
+  </g>
+  <g id="desk-063">
+    <path d="M454.38,454.8l-9.36,5.35,9.76,17.01,18.99.64.38-11.16-10.33-.35-2.33-.08-1.92-2.4S454.22,454.62,454.38,454.8Z" fill="none" stroke="#a97c50" stroke-miterlimit="10" stroke-width=".5"/>
+  </g>
+  <g id="desk-062">
+    <path d="M474.01,466.24l.09,10.77,19.61-.18,9.85-16.25-9.54-5.79-5.36,8.83-1.21,2-3.04.5S473.78,466.29,474.01,466.24Z" fill="none" stroke="#a97c50" stroke-miterlimit="10" stroke-width=".5"/>
+  </g>
+  <g id="desk-050">
+    <path d="M450.33,515.98l-10.77.3.56,19.6,16.43,9.54,5.61-9.65-8.94-5.19-2.02-1.18-.55-3.02S450.27,515.75,450.33,515.98Z" fill="none" stroke="#a97c50" stroke-miterlimit="10" stroke-width=".5"/>
+  </g>
+  <g id="desk-051">
+    <path d="M450.81,555.49l5.31-9.38-17.08-9.64-16.65,9.15,5.37,9.78,9.06-4.97,2.05-1.12,2.87,1.08S451.04,555.55,450.81,555.49Z" fill="none" stroke="#a97c50" stroke-miterlimit="10" stroke-width=".5"/>
+  </g>
+  <g id="desk-049">
+    <path d="M416.14,536.4l5.57,9.22,16.78-10.15.2-19-11.17-.12-.11,10.33-.02,2.34-2.36,1.97S415.97,536.56,416.14,536.4Z" fill="none" stroke="#a97c50" stroke-miterlimit="10" stroke-width=".5"/>
+  </g>
+  <g id="desk-052">
+    <path d="M427.4,556.09l-5.51-9.26-16.83,10.06-.31,19,11.16.18.17-10.33.04-2.33,2.36-1.96S427.57,555.93,427.4,556.09Z" fill="none" stroke="#a97c50" stroke-miterlimit="10" stroke-width=".5"/>
+  </g>
+  <g id="desk-047">
+    <path d="M393.17,575.8l10.77.06.07-19.61-16.11-10.07-5.92,9.47,8.76,5.47,1.98,1.24.46,3.04S393.22,576.03,393.17,575.8Z" fill="none" stroke="#a97c50" stroke-miterlimit="10" stroke-width=".5"/>
+  </g>
+  <g id="desk-048">
+    <path d="M392.9,536.23l-5.34,9.36,17.06,9.68,16.67-9.1-5.34-9.8-9.07,4.95-2.05,1.12-2.88-1.09S392.67,536.16,392.9,536.23Z" fill="none" stroke="#a97c50" stroke-miterlimit="10" stroke-width=".5"/>
+  </g>
+  <g id="desk-055">
+    <path d="M519.11,550.36l-5.4-9.33-16.95,9.86-.54,18.99,11.16.32.29-10.33.07-2.33,2.39-1.94S519.29,550.2,519.11,550.36Z" fill="none" stroke="#a97c50" stroke-miterlimit="10" stroke-width=".5"/>
+  </g>
+  <g id="desk-053">
+    <path d="M484.64,569.65l10.77.19.31-19.61-15.99-10.27-6.03,9.4,8.7,5.58,1.96,1.26.42,3.05S484.69,569.88,484.64,569.65Z" fill="none" stroke="#a97c50" stroke-miterlimit="10" stroke-width=".5"/>
+  </g>
+  <g id="desk-054">
+    <path d="M484.85,530.07l-5.45,9.3,16.94,9.89,16.79-8.89-5.23-9.87-9.13,4.84-2.07,1.09-2.86-1.13S484.62,530.01,484.85,530.07Z" fill="none" stroke="#a97c50" stroke-miterlimit="10" stroke-width=".5"/>
+  </g>
+  <g id="desk-045">
+    <rect x="450.86" y="596.83" width="18.98" height="10.83" fill="none" stroke="#a97c50" stroke-miterlimit="10" stroke-width=".5"/>
+  </g>
+  <g id="desk-046">
+    <rect x="469.91" y="596.83" width="18.98" height="10.83" fill="none" stroke="#a97c50" stroke-miterlimit="10" stroke-width=".5"/>
+  </g>
+  <g id="desk-043">
+    <rect x="398.33" y="596.83" width="18.98" height="10.83" fill="none" stroke="#a97c50" stroke-miterlimit="10" stroke-width=".5"/>
+  </g>
+  <g id="desk-044">
+    <rect x="417.39" y="596.83" width="18.98" height="10.83" fill="none" stroke="#a97c50" stroke-miterlimit="10" stroke-width=".5"/>
+  </g>
+  <g id="desk-042A">
+    <rect x="328.83" y="532" width="10.17" height="21.5" fill="none" stroke="#a97c50" stroke-miterlimit="10" stroke-width=".5"/>
+  </g>
+  <g id="desk-042B">
+    <rect x="328.83" y="554.36" width="10.17" height="21.5" fill="none" stroke="#a97c50" stroke-miterlimit="10" stroke-width=".5"/>
+  </g>
+  <g id="desk-042C">
+    <rect x="328.83" y="576.5" width="10.17" height="21.5" fill="none" stroke="#a97c50" stroke-miterlimit="10" stroke-width=".5"/>
+  </g>
+  <g id="desk-042D">
+    <rect x="317.67" y="532.11" width="10.17" height="21.5" fill="none" stroke="#a97c50" stroke-miterlimit="10" stroke-width=".5"/>
+  </g>
+  <g id="desk-042E">
+    <rect x="317.67" y="554.46" width="10.17" height="21.5" fill="none" stroke="#a97c50" stroke-miterlimit="10" stroke-width=".5"/>
+  </g>
+  <g id="desk-042F">
+    <rect x="317.67" y="576.61" width="10.17" height="21.5" fill="none" stroke="#a97c50" stroke-miterlimit="10" stroke-width=".5"/>
+  </g>
+  <g id="desk-039">
+    <rect x="275.67" y="508.17" width="10.67" height="22" fill="none" stroke="#a97c50" stroke-miterlimit="10" stroke-width=".5"/>
+  </g>
+  <g id="desk-040">
+    <rect x="275.67" y="530.83" width="10.67" height="22" fill="none" stroke="#a97c50" stroke-miterlimit="10" stroke-width=".5"/>
+  </g>
+  <g id="desk-041">
+    <rect x="275.67" y="555.11" width="10.67" height="22" fill="none" stroke="#a97c50" stroke-miterlimit="10" stroke-width=".5"/>
+  </g>
+  <g id="desk-042">
+    <rect x="275.67" y="577.11" width="10.67" height="21.56" fill="none" stroke="#a97c50" stroke-miterlimit="10" stroke-width=".5"/>
+  </g>
+  <g id="desk-035">
+    <rect x="263.78" y="508.25" width="10.67" height="22" fill="none" stroke="#a97c50" stroke-miterlimit="10" stroke-width=".5"/>
+  </g>
+  <g id="desk-036">
+    <rect x="263.78" y="530.92" width="10.67" height="22" fill="none" stroke="#a97c50" stroke-miterlimit="10" stroke-width=".5"/>
+  </g>
+  <g id="desk-037">
+    <rect x="263.78" y="554.19" width="10.67" height="22" fill="none" stroke="#a97c50" stroke-miterlimit="10" stroke-width=".5"/>
+  </g>
+  <g id="desk-038">
+    <rect x="263.78" y="577.19" width="10.67" height="21.56" fill="none" stroke="#a97c50" stroke-miterlimit="10" stroke-width=".5"/>
+  </g>
+  <g id="desk-031">
+    <rect x="220.56" y="508.21" width="10.67" height="22" fill="none" stroke="#a97c50" stroke-miterlimit="10" stroke-width=".5"/>
+  </g>
+  <g id="desk-032">
+    <rect x="220.56" y="530.87" width="10.67" height="22" fill="none" stroke="#a97c50" stroke-miterlimit="10" stroke-width=".5"/>
+  </g>
+  <g id="desk-033">
+    <rect x="220.56" y="554.15" width="10.67" height="22" fill="none" stroke="#a97c50" stroke-miterlimit="10" stroke-width=".5"/>
+  </g>
+  <g id="desk-034">
+    <rect x="220.56" y="577.15" width="10.67" height="21.56" fill="none" stroke="#a97c50" stroke-miterlimit="10" stroke-width=".5"/>
+  </g>
+  <g id="desk-027">
+    <rect x="208.67" y="508.29" width="10.67" height="22" fill="none" stroke="#a97c50" stroke-miterlimit="10" stroke-width=".5"/>
+  </g>
+  <g id="desk-028">
+    <rect x="208.67" y="530.96" width="10.67" height="22" fill="none" stroke="#a97c50" stroke-miterlimit="10" stroke-width=".5"/>
+  </g>
+  <g id="desk-029">
+    <rect x="208.67" y="554.23" width="10.67" height="22" fill="none" stroke="#a97c50" stroke-miterlimit="10" stroke-width=".5"/>
+  </g>
+  <g id="desk-030">
+    <rect x="208.67" y="577.24" width="10.67" height="21.56" fill="none" stroke="#a97c50" stroke-miterlimit="10" stroke-width=".5"/>
+  </g>
+  <g id="desk-023">
+    <rect x="169.39" y="500.04" width="10.67" height="22" fill="none" stroke="#a97c50" stroke-miterlimit="10" stroke-width=".5"/>
+  </g>
+  <g id="desk-024">
+    <rect x="169.39" y="522.71" width="10.67" height="22" fill="none" stroke="#a97c50" stroke-miterlimit="10" stroke-width=".5"/>
+  </g>
+  <g id="desk-025">
+    <rect x="169.39" y="545.98" width="10.67" height="22" fill="none" stroke="#a97c50" stroke-miterlimit="10" stroke-width=".5"/>
+  </g>
+  <g id="desk-026">
+    <rect x="169.39" y="568.99" width="10.67" height="21.56" fill="none" stroke="#a97c50" stroke-miterlimit="10" stroke-width=".5"/>
+  </g>
+  <g id="desk-019">
+    <rect x="157.5" y="500.12" width="10.67" height="22" fill="none" stroke="#a97c50" stroke-miterlimit="10" stroke-width=".5"/>
+  </g>
+  <g id="desk-020">
+    <rect x="157.5" y="522.79" width="10.67" height="22" fill="none" stroke="#a97c50" stroke-miterlimit="10" stroke-width=".5"/>
+  </g>
+  <g id="desk-021">
+    <rect x="157.5" y="546.07" width="10.67" height="22" fill="none" stroke="#a97c50" stroke-miterlimit="10" stroke-width=".5"/>
+  </g>
+  <g id="desk-022">
+    <rect x="157.5" y="569.07" width="10.67" height="21.56" fill="none" stroke="#a97c50" stroke-miterlimit="10" stroke-width=".5"/>
   </g>
   <g id="desk-107">
-    <polygon points="221.19 549.77 221.36 527.81 209.96 527.81 209.96 549.77 221.19 549.77" fill="#bcbec0" opacity=".3"/>
+    <rect x="197" y="26.49" width="10.67" height="22" fill="none" stroke="#a97c50" stroke-miterlimit="10" stroke-width=".5"/>
   </g>
-  <g id="desk-108">
-    <polygon points="232.09 526.62 232.26 504.66 220.85 504.66 220.85 526.62 232.09 526.62" fill="#bcbec0" opacity=".3"/>
+  <g id="desk-106">
+    <rect x="197" y="49.15" width="10.67" height="22" fill="none" stroke="#a97c50" stroke-miterlimit="10" stroke-width=".5"/>
   </g>
-  <g id="desk-109">
-    <polygon points="220.68 526.62 220.85 504.66 209.45 504.66 209.45 526.62 220.68 526.62" fill="#bcbec0" opacity=".3"/>
+  <g id="desk-105">
+    <rect x="197" y="72.43" width="10.67" height="22" fill="none" stroke="#a97c50" stroke-miterlimit="10" stroke-width=".5"/>
   </g>
-  <g id="desk-110">
-    <polygon points="181.7 585.51 181.87 563.55 170.47 563.55 170.47 585.51 181.7 585.51" fill="#bcbec0" opacity=".3"/>
+  <g id="desk-104">
+    <rect x="197" y="95.43" width="10.67" height="21.56" fill="none" stroke="#a97c50" stroke-miterlimit="10" stroke-width=".5"/>
   </g>
   <g id="desk-111">
-    <polygon points="170.3 585.51 170.47 563.55 159.06 563.55 159.06 585.51 170.3 585.51" fill="#bcbec0" opacity=".3"/>
+    <rect x="185.11" y="26.57" width="10.67" height="22" fill="none" stroke="#a97c50" stroke-miterlimit="10" stroke-width=".5"/>
   </g>
-  <g id="desk-112">
-    <polygon points="181.36 562.87 181.53 540.91 170.13 540.91 170.13 562.87 181.36 562.87" fill="#bcbec0" opacity=".3"/>
+  <g id="desk-110">
+    <rect x="185.11" y="49.24" width="10.67" height="22" fill="none" stroke="#a97c50" stroke-miterlimit="10" stroke-width=".5"/>
   </g>
-  <g id="desk-113">
-    <polygon points="169.96 562.87 170.13 540.91 158.72 540.91 158.72 562.87 169.96 562.87" fill="#bcbec0" opacity=".3"/>
+  <g id="desk-109">
+    <rect x="185.11" y="72.51" width="10.67" height="22" fill="none" stroke="#a97c50" stroke-miterlimit="10" stroke-width=".5"/>
   </g>
-  <g id="desk-114">
-    <polygon points="181.87 540.74 182.04 518.79 170.64 518.79 170.64 540.74 181.87 540.74" fill="#bcbec0" opacity=".3"/>
+  <g id="desk-108">
+    <rect x="185.11" y="95.51" width="10.67" height="21.56" fill="none" stroke="#a97c50" stroke-miterlimit="10" stroke-width=".5"/>
   </g>
-  <g id="desk-115">
-    <polygon points="170.47 540.74 170.64 518.79 159.23 518.79 159.23 540.74 170.47 540.74" fill="#bcbec0" opacity=".3"/>
+  <g id="desk-099">
+    <rect x="247.17" y="25.94" width="10.67" height="22" fill="none" stroke="#a97c50" stroke-miterlimit="10" stroke-width=".5"/>
   </g>
-  <g id="desk-116">
-    <polygon points="181.36 517.6 181.53 495.64 170.13 495.64 170.13 517.6 181.36 517.6" fill="#bcbec0" opacity=".3"/>
+  <g id="desk-098">
+    <rect x="247.17" y="48.61" width="10.67" height="22" fill="none" stroke="#a97c50" stroke-miterlimit="10" stroke-width=".5"/>
   </g>
-  <g id="desk-117">
-    <polygon points="169.96 517.6 170.13 495.64 158.72 495.64 158.72 517.6 169.96 517.6" fill="#bcbec0" opacity=".3"/>
+  <g id="desk-097">
+    <rect x="247.17" y="71.88" width="10.67" height="22" fill="none" stroke="#a97c50" stroke-miterlimit="10" stroke-width=".5"/>
   </g>
-  <g id="desk-118">
-    <polygon points="85.99 505.06 107.94 505.34 108 493.93 86.04 493.82 85.99 505.06" fill="#bcbec0" opacity=".3"/>
+  <g id="desk-096">
+    <rect x="247.17" y="94.89" width="10.67" height="21.56" fill="none" stroke="#a97c50" stroke-miterlimit="10" stroke-width=".5"/>
   </g>
-  <g id="desk-119">
-    <polygon points="86.04 493.65 108 493.93 108.06 482.53 86.1 482.42 86.04 493.65" fill="#bcbec0" opacity=".3"/>
+  <g id="desk-103">
+    <rect x="235.28" y="26.03" width="10.67" height="22" fill="none" stroke="#a97c50" stroke-miterlimit="10" stroke-width=".5"/>
   </g>
-  <g id="desk-120">
-    <polygon points="109.14 504.66 131.09 504.94 131.15 493.54 109.19 493.43 109.14 504.66" fill="#bcbec0" opacity=".3"/>
+  <g id="desk-102">
+    <rect x="235.28" y="48.69" width="10.67" height="22" fill="none" stroke="#a97c50" stroke-miterlimit="10" stroke-width=".5"/>
   </g>
-  <g id="desk-121">
-    <polygon points="109.19 493.26 131.15 493.54 131.21 482.13 109.25 482.02 109.19 493.26" fill="#bcbec0" opacity=".3"/>
+  <g id="desk-101">
+    <rect x="235.28" y="71.97" width="10.67" height="22" fill="none" stroke="#a97c50" stroke-miterlimit="10" stroke-width=".5"/>
   </g>
-  <g id="desk-122">
-    <polygon points="20.62 493.82 42.58 494.1 42.64 482.7 20.68 482.59 20.62 493.82" fill="#bcbec0" opacity=".3"/>
+  <g id="desk-099F">
+    <rect x="298.03" y="25.6" width="10.67" height="22" fill="none" stroke="#a97c50" stroke-miterlimit="10" stroke-width=".5"/>
   </g>
-  <g id="desk-123">
-    <polygon points="20.68 482.42 42.64 482.7 42.69 471.3 20.74 471.19 20.68 482.42" fill="#bcbec0" opacity=".3"/>
+  <g id="desk-099E">
+    <rect x="298.03" y="48.27" width="10.67" height="22" fill="none" stroke="#a97c50" stroke-miterlimit="10" stroke-width=".5"/>
   </g>
-  <g id="desk-124">
-    <polygon points="43.78 493.43 65.73 493.71 65.79 482.3 43.83 482.19 43.78 493.43" fill="#bcbec0" opacity=".3"/>
+  <g id="desk-099D">
+    <rect x="298.03" y="71.54" width="10.67" height="22" fill="none" stroke="#a97c50" stroke-miterlimit="10" stroke-width=".5"/>
   </g>
-  <g id="desk-125">
-    <polygon points="43.83 482.02 65.79 482.3 65.84 470.9 43.89 470.79 43.83 482.02" fill="#bcbec0" opacity=".3"/>
+  <g id="desk-099A">
+    <rect x="286.14" y="25.68" width="10.67" height="22" fill="none" stroke="#a97c50" stroke-miterlimit="10" stroke-width=".5"/>
   </g>
-  <g id="desk-126">
-    <polygon points="20.45 544.21 42.41 544.49 42.47 533.08 20.51 532.97 20.45 544.21" fill="#bcbec0" opacity=".3"/>
+  <g id="desk-099B">
+    <rect x="286.14" y="48.35" width="10.67" height="22" fill="none" stroke="#a97c50" stroke-miterlimit="10" stroke-width=".5"/>
   </g>
-  <g id="desk-127">
-    <polygon points="20.51 532.8 42.47 533.08 42.52 521.68 20.57 521.57 20.51 532.8" fill="#bcbec0" opacity=".3"/>
+  <g id="desk-099C">
+    <rect x="286.14" y="71.62" width="10.67" height="22" fill="none" stroke="#a97c50" stroke-miterlimit="10" stroke-width=".5"/>
   </g>
-  <g id="desk-128">
-    <polygon points="43.61 543.81 65.56 544.09 65.62 532.69 43.66 532.58 43.61 543.81" fill="#bcbec0" opacity=".3"/>
+  <g id="desk-099J">
+    <rect x="348.54" y="25.68" width="10.67" height="22" fill="none" stroke="#a97c50" stroke-miterlimit="10" stroke-width=".5"/>
   </g>
-  <g id="desk-129">
-    <polygon points="43.66 532.41 65.62 532.69 65.67 521.28 43.72 521.17 43.66 532.41" fill="#bcbec0" opacity=".3"/>
+  <g id="desk-099K">
+    <rect x="348.54" y="48.35" width="10.67" height="22" fill="none" stroke="#a97c50" stroke-miterlimit="10" stroke-width=".5"/>
   </g>
-  <g id="desk-130">
-    <polygon points="85.48 555.78 107.43 556.06 107.49 544.66 85.53 544.55 85.48 555.78" fill="#bcbec0" opacity=".3"/>
+  <g id="desk-099L">
+    <rect x="348.54" y="71.62" width="10.67" height="22" fill="none" stroke="#a97c50" stroke-miterlimit="10" stroke-width=".5"/>
   </g>
-  <g id="desk-131">
-    <polygon points="85.53 544.38 107.49 544.66 107.54 533.25 85.59 533.14 85.53 544.38" fill="#bcbec0" opacity=".3"/>
+  <g id="desk-099I">
+    <rect x="336.65" y="25.77" width="10.67" height="22" fill="none" stroke="#a97c50" stroke-miterlimit="10" stroke-width=".5"/>
   </g>
-  <g id="desk-132">
-    <polygon points="108.63 555.39 130.58 555.66 130.64 544.26 108.68 544.15 108.63 555.39" fill="#bcbec0" opacity=".3"/>
+  <g id="desk-099H">
+    <rect x="336.65" y="48.43" width="10.67" height="22" fill="none" stroke="#a97c50" stroke-miterlimit="10" stroke-width=".5"/>
   </g>
-  <g id="desk-133">
-    <polygon points="108.68 543.98 130.64 544.26 130.7 532.86 108.74 532.75 108.68 543.98" fill="#bcbec0" opacity=".3"/>
+  <g id="desk-099G">
+    <rect x="336.65" y="71.71" width="10.67" height="22" fill="none" stroke="#a97c50" stroke-miterlimit="10" stroke-width=".5"/>
   </g>
-  <g id="desk-134">
-    <polygon points="24.26 439.13 24.09 420.4 12.68 420.4 12.85 438.79 24.26 439.13" fill="#bcbec0" opacity=".3"/>
+  <g id="desk-100">
+    <rect x="235.28" y="94.97" width="10.67" height="21.56" fill="none" stroke="#a97c50" stroke-miterlimit="10" stroke-width=".5"/>
   </g>
-  <g id="desk-135">
-    <polygon points="23.91 420.57 23.74 401.85 12.34 401.85 12.51 420.23 23.91 420.57" fill="#bcbec0" opacity=".3"/>
+  <g id="desk-018">
+    <rect x="112.56" y="543.58" width="10.67" height="22" transform="translate(672.47 436.69) rotate(90)" fill="none" stroke="#a97c50" stroke-miterlimit="10" stroke-width=".5"/>
+  </g>
+  <g id="desk-017">
+    <rect x="89.77" y="543.8" width="10.67" height="21.56" transform="translate(649.69 459.47) rotate(90)" fill="none" stroke="#a97c50" stroke-miterlimit="10" stroke-width=".5"/>
+  </g>
+  <g id="desk-016">
+    <rect x="112.47" y="531.69" width="10.67" height="22" transform="translate(660.5 424.89) rotate(90)" fill="none" stroke="#a97c50" stroke-miterlimit="10" stroke-width=".5"/>
+  </g>
+  <g id="desk-015">
+    <rect x="89.69" y="531.91" width="10.67" height="21.56" transform="translate(637.72 447.67) rotate(90)" fill="none" stroke="#a97c50" stroke-miterlimit="10" stroke-width=".5"/>
+  </g>
+  <g id="desk-014">
+    <rect x="112.88" y="493.06" width="10.67" height="22" transform="translate(622.27 385.85) rotate(90)" fill="none" stroke="#a97c50" stroke-miterlimit="10" stroke-width=".5"/>
+  </g>
+  <g id="desk-013">
+    <rect x="90.1" y="493.28" width="10.67" height="21.56" transform="translate(599.48 408.63) rotate(90)" fill="none" stroke="#a97c50" stroke-miterlimit="10" stroke-width=".5"/>
+  </g>
+  <g id="desk-012">
+    <rect x="112.79" y="481.17" width="10.67" height="22" transform="translate(610.29 374.04) rotate(90)" fill="none" stroke="#a97c50" stroke-miterlimit="10" stroke-width=".5"/>
+  </g>
+  <g id="desk-011">
+    <rect x="90.01" y="481.39" width="10.67" height="21.56" transform="translate(587.51 396.82) rotate(90)" fill="none" stroke="#a97c50" stroke-miterlimit="10" stroke-width=".5"/>
+  </g>
+  <g id="desk-006">
+    <rect x="46.81" y="481.17" width="10.67" height="22" transform="translate(544.31 440.02) rotate(90)" fill="none" stroke="#a97c50" stroke-miterlimit="10" stroke-width=".5"/>
+  </g>
+  <g id="desk-005">
+    <rect x="24.03" y="481.39" width="10.67" height="21.56" transform="translate(521.53 462.81) rotate(90)" fill="none" stroke="#a97c50" stroke-miterlimit="10" stroke-width=".5"/>
+  </g>
+  <g id="desk-004">
+    <rect x="46.73" y="469.28" width="10.67" height="22" transform="translate(532.34 428.22) rotate(90)" fill="none" stroke="#a97c50" stroke-miterlimit="10" stroke-width=".5"/>
+  </g>
+  <g id="desk-003">
+    <rect x="23.94" y="469.5" width="10.67" height="21.56" transform="translate(509.56 451) rotate(90)" fill="none" stroke="#a97c50" stroke-miterlimit="10" stroke-width=".5"/>
+  </g>
+  <g id="desk-010">
+    <rect x="46.81" y="532.3" width="10.67" height="22" transform="translate(595.45 491.16) rotate(90)" fill="none" stroke="#a97c50" stroke-miterlimit="10" stroke-width=".5"/>
+  </g>
+  <g id="desk-009">
+    <rect x="24.03" y="532.53" width="10.67" height="21.56" transform="translate(572.66 513.94) rotate(90)" fill="none" stroke="#a97c50" stroke-miterlimit="10" stroke-width=".5"/>
+  </g>
+  <g id="desk-008">
+    <rect x="46.73" y="520.41" width="10.67" height="22" transform="translate(583.47 479.35) rotate(90)" fill="none" stroke="#a97c50" stroke-miterlimit="10" stroke-width=".5"/>
+  </g>
+  <g id="desk-007">
+    <rect x="23.94" y="520.64" width="10.67" height="21.56" transform="translate(560.69 502.14) rotate(90)" fill="none" stroke="#a97c50" stroke-miterlimit="10" stroke-width=".5"/>
+  </g>
+  <g id="desk-001">
+    <rect x="10.5" y="405.17" width="11.17" height="18.5" fill="none" stroke="#a97c50" stroke-miterlimit="10" stroke-width=".5"/>
+  </g>
+  <g id="desk-002">
+    <rect x="10.5" y="424.83" width="11.17" height="18.17" fill="none" stroke="#a97c50" stroke-miterlimit="10" stroke-width=".5"/>
+  </g>
+  <g id="desk-meet-002">
+    <rect x="58.5" y="382.33" width="10.83" height="27.83" fill="none" stroke="#a97c50" stroke-miterlimit="10" stroke-width=".5"/>
+  </g>
+  <g id="desk-meet-003">
+    <rect x="101.83" y="382.33" width="11.17" height="26.83" fill="none" stroke="#a97c50" stroke-miterlimit="10" stroke-width=".5"/>
+  </g>
+  <g id="desk-meet-001">
+    <rect x="64.67" y="323.33" width="44.5" height="27.5" fill="none" stroke="#a97c50" stroke-miterlimit="10" stroke-width=".5"/>
+  </g>
+  <g id="desk-meet-007">
+    <rect x="390.83" y="174.83" width="10.83" height="22" fill="none" stroke="#a97c50" stroke-miterlimit="10" stroke-width=".5"/>
+  </g>
+  <g id="desk-meet-006">
+    <rect x="389.33" y="224.17" width="11.17" height="28" fill="none" stroke="#a97c50" stroke-miterlimit="10" stroke-width=".5"/>
+  </g>
+  <g id="desk-meet-005">
+    <rect x="387.5" y="327.47" width="16.67" height="38.86" fill="none" stroke="#a97c50" stroke-miterlimit="10" stroke-width=".5"/>
+  </g>
+  <g id="desk-meet-004">
+    <rect x="390" y="430.71" width="11" height="22.79" fill="none" stroke="#a97c50" stroke-miterlimit="10" stroke-width=".5"/>
   </g>
 </svg>
