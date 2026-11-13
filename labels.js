@@ -62,7 +62,9 @@ export function drawTeamLabels(containerId, day) {
   svg.appendChild(layer);
 
   const vbWidth  = svg.viewBox?.baseVal?.width || svg.getBBox().width || 550;
-  const fontSize = clamp(vbWidth * 0.016, 7, 14);
+  // ~1% of floor width ≈ half a desk's width on 275G/400G; clamp keeps
+  // wide floors (1WS, 57S) from getting oversized bubbles
+  const fontSize = clamp(vbWidth * 0.010, 5, 10);
 
   teamIds.forEach(teamId => {
     clusterBoxes(byTeam[teamId]).forEach(box => {
@@ -96,15 +98,15 @@ function drawBubble(layer, teamId, box, fontSize) {
 
   // Measure after insertion so the text has a rendered length
   const textW = text.getComputedTextLength() || name.length * fontSize * 0.6;
-  const padX  = fontSize * 0.5;
+  const padX  = fontSize * 0.35;
   const w     = textW + padX * 2;
-  const h     = fontSize * 1.5;
+  const h     = fontSize * 1.3;
 
   rect.setAttribute("x", (cx - w / 2).toFixed(2));
   rect.setAttribute("y", (cy - h / 2).toFixed(2));
   rect.setAttribute("width",  w.toFixed(2));
   rect.setAttribute("height", h.toFixed(2));
-  rect.setAttribute("rx", "3");
+  rect.setAttribute("rx", (fontSize * 0.3).toFixed(2));
   rect.setAttribute("fill", fill);
   rect.setAttribute("stroke", "#ffffff");
   rect.setAttribute("stroke-width", (fontSize * 0.08).toFixed(2));
