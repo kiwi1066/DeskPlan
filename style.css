@@ -550,6 +550,7 @@ button[data-active="true"] { background: var(--accent); }
 
 .team-labels-toggle {
   cursor: pointer;
+  margin-left: 8px;
 }
 
 .team-labels-toggle input {
