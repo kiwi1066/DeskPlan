@@ -1,0 +1,8 @@
+{
+  "name": "deskplan-tools",
+  "private": true,
+  "description": "Scripts for preparing DeskPlan floor plans (see README.md)",
+  "devDependencies": {
+    "playwright": "^1.47.0"
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "_about": "Settings for building 5BS Level 2 from the QGAO plan PDF dated 23.09.2025. See tools/README.md for what each setting does. Coordinates in 'crop', 'perimeter' and 'clean' are PDF points; 'addedDesks' seeds and 'rooms' are pixels in work/<floor>/clean.png.",
+
+  "building": { "id": "5BS", "label": "5B Sheridan St (WMP), Cairns" },
+  "floor":    { "id": "L2",  "label": "Level 2" },
+
+  "crop": [66, 105, 772, 352],
+  "renderWidth": 2944,
+
+  "clean": {
+    "removeFill":        ["rgb(100%, 50.19", "rgb(100%, 0%, 0%)"],
+    "removeStroke":      ["rgb(100%, 66.6", "rgb(89.79"],
+    "removeFilledPaths": ["rgb(32.89"],
+    "hatchStroke":       ["rgb(50.19"],
+    "recolourStroke":    [["rgb(44.69", "rgb(32.899475%, 32.899475%, 32.899475%)"]],
+    "whiteMasks":        true,
+    "removeElements":    [12757, 7514, 7515, 7516, 7517],
+    "smallStrokeText":   { "stroke": "rgb(32.89", "maxSize": 4, "perimeter": [78.35, 117.1, 759.5, 339.6], "margin": 3 }
+  },
+
+  "deskNumbers": { "pattern": "^W\\.?2\\.(\\d+)\\.(\\d+)$", "labelFormat": "W2.{area}.{num}" },
+  "wallThreshold": 200,
+
+  "addedDesks": {
+    "_note": "Former DSROPG area: no printed numbers. One desk per chair; seed = a point on the work surface the chair faces. Numbering continues the plan's pattern (areas 15, 16, 17 right to left; right column top->bottom, next column bottom->top).",
+    "textFill": "rgb(7.5%, 45.1%, 91%)",
+    "fontSize": 3.85,
+    "seeds": [
+      [15, 85, 850, 825], [15, 86, 850, 915],
+      [15, 87, 590, 912], [15, 88, 590, 848], [15, 89, 590, 745],
+      [16, 90, 554, 745], [16, 91, 554, 848],
+      [16, 92, 336, 912], [16, 93, 336, 848], [16, 94, 336, 745],
+      [17, 95, 300, 745], [17, 96, 300, 925],
+      [17, 97, 80, 912],  [17, 98, 80, 848],  [17, 99, 80, 745]
+    ]
+  },
+
+  "rooms": {
+    "_note": "Rectangles on the wall centre lines, read from zoomed crops of clean.png: [x0, y0, x1, y1] in pixels.",
+    "desk-office-05": [766, 382.5, 950, 512.5],
+    "desk-quiet-02":  [950, 382.5, 1042.5, 512.5],
+    "desk-meet-02":   [766, 512.5, 857.5, 645],
+    "desk-office-04": [857.5, 512.5, 1042.5, 645],
+    "desk-meet-01":   [1897.5, 382.5, 2036, 512.5],
+    "desk-office-03": [1897.5, 512.5, 2036, 644],
+    "desk-office-01": [2499, 382.5, 2724, 514],
+    "desk-office-02": [2499, 514, 2729, 646],
+    "desk-quiet-01":  [2729, 514, 2819, 646]
+  }
+}
