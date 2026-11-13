@@ -548,6 +548,15 @@ button[data-active="true"] { background: var(--accent); }
   color: var(--brand-dark);
 }
 
+.team-labels-toggle {
+  cursor: pointer;
+}
+
+.team-labels-toggle input {
+  margin: 0;
+  cursor: pointer;
+}
+
 .default-floor-btn.is-default {
   color: var(--brand-dark);
   border-color: var(--brand-mid);
@@ -673,8 +682,8 @@ button[data-active="true"] { background: var(--accent); }
 .mapBox {
   position: relative;
   max-width: 1200px;
-  /* transform applied by zoom.js */
-  will-change: transform;
+  /* transform applied by zoom.js. No will-change here: it makes the browser
+     rasterise the map once and scale the bitmap, so zoomed text goes blurry */
 }
 
 .mapBox img {

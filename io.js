@@ -358,7 +358,9 @@ export function exportImage(planFile, titleText, planDarken) {
     const svgImg  = new Image();
 
     svgImg.onload = () => {
-      ctx.drawImage(svgImg, 0, bannerH);
+      // Explicit size: the SVG only has a viewBox, so without it the overlay
+      // draws at the browser's default size instead of covering the plan
+      ctx.drawImage(svgImg, 0, bannerH, width, height);
       URL.revokeObjectURL(url);
 
       // Summary section

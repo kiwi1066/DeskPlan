@@ -93,6 +93,7 @@ import {
 } from "./buildings.js";
 
 import { uiPrompt, uiConfirm } from "./modal.js";
+import { getShowTeamLabels, setShowTeamLabels } from "./labels.js";
 
 // ── Render wrapper ────────────────────────────────────────────────────────────
 // Keeps category label UI and summary visibility in sync after every render
@@ -721,6 +722,16 @@ elDay.addEventListener("change", () => {
 elDay2.addEventListener("change", () => {
   AppState.currentDay2 = elDay2.value;
   refreshCompare();
+});
+
+// ── Show team names toggle ────────────────────────────────────────────────────
+// One app-wide preference (not per floor), default off
+
+const elToggleTeamLabels = document.getElementById("toggleTeamLabels");
+elToggleTeamLabels.checked = getShowTeamLabels();
+elToggleTeamLabels.addEventListener("change", () => {
+  setShowTeamLabels(elToggleTeamLabels.checked);
+  AppState.mode === "compare" ? refreshCompare() : render();
 });
 
 // ── Toolbar buttons ───────────────────────────────────────────────────────────
