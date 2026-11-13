@@ -13,6 +13,7 @@ import {
   displayName,
   readableTextColor,
 } from "./state.js";
+import { drawTeamLabels } from "./labels.js";
 
 const SVG_NS = "http://www.w3.org/2000/svg";
 
@@ -61,6 +62,9 @@ export function renderContainer(containerId, day) {
       title.remove();
     }
   });
+
+  // Team name bubbles (no-op layer clear when the toggle is off)
+  drawTeamLabels(containerId, day);
 }
 
 // Callbacks set by app.js so render.js never imports state-mutation functions

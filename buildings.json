@@ -86,6 +86,16 @@
       }
     ]
   },
+  "5BS": {
+    "label": "5B Sheridan St (WMP), Cairns",
+    "floors": [
+      {
+        "id":    "L2",
+        "label": "Level 2",
+        "plan":  "5BS_L2_deskPlan.svg"
+      }
+    ]
+  },
   "140C": {
     "label": "140 Creek St",
     "floors": []
