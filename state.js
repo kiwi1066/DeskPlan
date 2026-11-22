@@ -381,7 +381,9 @@ export function resetFloorData() {
 
 // ── Desk vs other-space classification ───────────────────────────────────────
 // Every bookable shape in the SVG is a <g id="desk-…">. Real desks are
-// "desk-" + number (+ optional letter), e.g. desk-012, desk-093A.
+// "desk-" + number (+ optional letter), e.g. desk-012, desk-093A. On a floor
+// shared by agencies whose desk numbers overlap, the number carries an
+// upper-case agency code: desk-QGIF-001, desk-RSHQ-001 (275G L18).
 // Other spaces use a type token: desk-<type>-NN, e.g. desk-meet-01.
 // Order here is the display order in the summary.
 
@@ -394,7 +396,7 @@ export const SPACE_TYPES = {
   hot:    { one: "Hot desk",           many: "Hot desks" },
 };
 
-const DESK_ID_RE  = /^desk-\d+[A-Za-z]?$/;
+const DESK_ID_RE  = /^desk-(?:[A-Z]+-)?\d+[A-Za-z]?$/;
 const SPACE_ID_RE = /^desk-([a-z]+)-/;
 
 /**
@@ -414,7 +416,7 @@ export function warnUnknownDeskIds() {
   if (bad.length) {
     console.warn(
       `Unrecognised desk IDs (counted as desks): ${bad.join(", ")}. ` +
-      `Use desk-<number> for desks or desk-<${Object.keys(SPACE_TYPES).join("|")}>-NN for other spaces.`
+      `Use desk-<number> (or desk-<AGENCY>-<number>) for desks or desk-<${Object.keys(SPACE_TYPES).join("|")}>-NN for other spaces.`
     );
   }
 }

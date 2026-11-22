@@ -27,6 +27,8 @@ Python packages and poppler (`pdftocairo`, `pdftotext`) with Miniforge:
 conda install -c conda-forge numpy pillow poppler
 ```
 
+`3b_reuse_shapes.py` and the `nearestDesk` option also need opencv: `pip install opencv-python-headless`.
+
 ## Adding a new floor from a PDF
 
 Works with PDFs that hold real linework and text: exported from CAD, or printed to PDF from
@@ -73,7 +75,14 @@ Then fill in the config:
 | `clean.removeElements` | Specific element indices from `inv.json` that no rule catches. |
 | `deskNumbers.pattern` | Regex matching a desk number in `words.html`. Group 1 = work area, group 2 = desk number. |
 | `deskNumbers.labelFormat` | How a number is written, e.g. `W2.{area}.{num}`. |
+| `deskNumbers.idFormat` | How an ID is built from the number. Default `desk-{area}{num:02d}` (`W2.14.84` → `desk-1484`). 275G uses `desk-{num:03d}` so IDs stay `desk-001` … |
+| `deskNumbers.prefixMap` | For a floor shared by agencies whose numbers overlap: a named group `prefix` in the pattern, mapped to an agency code, e.g. `{"Q": "QGIF", "R": "RSHQ"}` with `idFormat` `desk-{prefix}-{num:03d}` → `desk-QGIF-001`. The app treats `desk-<UPPERCASE>-<number>` as a desk. |
+| `deskNumbers.nearestDesk` | `{"radius": pt, "size": [short, long] pt, "tolerance": [lo, hi]}` for plans that print each number *beside* its desk (275G L18). Each number is paired with the nearest white, desk-sized enclosed area, closest pairs first, one desk per number. Needs opencv. |
+| `clean.fitHideNumberTags` | Padding in PDF points. Hides the small tag drawn round each desk number in `fit.png` only, so the desk outline is found rather than the tag (275G L9/L10). |
 | `wallThreshold` | Grey level (0-255) darker than which counts as a line when finding outlines. 200 suits most plans. |
+
+Python-style named groups (`(?P<num>\d+)`) can be used in `deskNumbers.pattern`; groups `area`, `num` and `prefix`
+are read by name if present, otherwise group 1 = area and group 2 = number.
 
 The colour values are the exact strings from the style list (`rgb(32.899475%, ...)`); a
 prefix such as `rgb(32.89` is enough.
@@ -94,7 +103,12 @@ position, or ask Claude to read them off zoomed crops):
 
 - `addedDesks.seeds`: `[area, number, x, y]` per desk with no printed number, with x, y a
   point on the desk's work surface. Continue the plan's own numbering pattern.
+  A seed can also be an explicit rectangle `[area, number, x0, y0, x1, y1]`, for desks the outline search can't
+  trace (e.g. desks added as PDF markup, which comes through as an image). Set `addedDesks.drawNumbers` to `false`
+  when the plan already prints those numbers.
 - `rooms`: `"desk-office-01": [x0, y0, x1, y1]` per bookable room, on the wall centre lines.
+  `[cx, cy, r]` gives a round shape (for a round meeting table). On the 275G floors, meeting rooms are the
+  table rather than the whole room.
   Use the app's space types: `desk-office-NN`, `desk-quiet-NN`, `desk-meet-NN`,
   `desk-booth-NN`, `desk-mp-NN`, `desk-hot-NN`. Leave out kitchens, utility, stores and so on.
 
@@ -113,6 +127,23 @@ python3 tools/new-floor/5_write.py <BUILDING>_<FLOOR>
 - `5_write.py` writes the app SVG, adds the floor to `buildings.json` if it isn't
   there, and makes `tools/work/<floor>/review.png`: every shape outlined and labelled
   (green = printed desks, orange = added desks, purple = rooms).
+
+### Replacing an existing floor
+
+Keep the IDs people's saved assignments use. After `3_shapes.py`:
+
+```bash
+python3 tools/new-floor/3b_reuse_shapes.py <BUILDING>_<FLOOR> <current>_deskPlan.svg <current>_deskPlan.png --reuse-unusual
+```
+
+It lines the floor's current PNG up with the new `clean.png` (check `tools/work/<floor>/align_check.png`),
+writes `old_on_new.json` (where every current shape lands on the new plan, for giving rooms and renamed desks the
+right IDs), and with `--reuse-unusual` copies the current outlines of desks the new run found an odd size (bent
+Y-pod desks). Needs opencv (`pip install opencv-python-headless`).
+
+PDF markup (comment boxes) isn't converted by poppler: flatten it into the page first, and pre-rotate the page if the
+plan is drawn at a different angle to the floor's other levels, e.g. with PyMuPDF
+(`doc.bake(); page.set_rotation(270); doc.save(...)`).
 
 ### 7. Check, then commit
 

@@ -6,6 +6,8 @@
  * Writes <BUILDING>_<FLOOR>_deskPlan.png in the repo root: the cleaned plan,
  *        plus the number of every added desk (config.addedDesks) drawn in the
  *        same blue as the printed numbers, centred and running along the desk.
+ *        Set config.addedDesks.drawNumbers to false when the plan already prints
+ *        them (e.g. as markup that pdftotext can't read).
  */
 const { chromium } = require('playwright');
 const fs = require('fs'), path = require('path');
@@ -37,7 +39,7 @@ const { ROOT, loadFloor, renderSize, svgBody } = require('./common');
       const len = t.getComputedTextLength();
       return len > Math.max(w, h) ? `${d.label} text ${len.toFixed(1)} longer than desk ${Math.max(w, h).toFixed(1)}` : null;
     }).filter(Boolean);
-  }, [S.added || {}, cfg.crop, W, H, A.textFill || '#1373e8', A.fontSize || 3.85]);
+  }, [A.drawNumbers === false ? {} : (S.added || {}), cfg.crop, W, H, A.textFill || '#1373e8', A.fontSize || 3.85]);
   const out = path.join(ROOT, plan + '.png');
   await p.screenshot({ path: out });
   console.log(`wrote ${path.basename(out)} (${W} x ${H}px)` + (placed.length ? '\n  note: ' + placed.join('\n  note: ') : ''));

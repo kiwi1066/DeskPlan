@@ -97,7 +97,26 @@ const starts = (v, list) => !!v && (list || []).some(x => v.startsWith(x));
   await p.setViewportSize({ width: W, height: H });
   await p.evaluate(([W, H]) => { const s = document.querySelector('svg'); s.setAttribute('width', W); s.setAttribute('height', H); document.body.style.background = '#fff'; }, [W, H]);
   await p.screenshot({ path: path.join(work, 'clean.png') });
-  await p.evaluate(() => document.querySelectorAll('use').forEach(u => { u.style.display = 'none'; }));
+  // fit.png only: hide the small tag drawn around each desk number (clean.png keeps it).
+  // config.clean.fitHideNumberTags = padding in PDF points around each desk-number word;
+  // paths lying entirely inside that padded box are hidden so the desk outline is found.
+  if (C.fitHideNumberTags) {
+    const pad = C.fitHideNumberTags, re = new RegExp(cfg.deskNumbers.pattern.replace(/\(\?P</g, "(?<"));   // Python-style named groups
+    const boxes = [...fs.readFileSync(path.join(work, 'words.html'), 'utf8')
+      .matchAll(/<word xMin="([\d.]+)" yMin="([\d.]+)" xMax="([\d.]+)" yMax="([\d.]+)">([^<]*)<\/word>/g)]
+      .filter(m => re.test(m[5])).map(m => [+m[1] - pad, +m[2] - pad, +m[3] + pad, +m[4] + pad]);
+    const hide = inv.filter(e => e.tag === 'path' && boxes.some(([a, b, c, d]) => e.x0 >= a && e.x1 <= c && e.y0 >= b && e.y1 <= d))
+                    .map(e => String(e.i));
+    await p.evaluate(ids => { const set = new Set(ids);
+      document.querySelectorAll('[data-i]').forEach(e => { if (set.has(e.getAttribute('data-i'))) e.style.display = 'none'; }); }, hide);
+    console.log(`fit.png: hid ${hide.length} number-tag paths`);
+  }
+  // Hide text glyphs (small <use>s). Large <use>s are drawings, e.g. flattened PDF markup
+  // holding newly added desks, and must stay so their outlines can be found.
+  await p.evaluate(W => document.querySelectorAll('use').forEach(u => {
+    const r = u.getBoundingClientRect();
+    if (Math.max(r.width, r.height) < 0.03 * W) u.style.display = 'none';
+  }), W);
   await p.screenshot({ path: path.join(work, 'fit.png') });
   console.log(`clean.png / fit.png: ${W} x ${H}px`);
   await b.close();

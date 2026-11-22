@@ -1,0 +1,109 @@
+{
+  "_about": "Settings for 275G L18 (shared floor: QGIF and RSHQ tenancies) from the QGAO plan dated 30/09/2026, pre-rotated a quarter-turn anticlockwise to match the other 275G floors. Desk numbers WQ.18.nn (QGIF) and WR.18.nn (RSHQ) overlap, so IDs carry the agency: desk-QGIF-001, desk-RSHQ-001.",
+  "building": {
+    "id": "275G",
+    "label": "275 George St"
+  },
+  "floor": {
+    "id": "L18",
+    "label": "Level 18"
+  },
+  "crop": [
+    10,
+    181,
+    755,
+    1018
+  ],
+  "renderWidth": 2800,
+  "clean": {},
+  "deskNumbers": {
+    "pattern": "^W(?P<prefix>[QR])\\.(?P<area>18)\\.(?P<num>\\d+)$",
+    "labelFormat": "W{prefix}.18.{num:02d}",
+    "idFormat": "desk-{prefix}-{num:03d}",
+    "prefixMap": {
+      "Q": "QGIF",
+      "R": "RSHQ"
+    },
+    "nearestDesk": {
+      "radius": 22,
+      "size": [
+        12.8,
+        33.5
+      ],
+      "tolerance": [
+        0.85,
+        1.4
+      ]
+    }
+  },
+  "wallThreshold": 200,
+  "rooms": {
+    "_note": "clean.png pixels. Meeting rooms are the table; quiet rooms and the multipurpose room are the whole room. IDs carry the tenancy (RSHQ, QGIF) or SHARED so the two agencies' rooms stay apart.",
+    "desk-meet-RSHQ-01": [
+      347,
+      473,
+      505,
+      547
+    ],
+    "desk-meet-RSHQ-02": [
+      130,
+      2750,
+      200,
+      2840
+    ],
+    "desk-meet-QGIF-01": [
+      2348,
+      488,
+      2435,
+      563
+    ],
+    "desk-meet-QGIF-02": [
+      1971,
+      1596,
+      2045,
+      1818
+    ],
+    "desk-meet-QGIF-03": [
+      1967,
+      2135,
+      2032,
+      2218
+    ],
+    "desk-quiet-QGIF-01": [
+      1897,
+      880,
+      2130,
+      1072
+    ],
+    "desk-quiet-QGIF-02": [
+      1897,
+      1072,
+      2130,
+      1208
+    ],
+    "desk-quiet-QGIF-03": [
+      1897,
+      1208,
+      2130,
+      1342
+    ],
+    "desk-quiet-QGIF-04": [
+      1897,
+      1342,
+      2130,
+      1478
+    ],
+    "desk-meet-SHARED-01": [
+      1638,
+      2577,
+      1960,
+      2790
+    ],
+    "desk-mp-SHARED-01": [
+      708,
+      2460,
+      1030,
+      3060
+    ]
+  }
+}
