@@ -1,0 +1,237 @@
+{
+  "_about": "Settings for 275G L9 from the 2026-11 numbering plan PDF (pre-rotated a quarter-turn anticlockwise to match the other 275G floors; L9/L9 markup boxes flattened). See tools/README.md.",
+  "building": {
+    "id": "275G",
+    "label": "275 George St"
+  },
+  "floor": {
+    "id": "L9",
+    "label": "Level 9"
+  },
+  "crop": [
+    87,
+    191,
+    486,
+    638
+  ],
+  "renderWidth": 2800,
+  "clean": {
+    "removeFill": [
+      "rgb(88.62"
+    ],
+    "removeElements": [
+      2550,
+      33034,
+      35154,
+      35155,
+      35156,
+      35157
+    ],
+    "fitHideNumberTags": 1.7
+  },
+  "deskNumbers": {
+    "pattern": "^W?\\.(?P<area>9|09)\\.(?P<num>\\d+)$",
+    "labelFormat": "W.09.{num:02d}",
+    "idFormat": "desk-{num:03d}"
+  },
+  "wallThreshold": 200,
+  "addedDesks": {
+    "_note": "Desks numbered in red markup on the 2026-11 plan. The markup renders as an image, so each desk is an explicit rectangle [area, num, x0, y0, x1, y1] in clean.png pixels. The plan prints the numbers, so they are not drawn again.",
+    "drawNumbers": false,
+    "seeds": [
+      [
+        9,
+        130,
+        1447,
+        140,
+        1503,
+        252
+      ],
+      [
+        9,
+        127,
+        1503,
+        140,
+        1559,
+        252
+      ],
+      [
+        9,
+        129,
+        1447,
+        252,
+        1503,
+        365
+      ],
+      [
+        9,
+        126,
+        1503,
+        252,
+        1559,
+        365
+      ],
+      [
+        9,
+        128,
+        1447,
+        365,
+        1503,
+        477
+      ],
+      [
+        9,
+        125,
+        1503,
+        365,
+        1559,
+        477
+      ],
+      [
+        9,
+        124,
+        1700,
+        140,
+        1756,
+        252
+      ],
+      [
+        9,
+        121,
+        1756,
+        140,
+        1812,
+        252
+      ],
+      [
+        9,
+        123,
+        1700,
+        252,
+        1756,
+        365
+      ],
+      [
+        9,
+        120,
+        1756,
+        252,
+        1812,
+        365
+      ],
+      [
+        9,
+        122,
+        1700,
+        365,
+        1756,
+        477
+      ],
+      [
+        9,
+        119,
+        1756,
+        365,
+        1812,
+        477
+      ],
+      [
+        9,
+        115,
+        1629,
+        2669,
+        1686,
+        2785
+      ],
+      [
+        9,
+        118,
+        1686,
+        2669,
+        1743,
+        2785
+      ],
+      [
+        9,
+        114,
+        1629,
+        2785,
+        1686,
+        2902
+      ],
+      [
+        9,
+        117,
+        1686,
+        2785,
+        1743,
+        2902
+      ],
+      [
+        9,
+        113,
+        1629,
+        2902,
+        1686,
+        3018
+      ],
+      [
+        9,
+        116,
+        1686,
+        2902,
+        1743,
+        3018
+      ]
+    ]
+  },
+  "rooms": {
+    "_note": "clean.png pixels. Meeting rooms are the table, keeping the IDs of the old shapes in the same place; [cx, cy, r] is a round table. Quiet rooms are the whole room on the wall centre lines. The old 6P room bottom-left is now two 4P rooms: the left keeps desk-meet-002, the right is new desk-meet-007. Old desk-meet-001 (now IT build room) and -004 (now quiet rooms) are retired.",
+    "desk-meet-002": [
+      324,
+      2008,
+      42
+    ],
+    "desk-meet-007": [
+      560,
+      2008,
+      42
+    ],
+    "desk-meet-003": [
+      1970,
+      2175,
+      2026,
+      2288
+    ],
+    "desk-meet-005": [
+      1972,
+      1150,
+      2030,
+      1262
+    ],
+    "desk-meet-006": [
+      1972,
+      885,
+      2030,
+      998
+    ],
+    "desk-quiet-01": [
+      1877,
+      1799,
+      2115,
+      1933
+    ],
+    "desk-quiet-02": [
+      1877,
+      1665,
+      2115,
+      1799
+    ],
+    "desk-quiet-03": [
+      1877,
+      1531,
+      2115,
+      1665
+    ]
+  }
+}

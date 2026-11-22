@@ -58,6 +58,11 @@
         "id":    "L14",
         "label": "Level 14",
         "plan":  "275G_L14_deskPlan.svg"
+      },
+      {
+        "id":    "L18",
+        "label": "Level 18",
+        "plan":  "275G_L18_deskPlan.svg"
       }
     ]
   },

@@ -44,7 +44,7 @@ def element(pts):
 
 # ── SVG ─────────────────────────────────────────────────────────────────────
 items = {**S["desks"], **S["added"], **S["rooms"]}
-order = sorted(items, key=lambda i: (0, items[i]["area"], items[i]["num"]) if "area" in items[i] else (1, i, 0))
+order = sorted(items, key=lambda i: (0, items[i].get("prefix", ""), items[i]["area"], items[i]["num"]) if "area" in items[i] else (1, "", i, 0))
 lines = ['<?xml version="1.0" encoding="UTF-8"?>',
          f'<svg id="Desks" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {fmt(x1 - x0)} {fmt(y1 - y0)}">']
 for i in order:
