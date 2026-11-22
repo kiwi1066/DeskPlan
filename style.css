@@ -558,6 +558,19 @@ button[data-active="true"] { background: var(--accent); }
   cursor: pointer;
 }
 
+.selection-count {
+  margin-left: 8px;
+  padding: 3px 10px;
+  border-radius: 999px;
+  background: #1e6fd9;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.selection-count[hidden] { display: none; }
+
 .default-floor-btn.is-default {
   color: var(--brand-dark);
   border-color: var(--brand-mid);

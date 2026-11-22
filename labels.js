@@ -66,7 +66,7 @@ export function drawTeamLabels(containerId, day) {
     const teamId = AppState.deskData[el.id]?.[day];
     if (!teamId || !(AppState.teamNames[teamId] || "").trim()) return;
 
-    const shape   = el.querySelector("rect,polygon,path");
+    const shape   = el.querySelector(":is(rect,polygon,path):not(.sel-halo)");
     const outline = shape && deskOutline(shape, svg);
     if (outline) drawBubble(layer, teamId, outline, maxFont);
   });

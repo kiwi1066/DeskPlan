@@ -32,7 +32,7 @@ export function renderContainer(containerId, day) {
     const desk = container.querySelector(`#${deskId}`);
     if (!desk) return;
 
-    const shape = desk.querySelector("rect,polygon,path");
+    const shape = desk.querySelector(":is(rect,polygon,path):not(.sel-halo)");
     if (!shape) return;
 
     const teamId = AppState.deskData[deskId][day];
@@ -90,27 +90,67 @@ export function render() {
 
 // ── Selection highlight ───────────────────────────────────────────────────────
 
+// Selected desks get a translucent tint plus a two-tone outline (white halo
+// under a dark line). The tint shows only on unassigned desks, because an
+// assigned desk's team colour sits on top of it. The halo keeps the outline
+// visible against black plan line work and every team colour. Widths are in
+// screen pixels (non-scaling-stroke), so they look the same on every floor
+// and at every zoom level.
+const SEL_TINT       = "#1e6fd9";
+const SEL_TINT_ALPHA = "0.3";
+const SEL_LINE       = "#111";
+const SEL_LINE_PX    = "2.5";
+const SEL_HALO       = "#fff";
+const SEL_HALO_PX    = "5.5";
+
 export function applyHighlight() {
   const container = document.getElementById("svgContainer");
   if (!container) return;
 
-  // Outline width is in SVG units, so plans drawn at a wider viewBox would
-  // show a thinner line on screen. Scale it to 275 George St's 550-wide plan
-  // so every floor gets the same on-screen thickness.
-  const REF_WIDTH  = 550;
-  const BASE_WIDTH = 0.78;
-  const vbWidth = container.querySelector("svg")?.viewBox?.baseVal?.width || REF_WIDTH;
-  const strokeWidth = String(+(BASE_WIDTH * vbWidth / REF_WIDTH).toFixed(2));
+  container.querySelectorAll(".sel-halo").forEach(el => el.remove());
 
+  let count = 0;
   container.querySelectorAll(AppState.deskSelector).forEach(deskEl => {
-    const shape = deskEl.querySelector("rect,polygon,path");
+    const shape = deskEl.querySelector(":is(rect,polygon,path):not(.sel-halo)");
     if (!shape) return;
 
     const selected = AppState.selectedDesks.includes(deskEl.id);
-    shape.setAttribute("stroke",       selected ? "#444" : "none");
-    shape.setAttribute("stroke-width", selected ? strokeWidth : "0");
+    shape.classList.toggle("sel-shape", selected);
     shape.style.opacity = selected ? "1" : "0.85";
+
+    if (!selected) {
+      shape.setAttribute("stroke", "none");
+      shape.setAttribute("stroke-width", "0");
+      shape.removeAttribute("vector-effect");
+      return;
+    }
+    count++;
+
+    // Halo + tint: a copy of the shape drawn behind the real one
+    const halo = shape.cloneNode(false);
+    halo.removeAttribute("opacity");
+    halo.style.opacity = "1";
+    halo.setAttribute("class", "sel-halo");
+    halo.setAttribute("fill", SEL_TINT);
+    halo.setAttribute("fill-opacity", SEL_TINT_ALPHA);
+    halo.setAttribute("stroke", SEL_HALO);
+    halo.setAttribute("stroke-width", SEL_HALO_PX);
+    halo.setAttribute("stroke-linejoin", "round");
+    halo.setAttribute("vector-effect", "non-scaling-stroke");
+    halo.setAttribute("pointer-events", "none");
+    shape.before(halo);
+
+    shape.setAttribute("stroke", SEL_LINE);
+    shape.setAttribute("stroke-width", SEL_LINE_PX);
+    shape.setAttribute("stroke-linejoin", "round");
+    shape.setAttribute("vector-effect", "non-scaling-stroke");
   });
+
+  const counter = document.getElementById("selectionCount");
+  if (counter) {
+    counter.textContent = count ? `${count} selected` : "";
+    counter.hidden = !count;
+  }
 }
 
 // ── Legend ────────────────────────────────────────────────────────────────────

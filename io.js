@@ -351,7 +351,14 @@ export function exportImage(planFile, titleText, planDarken) {
     darkenRegion(ctx, 0, bannerH, width, height, planDarken);
 
     // SVG overlay
-    const svg     = document.querySelector("#svgContainer svg");
+    // Export without the on-screen selection highlight
+    const svg = document.querySelector("#svgContainer svg").cloneNode(true);
+    svg.querySelectorAll(".sel-halo").forEach(el => el.remove());
+    svg.querySelectorAll(".sel-shape").forEach(el => {
+      el.setAttribute("stroke", "none");
+      el.setAttribute("stroke-width", "0");
+      el.style.opacity = "0.85";
+    });
     const svgData = new XMLSerializer().serializeToString(svg);
     const svgBlob = new Blob([svgData], { type: "image/svg+xml" });
     const url     = URL.createObjectURL(svgBlob);
