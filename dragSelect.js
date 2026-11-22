@@ -124,7 +124,7 @@ function onMouseUp(e) {
 
   // Hit-test every desk
   svgEl.querySelectorAll(_deskSelector).forEach(deskEl => {
-    const shape = deskEl.querySelector("rect,polygon,path");
+    const shape = deskEl.querySelector(":is(rect,polygon,path):not(.sel-halo)");
     if (!shape) return;
 
     const bb = shape.getBBox();
